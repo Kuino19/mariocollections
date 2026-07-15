@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mario Collections — Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --wine:#3B1220;
+    --wine-deep:#240A13;
+    --ivory:#F6EFE2;
+    --gold:#C9A227;
+    --gold-soft:#E7C766;
+    --emerald:#1B5E4A;
+    --rust:#9B3A24;
+    --charcoal:#221D1A;
+    --line: rgba(201,162,39,0.35);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--charcoal);
+    font-family:'Work Sans', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    margin:0 0 0.4em 0;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;}
+  img{ max-width:100%; display:block; }
+  button{ font-family:inherit; cursor:pointer; }
+  .eyebrow{
+    font-size:0.72rem;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+  }
+
+  /* --- Aso-oke woven stripe: the signature element --- */
+  .weave{
+    height:12px;
+    width:100%;
+    background:repeating-linear-gradient(90deg,
+      var(--gold) 0 6px, var(--wine) 6px 18px,
+      var(--emerald) 18px 22px, var(--wine) 22px 34px,
+      var(--rust) 34px 38px, var(--wine) 38px 50px);
+    background-size:50px 100%;
+  }
+
+  .topbar{
+    background:var(--wine-deep);
+    color:var(--ivory);
+    text-align:center;
+    font-size:0.82rem;
+    padding:8px 16px;
+  }
+  .topbar a{ color:var(--gold-soft); text-decoration:none; font-weight:600;}
+
+  .btn{
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:2px;
+    font-weight:600;
+    font-size:0.9rem;
+    letter-spacing:0.03em;
+    text-decoration:none;
+    border:1.5px solid transparent;
+    transition:transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn-gold{ background:var(--gold); color:var(--wine-deep); }
+  .btn-gold:hover{ box-shadow:0 8px 22px rgba(201,162,39,0.35); }
+  .btn-outline{ border-color:var(--gold-soft); color:var(--gold-soft); }
+  .btn-outline:hover{ background:rgba(228,199,102,0.1); }
+
+  /* ============ HERO CAROUSEL ============ */
+  .hero-carousel{
+    position:relative;
+    height:min(84vh, 680px);
+    min-height:460px;
+    overflow:hidden;
+    background:var(--wine-deep);
+  }
+  .slide{
+    position:absolute; inset:0;
+    opacity:0;
+    transition:opacity 1s ease;
+    pointer-events:none;
+  }
+  .slide.active{ opacity:1; pointer-events:auto; }
+  .slide img{
+    width:100%; height:100%; object-fit:cover; object-position:center 15%;
+    filter:saturate(0.92) brightness(0.78);
+  }
+  .slide .tint{
+    position:absolute; inset:0;
+    background:linear-gradient(0deg, rgba(36,10,19,0.92) 8%, rgba(36,10,19,0.25) 48%, rgba(36,10,19,0.55) 100%);
+  }
+  .slide-content{
+    position:absolute; left:0; right:0; bottom:0;
+    padding:0 6vw 56px;
+    max-width:640px;
+    color:var(--ivory);
+  }
+  .slide-count{
+    position:absolute; top:26px; right:6vw;
+    color:var(--gold-soft);
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-size:0.95rem;
+    letter-spacing:0.05em;
+  }
+  .slide-content h1{
+    font-size:clamp(2.1rem, 4.8vw, 3.5rem);
+    color:var(--ivory);
+    margin:0.25em 0 0.3em;
+  }
+  .slide-content h1 em{ color:var(--gold-soft); font-style:italic; }
+  .slide-content p{
+    max-width:460px;
+    color:rgba(247,240,227,0.85);
+    margin:0 0 1.7em;
+  }
+  .carousel-arrows{
+    position:absolute; top:50%; left:0; right:0;
+    display:flex; justify-content:space-between;
+    padding:0 22px;
+    transform:translateY(-50%);
+    z-index:5;
+  }
+  .arrow{
+    width:44px; height:44px;
+    border-radius:50%;
+    border:1px solid var(--line);
+    background:rgba(36,10,19,0.45);
+    color:var(--ivory);
+    font-size:1.1rem;
+    display:flex; align-items:center; justify-content:center;
+    backdrop-filter:blur(2px);
+    transition:background 0.15s ease;
+  }
+  .arrow:hover{ background:rgba(201,162,39,0.35); }
+  .thread-dots{
+    position:absolute; bottom:22px; left:50%; transform:translateX(-50%);
+    display:flex; gap:9px; z-index:5;
+  }
+  .thread-dots button{
+    width:26px; height:5px; border:none; padding:0;
+    background:rgba(247,240,227,0.35);
+    transition:background 0.2s ease, width 0.2s ease;
+  }
+  .thread-dots button.active{ background:var(--gold); width:38px; }
+
+  /* ============ SECTIONS ============ */
+  section{ padding:76px 6vw; max-width:1220px; margin:0 auto; }
+  .section-head{ text-align:center; max-width:600px; margin:0 auto 46px; }
+  .section-head h2{ font-size:clamp(1.7rem, 3vw, 2.3rem); }
+  .section-head.left{ text-align:left; margin:0 0 36px; display:flex; align-items:flex-end; justify-content:space-between; gap:20px; max-width:none; }
+
+  /* Services */
+  .services{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .service-card{
+    background:#fff; border-radius:3px; overflow:hidden;
+    border-top:3px solid var(--gold);
+    box-shadow:0 4px 20px rgba(59,18,32,0.07);
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .service-card:hover{ transform:translateY(-5px); box-shadow:0 14px 30px rgba(59,18,32,0.12); }
+  .service-card .thumb-wrap{ overflow:hidden; }
+  .service-card img{
+    width:100%; aspect-ratio:3/4; object-fit:cover; object-position:center 18%;
+    transition:transform 0.4s ease;
+  }
+  .service-card:hover img{ transform:scale(1.06); }
+  .service-card .body{ padding:24px 24px 28px; }
+  .service-card h3{ font-size:1.2rem; margin-bottom:0.3em; }
+  .service-card p{ color:#4a423d; font-size:0.94rem; margin:0 0 12px; }
+  .service-card a.link{
+    font-size:0.84rem; font-weight:600; color:var(--rust);
+    text-decoration:none; border-bottom:1px solid var(--rust); padding-bottom:2px;
+  }
+
+  /* New arrivals filmstrip carousel */
+  .arrivals-wrap{ background:#fff; }
+  .filmstrip-controls{ display:flex; gap:10px; }
+  .fs-btn{
+    width:38px; height:38px; border-radius:50%;
+    border:1px solid rgba(59,18,32,0.2); background:none; color:var(--wine);
+    display:flex; align-items:center; justify-content:center; font-size:1rem;
+    transition:background 0.15s ease;
+  }
+  .fs-btn:hover{ background:rgba(201,162,39,0.15); }
+  .filmstrip{
+    display:flex; gap:18px; overflow-x:auto; scroll-snap-type:x mandatory;
+    padding-bottom:8px; scrollbar-width:none;
+  }
+  .filmstrip::-webkit-scrollbar{ display:none; }
+  .fs-card{
+    flex:0 0 auto; width:230px; scroll-snap-align:start;
+    text-decoration:none; color:inherit;
+  }
+  .fs-card .frame{
+    border-radius:3px; overflow:hidden; aspect-ratio:4/5;
+    border:1px solid rgba(59,18,32,0.1);
+  }
+  .fs-card img{ width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease; }
+  .fs-card:hover img{ transform:scale(1.07); }
+  .fs-card .fs-label{ margin-top:10px; }
+  .fs-card .eyebrow{ display:block; margin-bottom:2px; }
+  .fs-card h4{ font-family:'Fraunces',serif; font-weight:600; font-size:1.02rem; margin:0; }
+
+  /* Categories */
+  .categories-wrap{ background:var(--ivory); }
+  .categories{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .cat-card{ position:relative; aspect-ratio:3/4; border-radius:3px; overflow:hidden; display:block; background:var(--wine); }
+  .cat-card img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease; }
+  .cat-card:hover img{ transform:scale(1.08); }
+  .cat-card .overlay{
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(34,29,26,0) 38%, rgba(34,29,26,0.88) 100%);
+    display:flex; align-items:flex-end; padding:16px;
+  }
+  .cat-card h3{ color:#fff; font-size:1.08rem; margin:0.12em 0 0; }
+
+  /* Shop by Category — rent vs sale rows */
+  .cat-rows{ border-top:1px solid rgba(59,18,32,0.12); }
+  .cat-row{
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+    padding:20px 4px; border-bottom:1px solid rgba(59,18,32,0.12);
+  }
+  .cat-row-left{ display:flex; align-items:center; gap:16px; min-width:0; }
+  .cat-avatar{
+    width:56px; height:56px; border-radius:50%; overflow:hidden; flex:0 0 auto;
+    border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center;
+    background:var(--wine); color:var(--gold-soft);
+    font-family:'Fraunces', serif; font-weight:600; font-size:1rem;
+  }
+  .cat-avatar img{ width:100%; height:100%; object-fit:cover; }
+  .cat-row h3{ font-size:1.1rem; margin:0; }
+  .cat-row-actions{ display:flex; gap:10px; flex:0 0 auto; }
+  .pill{
+    padding:9px 20px; border-radius:999px; font-size:0.8rem; font-weight:600;
+    text-decoration:none; border:1.5px solid var(--wine); color:var(--wine);
+    transition:background 0.15s ease, color 0.15s ease; white-space:nowrap;
+  }
+  .pill:hover{ background:var(--wine); color:var(--ivory); }
+  .pill.fill{ background:var(--gold); border-color:var(--gold); color:var(--wine-deep); }
+  .pill.fill:hover{ background:var(--gold-soft); border-color:var(--gold-soft); }
+  .rows-tabs{ display:flex; gap:28px; margin-bottom:8px; }
+  .rows-tabs .eyebrow{ padding-bottom:10px; border-bottom:2px solid transparent; }
+  .rows-tabs .eyebrow.on{ color:var(--wine); border-color:var(--gold); }
+
+  /* Studio & more — icon service cards */
+  .studio-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+  .studio-card{
+    background:#fff; border:1px solid rgba(59,18,32,0.08); border-radius:3px;
+    padding:30px 24px; text-decoration:none; color:inherit; display:block;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .studio-card:hover{ transform:translateY(-4px); box-shadow:0 12px 26px rgba(59,18,32,0.1); }
+  .studio-icon{ color:var(--gold); margin-bottom:16px; }
+  .studio-card h3{ font-size:1.02rem; margin-bottom:6px; }
+  .studio-card p{ font-size:0.87rem; color:#4a423d; margin:0; }
+
+  /* About */
+  .about{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
+  .about-visual{ aspect-ratio:4/5; border-radius:3px; overflow:hidden; border:1px solid var(--line); position:relative; }
+  .about-visual img{ width:100%; height:100%; object-fit:cover; }
+  .about-visual .tag{
+    position:absolute; bottom:16px; left:16px;
+    background:var(--gold); color:var(--wine-deep);
+    font-size:0.72rem; font-weight:700; letter-spacing:0.04em;
+    padding:6px 12px;
+  }
+  .about ul{ list-style:none; padding:0; margin:22px 0 0; }
+  .about li{ padding:10px 0 10px 26px; border-bottom:1px solid rgba(59,18,32,0.08); position:relative; font-size:0.95rem; }
+  .about li:before{ content:""; position:absolute; left:0; top:18px; width:10px; height:2px; background:var(--gold); }
+
+  /* CTA */
+  .cta-banner{ background:var(--wine-deep); color:var(--ivory); text-align:center; padding:64px 6vw; }
+  .cta-banner h2{ color:var(--ivory); font-size:clamp(1.5rem,3vw,2.1rem); }
+  .cta-banner p{ color:rgba(247,240,227,0.8); max-width:460px; margin:0.6em auto 1.8em; }
+
+  footer{ background:var(--charcoal); color:rgba(247,240,227,0.6); text-align:center; padding:26px 24px; font-size:0.82rem; }
+  footer a{ color:var(--gold-soft); text-decoration:none; }
+
+  @media (max-width: 860px){
+    .hero-carousel{ height:60vh; min-height:380px; max-height:560px; }
+    .services{ grid-template-columns:1fr; }
+    .categories{ grid-template-columns:repeat(2,1fr); }
+    .studio-grid{ grid-template-columns:repeat(2,1fr); }
+    .about{ grid-template-columns:1fr; gap:30px; }
+    .section-head.left{ flex-direction:column; align-items:flex-start; }
+  }
+  @media (max-width: 560px){
+    .cat-row{ flex-direction:column; align-items:flex-start; gap:12px; }
+    .cat-row-actions{ width:100%; }
+    .pill{ flex:1; text-align:center; }
+  }
+  @media (max-width: 480px){
+    .hero-carousel{ height:52vh; min-height:340px; max-height:460px; }
+    .studio-grid{ grid-template-columns:1fr; }
+    .slide-content{ padding:0 5vw 44px; }
+    .arrow{ width:36px; height:36px; font-size:1rem; }
+    .carousel-arrows{ padding:0 12px; }
+    .slide-count{ top:16px; right:5vw; font-size:0.82rem; }
+    .fs-card{ width:170px; }
+    section{ padding:56px 5vw; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .btn, .slide, .service-card, .cat-card img, .fs-card img{ transition:none !important; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    Sale &amp; Rental of Native, Formal &amp; Themed Wear · <a href="https://wa.me/2348113683580" target="_blank" rel="noopener">Chat us on WhatsApp →</a>
+  </div>
+
+  <!-- HERO CAROUSEL -->
+  <div class="hero-carousel" id="heroCarousel">
+    <div class="slide active" data-index="0">
+      <img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-28-at-05.16.14.jpeg" alt="Brown and orange aso-oke agbada">
+      <div class="tint"></div>
+      <div class="slide-content">
+        <div class="eyebrow">New This Week</div>
+        <h1>Dressed right, <em>every</em> occasion</h1>
+        <p>Agbada, aso-oke and aso-ebi styles you can buy outright or rent for the day — fitted to your event and your budget.</p>
+        <a class="btn btn-gold" href="/shop/">Browse the Shop</a>
+      </div>
+    </div>
+    <div class="slide" data-index="1">
+      <img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-04-at-03.02.50.jpeg" alt="Emerald green agbada senator outfit">
+      <div class="tint"></div>
+      <div class="slide-content">
+        <div class="eyebrow">Defense &amp; Native Wear</div>
+        <h1>Senator sets, <em>sharpened</em></h1>
+        <p>Emerald, navy, black and brown agbada with matching fila — tailored native wear for owambe and family events.</p>
+        <a class="btn btn-gold" href="/product-category/defense/">Shop Defense</a>
+      </div>
+    </div>
+    <div class="slide" data-index="2">
+      <img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-27-at-15.25.19.jpeg" alt="Pink aso-ebi laced corset">
+      <div class="tint"></div>
+      <div class="slide-content">
+        <div class="eyebrow">Dinner &amp; Formal</div>
+        <h1>Aso-ebi, <em>elevated</em></h1>
+        <p>Laced corsets and formal aso-ebi pieces built for dinners, weddings and evening events.</p>
+        <a class="btn btn-gold" href="/product-category/dinner/">Shop Dinner</a>
+      </div>
+    </div>
+    <div class="slide" data-index="3">
+      <img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-07-at-02.33.01.jpeg" alt="Brown agbada senator outfit for graduation">
+      <div class="tint"></div>
+      <div class="slide-content">
+        <div class="eyebrow">Milestones</div>
+        <h1>Graduation, <em>marked</em> in style</h1>
+        <p>Themed outfits for convocation day and the celebrations that follow — rent or buy.</p>
+        <a class="btn btn-gold" href="/product-category/graduation-themed/">Shop Graduation</a>
+      </div>
+    </div>
+
+    <div class="slide-count"><span id="slideCount">01</span> — 04</div>
+    <div class="carousel-arrows">
+      <button class="arrow" id="prevSlide" aria-label="Previous slide">&#8249;</button>
+      <button class="arrow" id="nextSlide" aria-label="Next slide">&#8250;</button>
+    </div>
+    <div class="thread-dots" id="threadDots"></div>
+  </div>
+  <div class="weave"></div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-head">
+      <div class="eyebrow">What We Offer</div>
+      <h2>Three ways to work with us</h2>
+    </div>
+    <div class="services">
+      <div class="service-card">
+        <div class="thumb-wrap"><img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-04-at-03.25.36.jpeg" alt="Black agbada senator outfit"></div>
+        <div class="body">
+          <h3>Buy Outright</h3>
+          <p>Own your piece. Agbada sets, senator wears, aso-ebi styles and accessories, priced and ready to ship.</p>
+          <a class="link" href="/shop/">Shop to buy →</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="thumb-wrap"><img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-04-at-03.37.19.jpeg" alt="Navy blue agbada senator outfit"></div>
+        <div class="body">
+          <h3>Rent for the Day</h3>
+          <p>Big event, one-time wear? Rent premium agbada, aso-oke and dinner outfits for a fraction of the price.</p>
+          <a class="link" href="/shop/">Shop to rent →</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="thumb-wrap"><img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-04-at-02.33.20.jpeg" alt="Azure blue agbada senator outfit"></div>
+        <div class="body">
+          <h3>Guided Fitting</h3>
+          <p>Not sure of size or style? Send us your measurements and event on WhatsApp — we'll match you to the right piece.</p>
+          <a class="link" href="https://wa.me/2348113683580" target="_blank" rel="noopener">Get fitting help →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS FILMSTRIP CAROUSEL -->
+  <div class="arrivals-wrap">
+    <section id="arrivals">
+      <div class="section-head left">
+        <div>
+          <div class="eyebrow">Fresh In</div>
+          <h2>New arrivals</h2>
+        </div>
+        <div class="filmstrip-controls">
+          <button class="fs-btn" id="fsPrev" aria-label="Scroll left">&#8249;</button>
+          <button class="fs-btn" id="fsNext" aria-label="Scroll right">&#8250;</button>
+        </div>
+      </div>
+      <div class="filmstrip" id="filmstrip">
+        <a class="fs-card" href="/product-category/defense/">
+          <div class="frame"><img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-04-at-03.02.50.jpeg" alt="Emerald green agbada"></div>
+          <div class="fs-label"><span class="eyebrow">Defense</span><h4>Emerald Senator Set</h4></div>
+        </a>
+        <a class="fs-card" href="/product-category/defense/">
+          <div class="frame"><img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-04-at-03.25.36.jpeg" alt="Black agbada"></div>
+          <div class="fs-label"><span class="eyebrow">Defense</span><h4>Black Senator Set</h4></div>
+        </a>
+        <a class="fs-card" href="/product-category/defense/">
+          <div class="frame"><img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-04-at-03.37.19.jpeg" alt="Navy agbada"></div>
+          <div class="fs-label"><span class="eyebrow">Defense</span><h4>Navy Senator Set</h4></div>
+        </a>
+        <a class="fs-card" href="/product-category/dinner/">
+          <div class="frame"><img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-27-at-15.25.19.jpeg" alt="Pink aso-ebi corset"></div>
+          <div class="fs-label"><span class="eyebrow">Dinner</span><h4>Laced Aso-Ebi Corset</h4></div>
+        </a>
+        <a class="fs-card" href="/product-category/defense/">
+          <div class="frame"><img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-07-at-02.34.37.jpeg" alt="White agbada"></div>
+          <div class="fs-label"><span class="eyebrow">Defense</span><h4>White Senator Set</h4></div>
+        </a>
+        <a class="fs-card" href="/product-category/graduation-themed/">
+          <div class="frame"><img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-07-at-02.33.01.jpeg" alt="Brown agbada"></div>
+          <div class="fs-label"><span class="eyebrow">Graduation</span><h4>Brown Senator Set</h4></div>
+        </a>
+      </div>
+    </section>
+  </div>
+  <div class="weave"></div>
+
+  <!-- SHOP BY CATEGORY: RENTALS vs SALES -->
+  <div class="categories-wrap">
+    <section id="categories">
+      <div class="section-head">
+        <div class="eyebrow">Rent or Buy</div>
+        <h2>Shop by category</h2>
+      </div>
+
+      <div class="rows-tabs">
+        <span class="eyebrow on">Outfit Rentals</span>
+        <span class="eyebrow">&amp;</span>
+        <span class="eyebrow on">Sales</span>
+      </div>
+      <div class="cat-rows">
+        <div class="cat-row">
+          <div class="cat-row-left">
+            <div class="cat-avatar">SU</div>
+            <h3>Suits</h3>
+          </div>
+          <div class="cat-row-actions">
+            <a class="pill" href="/product-category/suits/?type=rental">Rent</a>
+            <a class="pill fill" href="/product-category/suits/">Buy</a>
+          </div>
+        </div>
+        <div class="cat-row">
+          <div class="cat-row-left">
+            <div class="cat-avatar">GO</div>
+            <h3>Gowns</h3>
+          </div>
+          <div class="cat-row-actions">
+            <a class="pill" href="/product-category/gowns/?type=rental">Rent</a>
+            <a class="pill fill" href="/product-category/gowns/">Buy</a>
+          </div>
+        </div>
+        <div class="cat-row">
+          <div class="cat-row-left">
+            <div class="cat-avatar"><img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-04-at-03.25.36.jpeg" alt="Male traditional agbada outfit"></div>
+            <h3>Male Traditional Outfits</h3>
+          </div>
+          <div class="cat-row-actions">
+            <a class="pill" href="/product-category/male-traditional-outfits/?type=rental">Rent</a>
+            <a class="pill fill" href="/product-category/male-traditional-outfits/">Buy</a>
+          </div>
+        </div>
+        <div class="cat-row">
+          <div class="cat-row-left">
+            <div class="cat-avatar"><img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-27-at-15.25.19.jpeg" alt="Female traditional aso-ebi corset outfit"></div>
+            <h3>Female Traditional Outfits</h3>
+          </div>
+          <div class="cat-row-actions">
+            <a class="pill" href="/product-category/female-traditional-outfits/?type=rental">Rent</a>
+            <a class="pill fill" href="/product-category/female-traditional-outfits/">Buy</a>
+          </div>
+        </div>
+        <div class="cat-row">
+          <div class="cat-row-left">
+            <div class="cat-avatar">SH</div>
+            <h3>Shoes</h3>
+          </div>
+          <div class="cat-row-actions">
+            <a class="pill" href="/product-category/shoes/?type=rental">Rent</a>
+            <a class="pill fill" href="/product-category/shoes/">Buy</a>
+          </div>
+        </div>
+        <div class="cat-row">
+          <div class="cat-row-left">
+            <div class="cat-avatar">FA</div>
+            <h3>Fans</h3>
+          </div>
+          <div class="cat-row-actions">
+            <a class="pill" href="/product-category/fans/?type=rental">Rent</a>
+            <a class="pill fill" href="/product-category/fans/">Buy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="weave"></div>
+
+  <!-- STUDIO & MORE -->
+  <section id="studio">
+    <div class="section-head">
+      <div class="eyebrow">Beyond Outfits</div>
+      <h2>Studio &amp; more</h2>
+    </div>
+    <div class="studio-grid">
+      <a class="studio-card" href="/souvenirs/">
+        <svg class="studio-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+        <h3>Souvenirs</h3>
+        <p>Branded keepsakes and party favours for weddings, birthdays and special events.</p>
+      </a>
+      <a class="studio-card" href="/studio-services/">
+        <svg class="studio-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <h3>Studio Services</h3>
+        <p>Book our studio space for shoots, fittings and content sessions.</p>
+      </a>
+      <a class="studio-card" href="/equipment-rentals/">
+        <svg class="studio-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+        <h3>Equipment Rentals</h3>
+        <p>Cameras, lighting and backdrops available to rent by the day.</p>
+      </a>
+      <a class="studio-card" href="/photoshoot-services/">
+        <svg class="studio-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <h3>Photoshoot Services</h3>
+        <p>Full styling-to-shutter packages, outfit included on request.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about">
+      <div class="about-visual">
+        <img src="https://www.mariocollections.com.ng/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-07-at-02.34.37.jpeg" alt="White agbada senator outfit">
+        <span class="tag">One of our styles</span>
+      </div>
+      <div>
+        <div class="eyebrow">Why Mario Collections</div>
+        <h2>Style made affordable and easy</h2>
+        <p style="color:#4a423d;">We stock ready-to-wear native and formal outfits, with a rental option so a big event doesn't need a big budget. Every order is confirmed and supported directly over WhatsApp.</p>
+        <ul>
+          <li>Buy or rent — you choose per outfit</li>
+          <li>Sizes from S to 2XL, most styles</li>
+          <li>Direct WhatsApp support for orders and fitting</li>
+          <li>New arrivals added weekly across all categories</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <h2>Have a specific outfit in mind?</h2>
+    <p>Send us a message with your event date, budget and size — we'll help you pick the right piece to buy or rent.</p>
+    <a class="btn btn-gold" href="https://wa.me/2348113683580?text=Hi%21%20I%20have%20a%20question%20about%20your%20products." target="_blank" rel="noopener">Message us on WhatsApp</a>
+  </div>
+
+  <footer>
+    © 2026 Mario Collections. Site by <a href="#">Kuino</a>.
+  </footer>
+
+<script>
+(function(){
+  // Hero carousel
+  var slides = document.querySelectorAll('#heroCarousel .slide');
+  var dotsWrap = document.getElementById('threadDots');
+  var countEl = document.getElementById('slideCount');
+  var current = 0;
+  var timer;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  slides.forEach(function(_, i){
+    var b = document.createElement('button');
+    if(i === 0) b.className = 'active';
+    b.addEventListener('click', function(){ goTo(i); resetTimer(); });
+    dotsWrap.appendChild(b);
+  });
+  var dots = dotsWrap.querySelectorAll('button');
+
+  function goTo(i){
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (i + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    countEl.textContent = String(current + 1).padStart(2, '0');
+  }
+  function next(){ goTo(current + 1); }
+  function prev(){ goTo(current - 1); }
+  function resetTimer(){
+    clearInterval(timer);
+    if(!reduceMotion) timer = setInterval(next, 5500);
+  }
+
+  document.getElementById('nextSlide').addEventListener('click', function(){ next(); resetTimer(); });
+  document.getElementById('prevSlide').addEventListener('click', function(){ prev(); resetTimer(); });
+  resetTimer();
+
+  // New arrivals filmstrip
+  var strip = document.getElementById('filmstrip');
+  document.getElementById('fsNext').addEventListener('click', function(){
+    strip.scrollBy({ left: 260, behavior: 'smooth' });
+  });
+  document.getElementById('fsPrev').addEventListener('click', function(){
+    strip.scrollBy({ left: -260, behavior: 'smooth' });
+  });
+})();
+</script>
+</body>
+</html>
