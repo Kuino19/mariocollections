@@ -46,7 +46,7 @@ export const products: Product[] = rawProducts.map((p: any) => ({
   salePrice: p.salePrice || undefined,
   rentPrice: p.rentPrice || undefined,
   rentDeposit: p.rentPrice ? Math.floor(p.rentPrice * 0.5) : undefined, // Auto-calculate a 50% deposit for rentals
-  images: p.images.map((img: string) => `/products/${img}`), // Prefix with /products/
+  images: (p.images || []).map((img: string) => `/products/${img}`), // Prefix with /products/
   sizes: p.sizes || undefined,
   description: p.note || p.name, // Use note as description if available
   inStock: true,

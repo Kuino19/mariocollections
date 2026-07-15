@@ -1,15 +1,19 @@
 [
   {
     "id": "1",
-    "slug": "unknown-product-1",
-    "name": "NEEDS DESCRIPTION FROM KUINO",
-    "category": null,
+    "slug": "dark-wine-aso-oke-iro-set",
+    "name": "Dark Wine Aso-Oke Iro, Ipele (Shoulder) & Gele + Blue Iro",
+    "category": "female-traditional",
     "mode": "both",
-    "salePrice": null,
-    "rentPrice": null,
-    "sizes": null,
-    "images": ["unknown-product-1/00000002-PHOTO-2026-07-15-19-51-58.jpg", "unknown-product-1/00000045-PHOTO-2026-07-15-19-52-14.jpg"],
-    "note": "Photos recovered but description text was not in this chat export. Confirm details before publishing."
+    "salePrice": 50000,
+    "rentPrice": 17000,
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "unknown-product-1/00000002-PHOTO-2026-07-15-19-51-58.jpg",
+      "unknown-product-1/00000045-PHOTO-2026-07-15-19-52-14.jpg"
+    ]
   },
   {
     "id": "2",
@@ -19,8 +23,13 @@
     "mode": "both",
     "salePrice": 50000,
     "rentPrice": 17000,
-    "sizes": ["One size fits all"],
-    "images": ["wine-aso-oke-iro-set/00000017-PHOTO-2026-07-15-19-52-03.jpg", "wine-aso-oke-iro-set/00000018-PHOTO-2026-07-15-19-52-04.jpg"]
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "wine-aso-oke-iro-set/00000017-PHOTO-2026-07-15-19-52-03.jpg",
+      "wine-aso-oke-iro-set/00000018-PHOTO-2026-07-15-19-52-04.jpg"
+    ]
   },
   {
     "id": "3",
@@ -30,8 +39,13 @@
     "mode": "both",
     "salePrice": 85000,
     "rentPrice": 25000,
-    "sizes": ["Bust 42, Waist 28, Hip 40"],
-    "images": ["wine-isiagu-gown/00000019-PHOTO-2026-07-15-19-52-04.jpg", "wine-isiagu-gown/00000020-PHOTO-2026-07-15-19-52-05.jpg"]
+    "sizes": [
+      "Bust 42, Waist 28, Hip 40"
+    ],
+    "images": [
+      "wine-isiagu-gown/00000019-PHOTO-2026-07-15-19-52-04.jpg",
+      "wine-isiagu-gown/00000020-PHOTO-2026-07-15-19-52-05.jpg"
+    ]
   },
   {
     "id": "4",
@@ -41,8 +55,13 @@
     "mode": "both",
     "salePrice": 50000,
     "rentPrice": 17000,
-    "sizes": ["One size fits all"],
-    "images": ["royal-blue-aso-oke-iro-set/00000021-PHOTO-2026-07-15-19-52-05.jpg", "royal-blue-aso-oke-iro-set/00000022-PHOTO-2026-07-15-19-52-06.jpg"],
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "royal-blue-aso-oke-iro-set/00000021-PHOTO-2026-07-15-19-52-05.jpg",
+      "royal-blue-aso-oke-iro-set/00000022-PHOTO-2026-07-15-19-52-06.jpg"
+    ],
     "note": "Image mapping confirmed explicitly in chat (\"NUMBER 4 PICTURE\")"
   },
   {
@@ -53,8 +72,13 @@
     "mode": "both",
     "salePrice": 95000,
     "rentPrice": 30000,
-    "sizes": ["Bust 37, Waist 31, Hip 42, Length 65"],
-    "images": ["black-aso-ebi-corset/00000023-PHOTO-2026-07-15-19-52-06.jpg", "black-aso-ebi-corset/00000024-PHOTO-2026-07-15-19-52-06.jpg"]
+    "sizes": [
+      "Bust 37, Waist 31, Hip 42, Length 65"
+    ],
+    "images": [
+      "black-aso-ebi-corset/00000023-PHOTO-2026-07-15-19-52-06.jpg",
+      "black-aso-ebi-corset/00000024-PHOTO-2026-07-15-19-52-06.jpg"
+    ]
   },
   {
     "id": "6",
@@ -64,8 +88,13 @@
     "mode": "both",
     "salePrice": 114000,
     "rentPrice": 33000,
-    "sizes": ["One size fits all"],
-    "images": ["royal-blue-agbada-set/00000025-PHOTO-2026-07-15-19-52-07.jpg", "royal-blue-agbada-set/00000026-PHOTO-2026-07-15-19-52-07.jpg"]
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "royal-blue-agbada-set/00000025-PHOTO-2026-07-15-19-52-07.jpg",
+      "royal-blue-agbada-set/00000026-PHOTO-2026-07-15-19-52-07.jpg"
+    ]
   },
   {
     "id": "7",
@@ -75,8 +104,15 @@
     "mode": "both",
     "salePrice": 75000,
     "rentPrice": 20000,
-    "sizes": ["Waist 32-34", "Suit size 48-50", "Trouser length 44"],
-    "images": ["burnt-orange-cropped-suit/00000027-PHOTO-2026-07-15-19-52-07.jpg", "burnt-orange-cropped-suit/00000028-PHOTO-2026-07-15-19-52-08.jpg"]
+    "sizes": [
+      "Waist 32-34",
+      "Suit size 48-50",
+      "Trouser length 44"
+    ],
+    "images": [
+      "burnt-orange-cropped-suit/00000027-PHOTO-2026-07-15-19-52-07.jpg",
+      "burnt-orange-cropped-suit/00000028-PHOTO-2026-07-15-19-52-08.jpg"
+    ]
   },
   {
     "id": "8",
@@ -86,8 +122,15 @@
     "mode": "both",
     "salePrice": 75000,
     "rentPrice": 20000,
-    "sizes": ["Waist 28-30", "Suit size 44-46", "Trouser length 40"],
-    "images": ["dark-green-cropped-suit/00000029-PHOTO-2026-07-15-19-52-08.jpg", "dark-green-cropped-suit/00000030-PHOTO-2026-07-15-19-52-08.jpg"]
+    "sizes": [
+      "Waist 28-30",
+      "Suit size 44-46",
+      "Trouser length 40"
+    ],
+    "images": [
+      "dark-green-cropped-suit/00000029-PHOTO-2026-07-15-19-52-08.jpg",
+      "dark-green-cropped-suit/00000030-PHOTO-2026-07-15-19-52-08.jpg"
+    ]
   },
   {
     "id": "9",
@@ -97,8 +140,14 @@
     "mode": "both",
     "salePrice": 95000,
     "rentPrice": 25000,
-    "sizes": ["Waist 40", "Suit size 56"],
-    "images": ["sky-blue-double-breasted-suit/00000031-PHOTO-2026-07-15-19-52-08.jpg", "sky-blue-double-breasted-suit/00000032-PHOTO-2026-07-15-19-52-09.jpg"]
+    "sizes": [
+      "Waist 40",
+      "Suit size 56"
+    ],
+    "images": [
+      "sky-blue-double-breasted-suit/00000031-PHOTO-2026-07-15-19-52-08.jpg",
+      "sky-blue-double-breasted-suit/00000032-PHOTO-2026-07-15-19-52-09.jpg"
+    ]
   },
   {
     "id": "10",
@@ -108,8 +157,13 @@
     "mode": "both",
     "salePrice": 108000,
     "rentPrice": 35000,
-    "sizes": ["Bust 42, Waist 36, Hip 48, Length 72"],
-    "images": ["pink-aso-ebi-corset/00000033-PHOTO-2026-07-15-19-52-09.jpg", "pink-aso-ebi-corset/00000034-PHOTO-2026-07-15-19-52-10.jpg"]
+    "sizes": [
+      "Bust 42, Waist 36, Hip 48, Length 72"
+    ],
+    "images": [
+      "pink-aso-ebi-corset/00000033-PHOTO-2026-07-15-19-52-09.jpg",
+      "pink-aso-ebi-corset/00000034-PHOTO-2026-07-15-19-52-10.jpg"
+    ]
   },
   {
     "id": "11",
@@ -119,8 +173,13 @@
     "mode": "both",
     "salePrice": 93000,
     "rentPrice": 30000,
-    "sizes": ["Bust 37, Hip 37, Waist 28"],
-    "images": ["black-isiagu-corset-gown/00000035-PHOTO-2026-07-15-19-52-10.jpg", "black-isiagu-corset-gown/00000036-PHOTO-2026-07-15-19-52-10.jpg"],
+    "sizes": [
+      "Bust 37, Hip 37, Waist 28"
+    ],
+    "images": [
+      "black-isiagu-corset-gown/00000035-PHOTO-2026-07-15-19-52-10.jpg",
+      "black-isiagu-corset-gown/00000036-PHOTO-2026-07-15-19-52-10.jpg"
+    ],
     "note": "Gele, beads, horsetail available at extra cost - not included in listed prices"
   },
   {
@@ -131,8 +190,13 @@
     "mode": "both",
     "salePrice": 95000,
     "rentPrice": 30000,
-    "sizes": ["Bust 44, Hip 42, Waist 32"],
-    "images": ["red-isiagu-gown-black-gele/00000037-PHOTO-2026-07-15-19-52-11.jpg", "red-isiagu-gown-black-gele/00000038-PHOTO-2026-07-15-19-52-11.jpg"],
+    "sizes": [
+      "Bust 44, Hip 42, Waist 32"
+    ],
+    "images": [
+      "red-isiagu-gown-black-gele/00000037-PHOTO-2026-07-15-19-52-11.jpg",
+      "red-isiagu-gown-black-gele/00000038-PHOTO-2026-07-15-19-52-11.jpg"
+    ],
     "note": "Price includes gown and gele. Beads and horsetail available at extra cost."
   },
   {
@@ -143,8 +207,15 @@
     "mode": "both",
     "salePrice": 75000,
     "rentPrice": 20000,
-    "sizes": ["Waist 32-34", "Suit size 48-50", "Trouser length 44"],
-    "images": ["light-grey-cropped-suit/00000039-PHOTO-2026-07-15-19-52-12.jpg", "light-grey-cropped-suit/00000040-PHOTO-2026-07-15-19-52-12.jpg"]
+    "sizes": [
+      "Waist 32-34",
+      "Suit size 48-50",
+      "Trouser length 44"
+    ],
+    "images": [
+      "light-grey-cropped-suit/00000039-PHOTO-2026-07-15-19-52-12.jpg",
+      "light-grey-cropped-suit/00000040-PHOTO-2026-07-15-19-52-12.jpg"
+    ]
   },
   {
     "id": "14",
@@ -154,8 +225,13 @@
     "mode": "both",
     "salePrice": 105000,
     "rentPrice": 33000,
-    "sizes": ["Bust 40, Waist 27, Hip 38, Length 58"],
-    "images": ["red-beaded-aso-oke-gown/00000041-PHOTO-2026-07-15-19-52-12.jpg", "red-beaded-aso-oke-gown/00000042-PHOTO-2026-07-15-19-52-13.jpg"],
+    "sizes": [
+      "Bust 40, Waist 27, Hip 38, Length 58"
+    ],
+    "images": [
+      "red-beaded-aso-oke-gown/00000041-PHOTO-2026-07-15-19-52-12.jpg",
+      "red-beaded-aso-oke-gown/00000042-PHOTO-2026-07-15-19-52-13.jpg"
+    ],
     "note": "Beads included per description, confirm if extra cost applies like similar items"
   },
   {
@@ -166,8 +242,13 @@
     "mode": "both",
     "salePrice": 62000,
     "rentPrice": 19000,
-    "sizes": ["One size fits all"],
-    "images": ["white-igbo-etibo-attire/00000043-PHOTO-2026-07-15-19-52-13.jpg", "white-igbo-etibo-attire/00000044-PHOTO-2026-07-15-19-52-14.jpg"]
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "white-igbo-etibo-attire/00000043-PHOTO-2026-07-15-19-52-13.jpg",
+      "white-igbo-etibo-attire/00000044-PHOTO-2026-07-15-19-52-14.jpg"
+    ]
   },
   {
     "id": "16",
@@ -177,8 +258,13 @@
     "mode": "both",
     "salePrice": 50000,
     "rentPrice": 13000,
-    "sizes": ["Size L-XL"],
-    "images": ["blue-isiagu-male-attire/00000049-PHOTO-2026-07-15-19-52-15.jpg", "blue-isiagu-male-attire/00000050-PHOTO-2026-07-15-19-52-16.jpg"],
+    "sizes": [
+      "Size L-XL"
+    ],
+    "images": [
+      "blue-isiagu-male-attire/00000049-PHOTO-2026-07-15-19-52-15.jpg",
+      "blue-isiagu-male-attire/00000050-PHOTO-2026-07-15-19-52-16.jpg"
+    ],
     "note": "Image split for items 16-18 is a best guess (7 photos across 3 items, not evenly divisible) - confirm"
   },
   {
@@ -189,8 +275,13 @@
     "mode": "both",
     "salePrice": 65000,
     "rentPrice": 22000,
-    "sizes": ["One size fits all"],
-    "images": ["red-iro-buba-set/00000051-PHOTO-2026-07-15-19-52-17.jpg", "red-iro-buba-set/00000052-PHOTO-2026-07-15-19-52-17.jpg"],
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "red-iro-buba-set/00000051-PHOTO-2026-07-15-19-52-17.jpg",
+      "red-iro-buba-set/00000052-PHOTO-2026-07-15-19-52-17.jpg"
+    ],
     "note": "Image split is a best guess - confirm"
   },
   {
@@ -201,8 +292,272 @@
     "mode": "both",
     "salePrice": 55000,
     "rentPrice": 19000,
-    "sizes": ["One size fits all"],
-    "images": ["brown-iro-buba-set/00000053-PHOTO-2026-07-15-19-52-17.jpg", "brown-iro-buba-set/00000054-PHOTO-2026-07-15-19-52-18.jpg", "brown-iro-buba-set/00000055-PHOTO-2026-07-15-19-52-19.jpg"],
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "brown-iro-buba-set/00000053-PHOTO-2026-07-15-19-52-17.jpg",
+      "brown-iro-buba-set/00000054-PHOTO-2026-07-15-19-52-18.jpg",
+      "brown-iro-buba-set/00000055-PHOTO-2026-07-15-19-52-19.jpg"
+    ],
     "note": "Image split is a best guess - confirm"
+  },
+  {
+    "id": "20",
+    "slug": "brown-agbada-topset",
+    "name": "Brown Aso-Oke Agbada, Aso-Oke Top & Trouser, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 155000,
+    "rentPrice": 39000,
+    "sizes": [
+      "Agbada: one size fits all",
+      "Top & trouser: size M-XL"
+    ],
+    "images": [
+      "brown-agbada-topset/00000060-PHOTO-2026-07-15-20-58-13.jpg",
+      "brown-agbada-topset/00000061-PHOTO-2026-07-15-20-58-13.jpg"
+    ]
+  },
+  {
+    "id": "21a",
+    "slug": "red-aso-oke-gown-set-v1",
+    "name": "Red Aso-Oke Gown, Ipele & Gele",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 86000,
+    "rentPrice": 25000,
+    "sizes": [
+      "Bust 36, Waist 30, Hip 41"
+    ],
+    "images": [
+      "red-aso-oke-gown-set-v1/00000062-PHOTO-2026-07-15-20-58-14.jpg",
+      "red-aso-oke-gown-set-v1/00000063-PHOTO-2026-07-15-20-58-14.jpg",
+      "red-aso-oke-gown-set-v1/00000064-PHOTO-2026-07-15-20-58-14.jpg"
+    ]
+  },
+  {
+    "id": "21b",
+    "slug": "red-agbada-senator-set",
+    "name": "Red Aso-Oke Agbada, Aso-Oke Senator, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 190000,
+    "rentPrice": 49000,
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "red-agbada-senator-set/00000064-PHOTO-2026-07-15-20-58-14.jpg",
+      "red-agbada-senator-set/00000065-PHOTO-2026-07-15-20-58-15.jpg"
+    ]
+  },
+  {
+    "id": "21c",
+    "slug": "purple-agbada-senator-set",
+    "name": "Purple Aso-Oke Agbada, Aso-Oke Senator, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 180000,
+    "rentPrice": 46000,
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "purple-agbada-senator-set/00000066-PHOTO-2026-07-15-20-58-15.jpg",
+      "purple-agbada-senator-set/00000067-PHOTO-2026-07-15-20-58-16.jpg",
+      "purple-agbada-senator-set/00000068-PHOTO-2026-07-15-20-58-16.jpg"
+    ]
+  },
+  {
+    "id": "22",
+    "slug": "green-gold-agbada-set",
+    "name": "Green and Gold Aso-Oke Agbada, Aso-Oke Senator, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 250000,
+    "rentPrice": 59500,
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "green-gold-agbada-set/00000074-PHOTO-2026-07-15-20-58-18.jpg",
+      "green-gold-agbada-set/00000075-PHOTO-2026-07-15-20-58-19.jpg"
+    ]
+  },
+  {
+    "id": "23",
+    "slug": "brown-orange-agbada-set",
+    "name": "Brown & Orange Aso-Oke Agbada, Aso-Oke Senator, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 180000,
+    "rentPrice": 47000,
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "brown-orange-agbada-set/00000076-PHOTO-2026-07-15-20-58-19.jpg",
+      "brown-orange-agbada-set/00000077-PHOTO-2026-07-15-20-58-20.jpg"
+    ]
+  },
+  {
+    "id": "24",
+    "slug": "green-gold-iro-buba-set",
+    "name": "Green & Gold Iro, Ipele & Gele + Green Buba",
+    "category": "female-traditional",
+    "mode": "both",
+    "salePrice": 69000,
+    "rentPrice": 20000,
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "green-gold-iro-buba-set/00000078-PHOTO-2026-07-15-20-58-20.jpg",
+      "green-gold-iro-buba-set/00000079-PHOTO-2026-07-15-20-58-20.jpg"
+    ]
+  },
+  {
+    "id": "25",
+    "slug": "red-iro-buba-set-2",
+    "name": "Red Aso-Oke Iro & Buba, Ipele & Gele",
+    "category": "female-traditional",
+    "mode": "both",
+    "salePrice": 71000,
+    "rentPrice": 21000,
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "red-iro-buba-set-2/00000080-PHOTO-2026-07-15-20-58-21.jpg",
+      "red-iro-buba-set-2/00000081-PHOTO-2026-07-15-20-58-21.jpg"
+    ]
+  },
+  {
+    "id": "26",
+    "slug": "ruby-wine-agbada-danshiki-set",
+    "name": "Ruby Wine Aso-Oke Agbada, Danshiki, Trouser & Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 138000,
+    "rentPrice": 35000,
+    "sizes": [
+      "One size fits all"
+    ],
+    "images": [
+      "ruby-wine-agbada-danshiki-set/00000082-PHOTO-2026-07-15-20-58-22.jpg",
+      "ruby-wine-agbada-danshiki-set/00000083-PHOTO-2026-07-15-20-58-23.jpg"
+    ]
+  },
+  {
+    "id": "27",
+    "slug": "royal-blue-sequenced-gown",
+    "name": "Royal Blue Sequenced Aso-Ebi Gown",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 96000,
+    "rentPrice": 33000,
+    "sizes": [
+      "Bust 49, Waist 38, Hip 50"
+    ],
+    "images": [
+      "royal-blue-sequenced-gown/00000091-PHOTO-2026-07-15-20-58-26.jpg",
+      "royal-blue-sequenced-gown/00000092-PHOTO-2026-07-15-20-58-27.jpg"
+    ]
+  },
+  {
+    "id": "28",
+    "slug": "black-feathered-gown",
+    "name": "Black Feathered Gown",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 40000,
+    "rentPrice": 14000,
+    "sizes": [
+      "Bust 38, Waist 30, Hip 38"
+    ],
+    "images": [
+      "black-feathered-gown/00000093-PHOTO-2026-07-15-20-58-27.jpg"
+    ]
+  },
+  {
+    "id": "29",
+    "slug": "purple-aso-oke-gown",
+    "name": "Purple Aso-Oke Gown, Ipele and Gele",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 90000,
+    "rentPrice": 25000,
+    "sizes": [
+      "Bust 46, Waist 35, Hip 43"
+    ],
+    "images": [
+      "purple-aso-oke-gown/00000066-PHOTO-2026-07-15-20-58-15.jpg",
+      "purple-aso-oke-gown/00000094-PHOTO-2026-07-15-20-58-27.jpg",
+      "purple-aso-oke-gown/00000095-PHOTO-2026-07-15-20-58-28.jpg"
+    ]
+  },
+  {
+    "id": "30",
+    "slug": "brown-orange-aso-oke-gown",
+    "name": "Brown & Orange Aso-Oke Gown, Ipele and Gele",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 95000,
+    "rentPrice": 27000,
+    "sizes": [
+      "Bust 38, Waist 30, Hip 42"
+    ],
+    "images": [
+      "brown-orange-aso-oke-gown/00000096-PHOTO-2026-07-15-20-58-28.jpg"
+    ]
+  },
+  {
+    "id": "21d",
+    "slug": "red-aso-oke-gown-set-v2",
+    "name": "Red Aso-Oke Gown, Ipele & Gele (second size)",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 86000,
+    "rentPrice": 25000,
+    "sizes": [
+      "Bust 39, Waist 32, Hip 41"
+    ],
+    "images": [
+      "red-aso-oke-gown-set-v1/00000062-PHOTO-2026-07-15-20-58-14.jpg",
+      "red-aso-oke-gown-set-v1/00000063-PHOTO-2026-07-15-20-58-14.jpg",
+      "red-aso-oke-gown-set-v1/00000064-PHOTO-2026-07-15-20-58-14.jpg"
+    ]
+  },
+  {
+    "id": "31",
+    "slug": "wine-suede-corset-cape",
+    "name": "Wine Suede Long Gown (Corset) + Cape",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 67000,
+    "rentPrice": 20000,
+    "sizes": [
+      "Bust 40, Waist 31, Hip 41.5"
+    ],
+    "images": [
+      "wine-suede-corset-cape/00000097-PHOTO-2026-07-15-20-58-29.jpg"
+    ]
+  },
+  {
+    "id": "32",
+    "slug": "black-suede-embroidered-set",
+    "name": "Black Suede Red Embroidered Top and Long Skirt",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 75000,
+    "rentPrice": 23000,
+    "sizes": [
+      "Bust 42, Waist 32, Hip 42"
+    ],
+    "images": [
+      "black-suede-embroidered-set/00000098-PHOTO-2026-07-15-20-58-29.jpg",
+      "black-suede-embroidered-set/00000099-PHOTO-2026-07-15-20-58-36.jpg"
+    ]
   }
 ]

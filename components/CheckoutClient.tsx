@@ -67,11 +67,25 @@ export default function CheckoutClient() {
         lastname: lastName,
         metadata,
         onSuccess: (transaction: any) => {
-          // Here we would typically verify the transaction on the backend
-          // For now, clear cart and redirect to success
+          // Construct the receipt message for WhatsApp
+          const itemsText = items.map(item => 
+            `- ${item.quantity}x ${item.name} (${item.mode.toUpperCase()}) - ₦${((item.price * item.quantity) + (item.rentDeposit ? item.rentDeposit * item.quantity : 0)).toLocaleString()}` + 
+            (item.eventDate ? `\n  Event: ${item.eventDate}` : '')
+          ).join('\n');
+
+          const receiptMessage = `*New Order Receipt (Paid via Paystack)*\n\n` +
+            `*Customer:* ${firstName} ${lastName}\n` +
+            `*Email:* ${email}\n` +
+            `*Phone:* ${phone}\n` +
+            `*Reference:* ${transaction.reference}\n\n` +
+            `*Items:*\n${itemsText}\n\n` +
+            `*Total Paid:* ₦${amount.toLocaleString()}`;
+
           clearCart();
-          alert(`Payment successful! Reference: ${transaction.reference}`);
-          router.push('/');
+          
+          // Redirect to WhatsApp with the pre-filled message
+          const waUrl = `https://wa.me/2348113683580?text=${encodeURIComponent(receiptMessage)}`;
+          window.location.href = waUrl;
         },
         onCancel: () => {
           console.log('Payment cancelled');
