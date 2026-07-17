@@ -113,21 +113,23 @@ export default function ProductDetailClient({
 
           {product.mode === 'both' && (
             <div>
-              <div style={{ fontWeight: 600, marginBottom: '12px' }}>Purchase Option:</div>
+              <div style={{ fontWeight: 600, marginBottom: '12px' }}>Choose Option:</div>
               <div style={{ display: 'flex', gap: '12px' }}>
                 <button
+                  type="button"
                   onClick={() => setMode('sale')}
                   className={`btn ${mode === 'sale' ? 'btn-gold' : 'btn-outline-wine'}`}
                   style={{ flex: 1, padding: '10px' }}
                 >
-                  Buy Outright
+                  Purchase (Buy)
                 </button>
                 <button
+                  type="button"
                   onClick={() => setMode('rent')}
                   className={`btn ${mode === 'rent' ? 'btn-gold' : 'btn-outline-wine'}`}
                   style={{ flex: 1, padding: '10px' }}
                 >
-                  Rent for Event
+                  Rent (Borrow)
                 </button>
               </div>
             </div>
@@ -190,9 +192,11 @@ export default function ProductDetailClient({
             className="btn btn-gold"
             onClick={handleAddToCart}
             disabled={!product.inStock || (mode === 'rent' && !eventDate)}
-            style={{ width: '100%', marginTop: 'auto', padding: '18px' }}
+            style={{ width: '100%', marginTop: 'auto', padding: '18px', fontSize: '1.1rem' }}
           >
-            {product.inStock ? 'Add to Cart' : 'Out of Stock'}
+            {product.inStock 
+              ? (mode === 'sale' ? 'Add Purchase to Cart' : 'Add Rental to Cart') 
+              : 'Out of Stock'}
           </button>
         </div>
       </div>
