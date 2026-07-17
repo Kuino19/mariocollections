@@ -14,7 +14,7 @@ export default function ProductDetailClient({
   product: Product, 
   relatedProducts?: Product[] 
 }) {
-  const [mode, setMode] = useState<'sale' | 'rent'>(product.mode === 'both' ? 'sale' : product.mode);
+  const [mode, setMode] = useState<'sale' | 'rent'>(product.mode === 'both' ? 'sale' : (product.mode as 'sale' | 'rent'));
   const [eventDate, setEventDate] = useState<string>('');
   const [selectedSize, setSelectedSize] = useState<string>(product.sizes?.[0] || '');
   const [mainImage, setMainImage] = useState<string>(product.images[0]);
@@ -37,12 +37,12 @@ export default function ProductDetailClient({
       id: cartId,
       productId: product.id,
       name: `${product.name} ${selectedSize ? `(${selectedSize})` : ''}`,
-      category: product.category,
+      category: product.category as any,
       mode: mode,
       price: mode === 'sale' ? (product.salePrice || 0) : (product.rentPrice || 0),
       quantity: 1,
       image: product.images[0],
-      rentDeposit: mode === 'rent' ? product.rentDeposit : undefined,
+      rentDeposit: mode === 'rent' ? (product.rentDeposit || undefined) : undefined,
       eventDate,
       returnDate
     });

@@ -1,13 +1,15 @@
-import { products } from "@/lib/data";
+import { getProducts } from "@/lib/data";
 import CategoryGrid from "@/components/CategoryGrid";
 
-export default function ShopPage({
+export default async function ShopPage({
   searchParams,
 }: {
   searchParams?: { [key: string]: string | string[] | undefined };
 }) {
-  const q = searchParams?.q;
-  const searchQuery = Array.isArray(q) ? q[0] : q;
+  const params = await searchParams;
+  const searchQuery = typeof params?.q === 'string' ? params.q : undefined;
+  
+  const products = await getProducts();
 
   return (
     <main className="container" style={{ minHeight: '80vh' }}>
@@ -15,8 +17,8 @@ export default function ShopPage({
         <div className="eyebrow">All Products</div>
         <h2>The Shop</h2>
       </div>
-
-      <CategoryGrid initialMode="sale" products={products} searchQuery={searchQuery} />
+      
+      <CategoryGrid initialMode="sale" products={products as any} searchQuery={searchQuery} />
     </main>
   );
 }

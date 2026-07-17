@@ -1,11 +1,12 @@
 import { getProductsByCategory, ProductCategory } from "@/lib/data";
 import CategoryGrid from "@/components/CategoryGrid";
 
-export default async function CategoryPage({ params, searchParams }: { params: { slug: string }, searchParams: { type?: string } }) {
+export default async function CategoryPage({ params, searchParams }: { params: { slug: string }, searchParams: { mode?: string } }) {
   const { slug } = await params;
-  const typeParam = (await searchParams).type;
-  const initialMode = typeParam === 'rental' ? 'rent' : 'sale';
-  const products = getProductsByCategory(slug as ProductCategory);
+  const sParams = await searchParams;
+  const initialMode = (sParams.mode === 'rent' || sParams.mode === 'sale') ? sParams.mode : 'sale';
+  
+  const products = await getProductsByCategory(slug as ProductCategory);
 
   const categoryName = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 

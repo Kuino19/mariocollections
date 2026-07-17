@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Product {
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  name         String
+  category     String
+  mode         String
+  salePrice    Float?
+  rentPrice    Float?
+  rentDeposit  Float?
+  images       String[] // Array of Cloudinary URLs
+  sizes        String[]
+  measurements String?
+  accessories  String?
+  description  String
+  inStock      Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}

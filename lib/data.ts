@@ -1,3 +1,7 @@
+import prisma from "./prisma";
+import type { Product } from "@prisma/client";
+export type { Product };
+
 export type ProductMode = "sale" | "rent" | "both";
 
 export type ProductCategory =
@@ -8,22 +12,6 @@ export type ProductCategory =
   | "shoes"
   | "fans"
   | "souvenirs";
-
-export interface Product {
-  id: string;
-  name: string;
-  category: ProductCategory;
-  mode: ProductMode;
-  salePrice?: number;
-  rentPrice?: number;
-  rentDeposit?: number;
-  images: string[];
-  sizes?: string[];
-  measurements?: string;
-  accessories?: string;
-  description: string;
-  inStock: boolean;
-}
 
 export type ServiceType = "equipment-rental" | "photoshoot";
 
@@ -36,25 +24,6 @@ export interface StudioService {
   images: string[];
   description: string;
 }
-
-import rawProducts from './products.json';
-
-// Flat JSON Data mapped from organized/products.json
-export const products: Product[] = rawProducts.map((p: any) => ({
-  id: p.slug, // Use slug as the ID for prettier URLs
-  name: p.name,
-  category: p.category as ProductCategory || 'gowns', // fallback for null categories
-  mode: p.mode as ProductMode,
-  salePrice: p.salePrice || undefined,
-  rentPrice: p.rentPrice || undefined,
-  rentDeposit: p.rentPrice ? Math.floor(p.rentPrice * 0.5) : undefined, // Auto-calculate a 50% deposit for rentals
-  images: (p.images || []).map((img: string) => `/products/${img}`), // Prefix with /products/
-  sizes: p.sizes || undefined,
-  measurements: p.measurements || undefined,
-  accessories: p.accessories || undefined,
-  description: p.note || p.name, // Use note as description if available
-  inStock: true,
-}));
 
 export const studioServices: StudioService[] = [
   {
@@ -86,13 +55,23 @@ export const studioServices: StudioService[] = [
   },
 ];
 
-// Helper functions
-export function getProductsByCategory(category: ProductCategory) {
-  return products.filter((p) => p.category === category);
+// Helper functions that now talk to Prisma
+export async function getProducts() {
+  return await prisma.product.findMany({
+    orderBy: { createdAt: 'desc' }
+  });
 }
 
-export function getProductById(id: string) {
-  return products.find((p) => p.id === id);
+export async function getProductsByCategory(category: ProductCategory | string) {
+  return await prisma.product.findMany({
+    where: { category }
+  });
+}
+
+export async function getProductById(id: string) {
+  return await prisma.product.findUnique({
+    where: { slug: id } // Using slug as id in the frontend routing
+  });
 }
 
 export function getServiceById(id: string) {

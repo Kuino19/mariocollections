@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Product } from '@/lib/data';
 
 interface Props {
@@ -105,30 +106,20 @@ export default function CategoryGrid({ initialMode, products, searchQuery = '' }
             {paginatedProducts.map(product => {
               const price = mode === 'rent' ? product.rentPrice : product.salePrice;
               return (
-                <Link key={product.id} href={`/product/${product.id}`} className="product-card" style={{
-                  textDecoration: 'none', color: 'inherit',
-                  border: '1px solid rgba(59,18,32,0.08)', borderRadius: '6px',
-                  overflow: 'hidden', display: 'flex', flexDirection: 'column',
-                  background: '#fff'
-                }}>
-                  <div style={{ aspectRatio: '4/5', background: 'var(--wine)', position: 'relative' }}>
-                    <img src={product.images[0]} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                    <div style={{
-                      position: 'absolute', top: '12px', left: '12px',
-                      background: 'rgba(255,255,255,0.9)', padding: '4px 8px',
-                      borderRadius: '4px', fontSize: '0.75rem', fontWeight: 600,
-                      color: 'var(--wine)', textTransform: 'uppercase', letterSpacing: '0.05em'
-                    }}>
+                <Link key={product.id} href={`/product/${product.id}`} className="product-card">
+                  <div className="image-wrapper">
+                    <Image src={product.images[0]} alt={product.name} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                    <div className="badge-premium">
                       {mode === 'rent' ? 'Rental' : 'For Sale'}
                     </div>
                   </div>
-                  <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
-                    <div className="eyebrow" style={{ marginBottom: '6px', opacity: 0.8 }}>
+                  <div style={{ padding: '24px 20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                    <div className="eyebrow" style={{ marginBottom: '8px', opacity: 0.85 }}>
                       {product.category.replace('-', ' ')}
                     </div>
-                    <h3 style={{ fontSize: '1.15rem', margin: '0 0 12px', lineHeight: 1.3 }}>{product.name}</h3>
-                    <div style={{ fontWeight: 700, color: 'var(--wine)', marginTop: 'auto', fontSize: '1.1rem' }}>
-                      ₦{price?.toLocaleString()} {mode === 'rent' && <span style={{ fontSize: '0.85rem', color: '#4a423d', fontWeight: 500 }}>/ day</span>}
+                    <h3 style={{ fontSize: '1.2rem', margin: '0 0 14px', lineHeight: 1.35, color: 'var(--wine-deep)' }}>{product.name}</h3>
+                    <div style={{ fontWeight: 700, color: 'var(--gold)', marginTop: 'auto', fontSize: '1.15rem' }}>
+                      ₦{price?.toLocaleString()} {mode === 'rent' && <span style={{ fontSize: '0.85rem', color: '#888', fontWeight: 500 }}>/ day</span>}
                     </div>
                   </div>
                 </Link>
