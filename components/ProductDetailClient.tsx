@@ -211,7 +211,7 @@ export default function ProductDetailClient({
               const rpModeDisplay = rp.mode === 'both' ? 'Buy or Rent' : (rp.mode === 'sale' ? 'For Sale' : 'Rental');
               
               return (
-                <Link key={rp.id} href={`/product/${rp.id}`} style={{
+                <Link key={rp.id} href={`/product/${rp.slug}`} style={{
                   textDecoration: 'none', color: 'inherit',
                   border: '1px solid rgba(59,18,32,0.1)', borderRadius: '3px',
                   overflow: 'hidden', display: 'flex', flexDirection: 'column'

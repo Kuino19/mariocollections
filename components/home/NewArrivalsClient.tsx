@@ -45,7 +45,7 @@ export default function NewArrivalsClient({ arrivals }: { arrivals: any[] }) {
             paddingBottom: '8px', scrollbarWidth: 'none'
           }}>
             {arrivals.map((item, i) => (
-              <Link key={i} className="fs-card" href={`/product/${item.id}`} style={{
+              <Link key={i} className="fs-card" href={`/product/${item.slug}`} style={{
                 flex: '0 0 auto', width: '230px', scrollSnapAlign: 'start',
                 textDecoration: 'none', color: 'inherit'
               }}>

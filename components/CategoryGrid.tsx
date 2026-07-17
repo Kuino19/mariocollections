@@ -106,7 +106,7 @@ export default function CategoryGrid({ initialMode, products, searchQuery = '' }
             {paginatedProducts.map(product => {
               const price = mode === 'rent' ? product.rentPrice : product.salePrice;
               return (
-                <Link key={product.id} href={`/product/${product.id}`} className="product-card">
+                <Link key={product.id} href={`/product/${product.slug}`} className="product-card">
                   <div className="image-wrapper">
                     <Image src={product.images[0]} alt={product.name} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                     <div className="badge-premium">

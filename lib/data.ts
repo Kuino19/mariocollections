@@ -68,9 +68,14 @@ export async function getProductsByCategory(category: ProductCategory | string) 
   });
 }
 
-export async function getProductById(id: string) {
-  return await prisma.product.findUnique({
-    where: { slug: id } // Using slug as id in the frontend routing
+export async function getProductById(idOrSlug: string) {
+  return await prisma.product.findFirst({
+    where: {
+      OR: [
+        { id: idOrSlug },
+        { slug: idOrSlug }
+      ]
+    }
   });
 }
 
