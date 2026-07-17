@@ -151,6 +151,24 @@ export default function ProductDetailClient({
             </div>
           )}
 
+          {product.measurements && (
+            <div>
+              <div style={{ fontWeight: 600, marginBottom: '8px' }}>Measurements:</div>
+              <div style={{ background: 'rgba(59,18,32,0.05)', padding: '12px', borderRadius: '3px', fontSize: '0.95rem' }}>
+                {product.measurements}
+              </div>
+            </div>
+          )}
+
+          {product.accessories && (
+            <div>
+              <div style={{ fontWeight: 600, marginBottom: '8px' }}>Included Accessories:</div>
+              <div style={{ background: 'rgba(59,18,32,0.05)', padding: '12px', borderRadius: '3px', fontSize: '0.95rem' }}>
+                {product.accessories}
+              </div>
+            </div>
+          )}
+
           {mode === 'rent' && (
             <div style={{ background: 'rgba(201,162,39,0.1)', padding: '16px', borderRadius: '3px', border: '1px solid var(--line)' }}>
               <div style={{ fontWeight: 600, marginBottom: '12px' }}>Event Date:</div>

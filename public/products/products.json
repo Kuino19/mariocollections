@@ -1,563 +1,1303 @@
 [
   {
-    "id": "1",
-    "slug": "dark-wine-aso-oke-iro-set",
-    "name": "Dark Wine Aso-Oke Iro, Ipele (Shoulder) & Gele + Blue Iro",
-    "category": "female-traditional",
+    "raw_id": "34",
+    "slug": "red-corset-ododo-edo-dress",
+    "name": "Red Corset Ododo (Edo) Dress",
+    "category": "gowns",
     "mode": "both",
-    "salePrice": 50000,
-    "rentPrice": 17000,
-    "sizes": [
-      "One size fits all"
-    ],
+    "salePrice": 88000,
+    "rentPrice": 26000,
+    "measurements": "BUST- 35, WAIST- 29, HIP- 40",
+    "accessories": "HORSETAIL, HEAD BEADS",
     "images": [
-      "unknown-product-1/00000002-PHOTO-2026-07-15-19-51-58.jpg",
-      "unknown-product-1/00000045-PHOTO-2026-07-15-19-52-14.jpg"
+      "red-corset-ododo-edo-dress/00000163-PHOTO-2026-07-17-10-12-38.jpg"
     ]
   },
   {
-    "id": "2",
-    "slug": "wine-aso-oke-iro-set",
-    "name": "Dark Wine Aso-Oke Iro, Ipele (Shoulder) & Gele + Blue Iro",
-    "category": "female-traditional",
-    "mode": "both",
-    "salePrice": 50000,
-    "rentPrice": 17000,
-    "sizes": [
-      "One size fits all"
-    ],
-    "images": [
-      "wine-aso-oke-iro-set/00000017-PHOTO-2026-07-15-19-52-03.jpg",
-      "wine-aso-oke-iro-set/00000018-PHOTO-2026-07-15-19-52-04.jpg"
-    ]
-  },
-  {
-    "id": "3",
-    "slug": "wine-isiagu-gown",
-    "name": "Wine Isi-Agu Gown",
-    "category": "female-traditional",
-    "mode": "both",
-    "salePrice": 85000,
-    "rentPrice": 25000,
-    "sizes": [
-      "Bust 42, Waist 28, Hip 40"
-    ],
-    "images": [
-      "wine-isiagu-gown/00000019-PHOTO-2026-07-15-19-52-04.jpg",
-      "wine-isiagu-gown/00000020-PHOTO-2026-07-15-19-52-05.jpg"
-    ]
-  },
-  {
-    "id": "4",
-    "slug": "royal-blue-aso-oke-iro-set",
-    "name": "Royal Blue Aso-Oke Iro, Ipele (Shoulder) & Gele + Gold Coloured Iro",
-    "category": "female-traditional",
-    "mode": "both",
-    "salePrice": 50000,
-    "rentPrice": 17000,
-    "sizes": [
-      "One size fits all"
-    ],
-    "images": [
-      "royal-blue-aso-oke-iro-set/00000021-PHOTO-2026-07-15-19-52-05.jpg",
-      "royal-blue-aso-oke-iro-set/00000022-PHOTO-2026-07-15-19-52-06.jpg"
-    ],
-    "note": "Image mapping confirmed explicitly in chat (\"NUMBER 4 PICTURE\")"
-  },
-  {
-    "id": "5",
-    "slug": "black-aso-ebi-corset",
-    "name": "Black Aso Ebi Laced Corset",
+    "raw_id": "35",
+    "slug": "dark-green-isi-agu-gown",
+    "name": "Dark Green Isi Agu Gown",
     "category": "gowns",
     "mode": "both",
     "salePrice": 95000,
     "rentPrice": 30000,
-    "sizes": [
-      "Bust 37, Waist 31, Hip 42, Length 65"
-    ],
+    "measurements": "BUST- 42, WAIST- 32, HIP- 40",
+    "accessories": null,
     "images": [
-      "black-aso-ebi-corset/00000023-PHOTO-2026-07-15-19-52-06.jpg",
-      "black-aso-ebi-corset/00000024-PHOTO-2026-07-15-19-52-06.jpg"
+      "dark-green-isi-agu-gown/00000164-PHOTO-2026-07-17-10-12-38.jpg"
     ]
   },
   {
-    "id": "6",
-    "slug": "royal-blue-agbada-set",
-    "name": "Royal Blue Aso-Oke Agbada + Navy Blue Senator + Aso-Oke Fila",
+    "raw_id": "36",
+    "slug": "dark-green-long-isi-agu-isi-agu-wrapper",
+    "name": "Dark Green Long Isi-Agu + Isi-Agu Wrapper",
     "category": "male-traditional",
     "mode": "both",
-    "salePrice": 114000,
-    "rentPrice": 33000,
-    "sizes": [
-      "One size fits all"
-    ],
+    "salePrice": 53000,
+    "rentPrice": 15000,
+    "measurements": "M-XL",
+    "accessories": null,
     "images": [
-      "royal-blue-agbada-set/00000025-PHOTO-2026-07-15-19-52-07.jpg",
-      "royal-blue-agbada-set/00000026-PHOTO-2026-07-15-19-52-07.jpg"
+      "dark-green-long-isi-agu-isi-agu-wrapper/00000165-PHOTO-2026-07-17-10-12-39.jpg"
     ]
   },
   {
-    "id": "7",
-    "slug": "burnt-orange-cropped-suit",
-    "name": "Cropped Suit & Baggy Trouser - Dark Burnt Orange",
-    "category": "suits",
-    "mode": "both",
-    "salePrice": 75000,
-    "rentPrice": 20000,
-    "sizes": [
-      "Waist 32-34",
-      "Suit size 48-50",
-      "Trouser length 44"
-    ],
-    "images": [
-      "burnt-orange-cropped-suit/00000027-PHOTO-2026-07-15-19-52-07.jpg",
-      "burnt-orange-cropped-suit/00000028-PHOTO-2026-07-15-19-52-08.jpg"
-    ]
-  },
-  {
-    "id": "8",
-    "slug": "dark-green-cropped-suit",
-    "name": "Cropped Dark Green Suit & Baggy Black Trouser",
-    "category": "suits",
-    "mode": "both",
-    "salePrice": 75000,
-    "rentPrice": 20000,
-    "sizes": [
-      "Waist 28-30",
-      "Suit size 44-46",
-      "Trouser length 40"
-    ],
-    "images": [
-      "dark-green-cropped-suit/00000029-PHOTO-2026-07-15-19-52-08.jpg",
-      "dark-green-cropped-suit/00000030-PHOTO-2026-07-15-19-52-08.jpg"
-    ]
-  },
-  {
-    "id": "9",
-    "slug": "sky-blue-double-breasted-suit",
-    "name": "Sky Blue Double Breasted Suit & Trouser",
-    "category": "suits",
-    "mode": "both",
-    "salePrice": 95000,
-    "rentPrice": 25000,
-    "sizes": [
-      "Waist 40",
-      "Suit size 56"
-    ],
-    "images": [
-      "sky-blue-double-breasted-suit/00000031-PHOTO-2026-07-15-19-52-08.jpg",
-      "sky-blue-double-breasted-suit/00000032-PHOTO-2026-07-15-19-52-09.jpg"
-    ]
-  },
-  {
-    "id": "10",
-    "slug": "pink-aso-ebi-corset",
-    "name": "Pink Aso Ebi Laced Corset",
+    "raw_id": "37",
+    "slug": "etibo-male-outfit-white-top-red-gown-red-muffler",
+    "name": "Etibo Male Outfit (White Top + Red Gown + Red Muffler)",
     "category": "gowns",
     "mode": "both",
-    "salePrice": 108000,
-    "rentPrice": 35000,
-    "sizes": [
-      "Bust 42, Waist 36, Hip 48, Length 72"
-    ],
+    "salePrice": 49000,
+    "rentPrice": 19000,
+    "measurements": "ONE SIZE FITS ALL",
+    "accessories": null,
     "images": [
-      "pink-aso-ebi-corset/00000033-PHOTO-2026-07-15-19-52-09.jpg",
-      "pink-aso-ebi-corset/00000034-PHOTO-2026-07-15-19-52-10.jpg"
+      "etibo-male-outfit-white-top-red-gown-red-muffler/00000166-PHOTO-2026-07-17-10-12-39.jpg",
+      "etibo-male-outfit-white-top-red-gown-red-muffler/00000167-PHOTO-2026-07-17-10-12-40.jpg",
+      "etibo-male-outfit-white-top-red-gown-red-muffler/00000168-PHOTO-2026-07-17-10-12-40.jpg"
     ]
   },
   {
-    "id": "11",
-    "slug": "black-isiagu-corset-gown",
-    "name": "Black Isi-Agu Corset Gown",
+    "raw_id": "38",
+    "slug": "orange-agbada-senator-outfit-fila-beads",
+    "name": "Orange Agbada, Senator Outfit, Fila, Beads",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 78000,
+    "rentPrice": 23000,
+    "measurements": "SIZE M-2XL",
+    "accessories": null,
+    "images": []
+  },
+  {
+    "raw_id": "39",
+    "slug": "lemon-green-agbada-senator-outfit-fila-beads",
+    "name": "Lemon Green Agbada, Senator Outfit, Fila, Beads",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 83000,
+    "rentPrice": 24000,
+    "measurements": "SIZE M-2XL",
+    "accessories": null,
+    "images": [
+      "lemon-green-agbada-senator-outfit-fila-beads/00000170-PHOTO-2026-07-17-10-12-41.jpg"
+    ]
+  },
+  {
+    "raw_id": "40",
+    "slug": "azure-blue-agbada-senator-outfit-fila",
+    "name": "Azure Blue Agbada, Senator Outfit, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 83000,
+    "rentPrice": 24000,
+    "measurements": "SIZE M-2XL",
+    "accessories": null,
+    "images": [
+      "azure-blue-agbada-senator-outfit-fila/00000171-PHOTO-2026-07-17-10-12-41.jpg"
+    ]
+  },
+  {
+    "raw_id": "41",
+    "slug": "emerald-green-agbada-senator-outfit-fila",
+    "name": "Emerald Green Agbada, Senator Outfit, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 83000,
+    "rentPrice": 24000,
+    "measurements": "SIZE M-XL",
+    "accessories": null,
+    "images": [
+      "emerald-green-agbada-senator-outfit-fila/00000172-PHOTO-2026-07-17-10-12-42.jpg"
+    ]
+  },
+  {
+    "raw_id": "42",
+    "slug": "wine-oyonyo-calabar-dress",
+    "name": "Wine Oyonyo (Calabar) Dress",
     "category": "gowns",
     "mode": "both",
     "salePrice": 93000,
     "rentPrice": 30000,
-    "sizes": [
-      "Bust 37, Hip 37, Waist 28"
-    ],
+    "measurements": "BUST- 49, WAIST- 40",
+    "accessories": null,
     "images": [
-      "black-isiagu-corset-gown/00000035-PHOTO-2026-07-15-19-52-10.jpg",
-      "black-isiagu-corset-gown/00000036-PHOTO-2026-07-15-19-52-10.jpg"
-    ],
-    "note": "Gele, beads, horsetail available at extra cost - not included in listed prices"
-  },
-  {
-    "id": "12",
-    "slug": "red-isiagu-gown-black-gele",
-    "name": "Red Isi-Agu Gown & Black Gele",
-    "category": "gowns",
-    "mode": "both",
-    "salePrice": 95000,
-    "rentPrice": 30000,
-    "sizes": [
-      "Bust 44, Hip 42, Waist 32"
-    ],
-    "images": [
-      "red-isiagu-gown-black-gele/00000037-PHOTO-2026-07-15-19-52-11.jpg",
-      "red-isiagu-gown-black-gele/00000038-PHOTO-2026-07-15-19-52-11.jpg"
-    ],
-    "note": "Price includes gown and gele. Beads and horsetail available at extra cost."
-  },
-  {
-    "id": "13",
-    "slug": "light-grey-cropped-suit",
-    "name": "Cropped Suit & Baggy Trouser - Light Grey",
-    "category": "suits",
-    "mode": "both",
-    "salePrice": 75000,
-    "rentPrice": 20000,
-    "sizes": [
-      "Waist 32-34",
-      "Suit size 48-50",
-      "Trouser length 44"
-    ],
-    "images": [
-      "light-grey-cropped-suit/00000039-PHOTO-2026-07-15-19-52-12.jpg",
-      "light-grey-cropped-suit/00000040-PHOTO-2026-07-15-19-52-12.jpg"
+      "wine-oyonyo-calabar-dress/00000173-PHOTO-2026-07-17-10-12-42.jpg",
+      "wine-oyonyo-calabar-dress/00000174-PHOTO-2026-07-17-10-12-43.jpg",
+      "wine-oyonyo-calabar-dress/00000175-PHOTO-2026-07-17-10-12-43.jpg"
     ]
   },
   {
-    "id": "14",
-    "slug": "red-beaded-aso-oke-gown",
-    "name": "Red Beaded Aso-Oke Gown, Gele & Ipele",
+    "raw_id": "43",
+    "slug": "black-agbada-senator-outfit-fila",
+    "name": "Black Agbada, Senator Outfit, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 77000,
+    "rentPrice": 21000,
+    "measurements": "SIZE S, M, L",
+    "accessories": null,
+    "images": []
+  },
+  {
+    "raw_id": "44",
+    "slug": "navy-blue-agbada-senator-outfit-fila",
+    "name": "Navy Blue Agbada, Senator Outfit, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 64000,
+    "rentPrice": 18000,
+    "measurements": "SIZE M-2XL",
+    "accessories": null,
+    "images": [
+      "navy-blue-agbada-senator-outfit-fila/00000177-PHOTO-2026-07-17-10-12-44.jpg"
+    ]
+  },
+  {
+    "raw_id": "45",
+    "slug": "green-trench-coat-waistcoat-trouser",
+    "name": "Green Trench Coat, Waistcoat & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 75000,
+    "rentPrice": 22000,
+    "measurements": "M-XL",
+    "accessories": null,
+    "images": [
+      "green-trench-coat-waistcoat-trouser/00000178-PHOTO-2026-07-17-10-12-44.jpg"
+    ]
+  },
+  {
+    "raw_id": "46",
+    "slug": "black-dotted-double-breasted-suit-trouser",
+    "name": "Black Dotted Double Breasted Suit & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 80000,
+    "rentPrice": 20000,
+    "measurements": "SIZE 58 SUIT, SIZE 42 WAIST (TROUSER)",
+    "accessories": null,
+    "images": [
+      "black-dotted-double-breasted-suit-trouser/00000179-PHOTO-2026-07-17-10-12-44.jpg"
+    ]
+  },
+  {
+    "raw_id": "48",
+    "slug": "grey-striped-double-breasted-suit-trouser",
+    "name": "Grey Striped Double Breasted Suit & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 77000,
+    "rentPrice": 20000,
+    "measurements": "SIZE 56 SUIT, SIZE 42 WAIST (TROUSER)",
+    "accessories": null,
+    "images": [
+      "grey-striped-double-breasted-suit-trouser/00000180-PHOTO-2026-07-17-10-12-45.jpg"
+    ]
+  },
+  {
+    "raw_id": "48",
+    "slug": "navy-blue-striped-double-breasted-suit-trouser",
+    "name": "Navy Blue Striped Double Breasted Suit & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 73000,
+    "rentPrice": 18000,
+    "measurements": "SIZE 56 SUIT, SIZE 40 WAIST (TROUSER)",
+    "accessories": null,
+    "images": [
+      "navy-blue-striped-double-breasted-suit-trouser/00000181-PHOTO-2026-07-17-10-12-45.jpg"
+    ]
+  },
+  {
+    "raw_id": "49",
+    "slug": "royal-blue-striped-double-breasted-suit-trouser",
+    "name": "Royal Blue Striped Double Breasted Suit & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 80000,
+    "rentPrice": 20000,
+    "measurements": "SIZE 56 SUIT, SIZE 40 WAIST (TROUSER)",
+    "accessories": null,
+    "images": [
+      "royal-blue-striped-double-breasted-suit-trouser/00000182-PHOTO-2026-07-17-10-12-46.jpg"
+    ]
+  },
+  {
+    "raw_id": "50",
+    "slug": "black-thin-striped-suit-trouser",
+    "name": "Black Thin Striped Suit & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 67000,
+    "rentPrice": 16000,
+    "measurements": "SIZE 60 SUIT, SIZE 44 WAIST (TROUSER)",
+    "accessories": null,
+    "images": [
+      "black-thin-striped-suit-trouser/00000183-PHOTO-2026-07-17-10-12-46.jpg"
+    ]
+  },
+  {
+    "raw_id": "51",
+    "slug": "red-elephant-igbo-attire-top-only",
+    "name": "Red Elephant Igbo Attire (Top Only)",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 27500,
+    "rentPrice": 8000,
+    "measurements": "M - L",
+    "accessories": null,
+    "images": [
+      "red-elephant-igbo-attire-top-only/00000184-PHOTO-2026-07-17-10-12-46.jpg"
+    ],
+    "note": "Categorized as male-traditional by inference (Igbo cultural top, no dress/gown keyword) - confirm"
+  },
+  {
+    "raw_id": "52",
+    "slug": "red-isi-agu-attire-top-only",
+    "name": "Red Isi-Agu Attire (Top Only)",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 27500,
+    "rentPrice": 8000,
+    "measurements": "M-2XL",
+    "accessories": null,
+    "images": [
+      "red-isi-agu-attire-top-only/00000185-PHOTO-2026-07-17-10-12-47.jpg"
+    ]
+  },
+  {
+    "raw_id": "53",
+    "slug": "white-agbada-senator-outfit-fila-beads",
+    "name": "White Agbada, Senator Outfit, Fila, Beads",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 75000,
+    "rentPrice": 20000,
+    "measurements": "SIZE M-XL",
+    "accessories": null,
+    "images": [
+      "white-agbada-senator-outfit-fila-beads/00000186-PHOTO-2026-07-17-10-12-47.jpg"
+    ]
+  },
+  {
+    "raw_id": "54",
+    "slug": "royal-blue-white-checkered-suit-trouser",
+    "name": "Royal Blue (White Checkered Suit & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 72000,
+    "rentPrice": 18000,
+    "measurements": "SIZE 54 SUIT, SIZE 38 WAIST (TROUSER)",
+    "accessories": null,
+    "images": [
+      "royal-blue-white-checkered-suit-trouser/00000187-PHOTO-2026-07-17-10-12-47.jpg"
+    ]
+  },
+  {
+    "raw_id": "56",
+    "slug": "black-trench-coat",
+    "name": "Black Trench Coat",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 50000,
+    "rentPrice": 15000,
+    "measurements": "M-XL",
+    "accessories": null,
+    "images": [
+      "black-trench-coat/00000189-PHOTO-2026-07-17-10-12-48.jpg",
+      "black-trench-coat/00000190-PHOTO-2026-07-17-10-12-49.jpg",
+      "black-trench-coat/00000191-PHOTO-2026-07-17-10-12-49.jpg"
+    ]
+  },
+  {
+    "raw_id": "57",
+    "slug": "wine-suede-trench-coat",
+    "name": "Wine Suede Trench Coat",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 50000,
+    "rentPrice": 15000,
+    "measurements": "M-XL",
+    "accessories": null,
+    "images": []
+  },
+  {
+    "raw_id": "58",
+    "slug": "grey-suede-trench-coat",
+    "name": "Grey Suede Trench Coat",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 50000,
+    "rentPrice": 15000,
+    "measurements": "M-XL",
+    "accessories": null,
+    "images": [
+      "grey-suede-trench-coat/00000193-PHOTO-2026-07-17-10-12-50.jpg"
+    ]
+  },
+  {
+    "raw_id": "59",
+    "slug": "green-3-piece-suit-blazer-waistcoat-trouser",
+    "name": "Green 3-Piece Suit (Blazer, Waistcoat, Trouser)",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 90000,
+    "rentPrice": 20000,
+    "measurements": "SIZE 54 SUIT, SIZE 38 TROUSER",
+    "accessories": null,
+    "images": [
+      "green-3-piece-suit-blazer-waistcoat-trouser/00000194-PHOTO-2026-07-17-10-12-50.jpg"
+    ]
+  },
+  {
+    "raw_id": "60",
+    "slug": "black-3-piece-suit-blazer-waistcoat-trouser",
+    "name": "Black 3-Piece Suit (Blazer, Waistcoat, Trouser)",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 75000,
+    "rentPrice": 19000,
+    "measurements": "SIZE 52 SUIT, SIZE 36 TROUSER",
+    "accessories": null,
+    "images": [
+      "black-3-piece-suit-blazer-waistcoat-trouser/00000195-PHOTO-2026-07-17-10-12-51.jpg"
+    ]
+  },
+  {
+    "raw_id": "61",
+    "slug": "navy-blue-double-breasted-suit-trouser-blazer-trouser",
+    "name": "Navy Blue Double Breasted Suit & Trouser (Blazer, Trouser)",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 63000,
+    "rentPrice": 18000,
+    "measurements": "SUIT SIZES: 46, 48, 50, 52",
+    "accessories": null,
+    "images": [
+      "navy-blue-double-breasted-suit-trouser-blazer-trouser/00000196-PHOTO-2026-07-17-10-12-51.jpg"
+    ]
+  },
+  {
+    "raw_id": "61",
+    "slug": "wine-double-breasted-suit-trouser-blazer-trouser",
+    "name": "Wine Double Breasted Suit & Trouser (Blazer, Trouser)",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 60000,
+    "rentPrice": 15000,
+    "measurements": "SUIT SIZE: 48",
+    "accessories": null,
+    "images": [
+      "wine-double-breasted-suit-trouser-blazer-trouser/00000197-PHOTO-2026-07-17-10-12-52.jpg"
+    ]
+  },
+  {
+    "raw_id": "62",
+    "slug": "brown-single-breasted-suit-trouser-blazer-trouser",
+    "name": "Brown Single Breasted Suit & Trouser (Blazer, Trouser)",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 55000,
+    "rentPrice": 14000,
+    "measurements": "SUIT SIZE: 52",
+    "accessories": null,
+    "images": [
+      "brown-single-breasted-suit-trouser-blazer-trouser/00000198-PHOTO-2026-07-17-10-12-52.jpg"
+    ]
+  },
+  {
+    "raw_id": "63",
+    "slug": "navy-blue-striped-suit-trouser-blazer-trouser",
+    "name": "Navy Blue Striped Suit & Trouser (Blazer, Trouser)",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 55000,
+    "rentPrice": 14000,
+    "measurements": "SUIT SIZE: 48",
+    "accessories": null,
+    "images": [
+      "navy-blue-striped-suit-trouser-blazer-trouser/00000199-PHOTO-2026-07-17-10-12-53.jpg",
+      "navy-blue-striped-suit-trouser-blazer-trouser/00000200-PHOTO-2026-07-17-10-12-53.jpg",
+      "navy-blue-striped-suit-trouser-blazer-trouser/00000201-PHOTO-2026-07-17-10-12-54.jpg"
+    ]
+  },
+  {
+    "raw_id": "64",
+    "slug": "light-yellow-trench-coat",
+    "name": "Light Yellow Trench Coat",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 50000,
+    "rentPrice": 15000,
+    "measurements": "M-2XL",
+    "accessories": null,
+    "images": [
+      "light-yellow-trench-coat/00000203-PHOTO-2026-07-17-10-12-55.jpg",
+      "light-yellow-trench-coat/00000204-PHOTO-2026-07-17-10-12-55.jpg"
+    ]
+  },
+  {
+    "raw_id": "65",
+    "slug": "wine-checkered-3-piece-suit-suit-waist-coat-trouser",
+    "name": "Wine Checkered 3 Piece Suit (Suit, Waist Coat & Trouser)",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 68000,
+    "rentPrice": 19000,
+    "measurements": "SUIT SIZE: 48, WAIST SIZE: 32",
+    "accessories": null,
+    "images": []
+  },
+  {
+    "raw_id": "66",
+    "slug": "silver-dotted-double-breasted-suit-trouser",
+    "name": "Silver Dotted Double Breasted Suit & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 80000,
+    "rentPrice": 20000,
+    "measurements": "SIZE 52 SUIT, SIZE 36 WAIST (TROUSER)",
+    "accessories": null,
+    "images": [
+      "silver-dotted-double-breasted-suit-trouser/00000206-PHOTO-2026-07-17-10-12-56.jpg"
+    ]
+  },
+  {
+    "raw_id": "67",
+    "slug": "navy-blue-plain-suit-trouser",
+    "name": "Navy Blue Plain Suit & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 55000,
+    "rentPrice": 14000,
+    "measurements": "SUIT SIZE: 50",
+    "accessories": null,
+    "images": [
+      "navy-blue-plain-suit-trouser/00000207-PHOTO-2026-07-17-10-12-56.jpg"
+    ]
+  },
+  {
+    "raw_id": "68",
+    "slug": "brown-agbada-senator-outfit-fila",
+    "name": "Brown Agbada, Senator Outfit, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 64000,
+    "rentPrice": 18000,
+    "measurements": "SIZE M-2XL",
+    "accessories": null,
+    "images": [
+      "brown-agbada-senator-outfit-fila/00000208-PHOTO-2026-07-17-10-12-57.jpg"
+    ]
+  },
+  {
+    "raw_id": "69",
+    "slug": "white-agbada-senator-outfit-fila",
+    "name": "White Agbada, Senator Outfit, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 64000,
+    "rentPrice": 18000,
+    "measurements": "SIZE M-XL",
+    "accessories": null,
+    "images": [
+      "white-agbada-senator-outfit-fila/00000209-PHOTO-2026-07-17-10-12-57.jpg"
+    ]
+  },
+  {
+    "raw_id": "70",
+    "slug": "navy-blue-plain-blazer",
+    "name": "Navy Blue Plain Blazer",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 45000,
+    "rentPrice": 12000,
+    "measurements": "SUIT SIZE: 50",
+    "accessories": null,
+    "images": [
+      "navy-blue-plain-blazer/00000210-PHOTO-2026-07-17-10-12-57.jpg"
+    ]
+  },
+  {
+    "raw_id": "71",
+    "slug": "lemon-laced-corset-dress",
+    "name": "Lemon Laced Corset Dress",
     "category": "gowns",
     "mode": "both",
     "salePrice": 105000,
     "rentPrice": 33000,
-    "sizes": [
-      "Bust 40, Waist 27, Hip 38, Length 58"
-    ],
+    "measurements": "BUST- 44, WAIST- 40, HIP- 48",
+    "accessories": null,
     "images": [
-      "red-beaded-aso-oke-gown/00000041-PHOTO-2026-07-15-19-52-12.jpg",
-      "red-beaded-aso-oke-gown/00000042-PHOTO-2026-07-15-19-52-13.jpg"
-    ],
-    "note": "Beads included per description, confirm if extra cost applies like similar items"
-  },
-  {
-    "id": "15",
-    "slug": "white-igbo-etibo-attire",
-    "name": "White Igbo/Etibo Cultural Attire",
-    "category": "male-traditional",
-    "mode": "both",
-    "salePrice": 62000,
-    "rentPrice": 19000,
-    "sizes": [
-      "One size fits all"
-    ],
-    "images": [
-      "white-igbo-etibo-attire/00000043-PHOTO-2026-07-15-19-52-13.jpg",
-      "white-igbo-etibo-attire/00000044-PHOTO-2026-07-15-19-52-14.jpg"
+      "lemon-laced-corset-dress/00000211-PHOTO-2026-07-17-10-12-58.jpg"
     ]
   },
   {
-    "id": "16",
-    "slug": "blue-isiagu-male-attire",
-    "name": "Blue Isi-Agu Male Attire + Black Trouser",
+    "raw_id": "72",
+    "slug": "wine-agbada-senator-outfit-fila",
+    "name": "Wine Agbada, Senator Outfit, Fila",
     "category": "male-traditional",
-    "mode": "both",
-    "salePrice": 50000,
-    "rentPrice": 13000,
-    "sizes": [
-      "Size L-XL"
-    ],
-    "images": [
-      "blue-isiagu-male-attire/00000049-PHOTO-2026-07-15-19-52-15.jpg",
-      "blue-isiagu-male-attire/00000050-PHOTO-2026-07-15-19-52-16.jpg"
-    ],
-    "note": "Image split for items 16-18 is a best guess (7 photos across 3 items, not evenly divisible) - confirm"
-  },
-  {
-    "id": "17",
-    "slug": "red-iro-buba-set",
-    "name": "Red Iro & Buba, White Ipele & Gele",
-    "category": "female-traditional",
     "mode": "both",
     "salePrice": 65000,
-    "rentPrice": 22000,
-    "sizes": [
-      "One size fits all"
-    ],
+    "rentPrice": 18000,
+    "measurements": "SIZE L-2XL",
+    "accessories": null,
     "images": [
-      "red-iro-buba-set/00000051-PHOTO-2026-07-15-19-52-17.jpg",
-      "red-iro-buba-set/00000052-PHOTO-2026-07-15-19-52-17.jpg"
-    ],
-    "note": "Image split is a best guess - confirm"
-  },
-  {
-    "id": "18",
-    "slug": "brown-iro-buba-set",
-    "name": "Brown Iro, Ipele & Gele + Gold Buba",
-    "category": "female-traditional",
-    "mode": "both",
-    "salePrice": 55000,
-    "rentPrice": 19000,
-    "sizes": [
-      "One size fits all"
-    ],
-    "images": [
-      "brown-iro-buba-set/00000053-PHOTO-2026-07-15-19-52-17.jpg",
-      "brown-iro-buba-set/00000054-PHOTO-2026-07-15-19-52-18.jpg",
-      "brown-iro-buba-set/00000055-PHOTO-2026-07-15-19-52-19.jpg"
-    ],
-    "note": "Image split is a best guess - confirm"
-  },
-  {
-    "id": "20",
-    "slug": "brown-agbada-topset",
-    "name": "Brown Aso-Oke Agbada, Aso-Oke Top & Trouser, Fila",
-    "category": "male-traditional",
-    "mode": "both",
-    "salePrice": 155000,
-    "rentPrice": 39000,
-    "sizes": [
-      "Agbada: one size fits all",
-      "Top & trouser: size M-XL"
-    ],
-    "images": [
-      "brown-agbada-topset/00000060-PHOTO-2026-07-15-20-58-13.jpg",
-      "brown-agbada-topset/00000061-PHOTO-2026-07-15-20-58-13.jpg"
+      "wine-agbada-senator-outfit-fila/00000212-PHOTO-2026-07-17-10-12-58.jpg"
     ]
   },
   {
-    "id": "21a",
-    "slug": "red-aso-oke-gown-set-v1",
-    "name": "Red Aso-Oke Gown, Ipele & Gele",
+    "raw_id": "73",
+    "slug": "grey-agbada-senator-outfit-fila",
+    "name": "Grey Agbada, Senator Outfit, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 64000,
+    "rentPrice": 18000,
+    "measurements": "SIZE L-2XL",
+    "accessories": null,
+    "images": [
+      "grey-agbada-senator-outfit-fila/00000213-PHOTO-2026-07-17-10-12-59.jpg"
+    ]
+  },
+  {
+    "raw_id": "74",
+    "slug": "agbada-senator-outfit-fila",
+    "name": "Agbada, Senator Outfit, Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 72000,
+    "rentPrice": 23000,
+    "measurements": "SIZE L-2XL",
+    "accessories": null,
+    "images": [
+      "agbada-senator-outfit-fila/00000214-PHOTO-2026-07-17-10-12-59.jpg"
+    ]
+  },
+  {
+    "raw_id": "75",
+    "slug": "red-ododo-beaded-corset-dress",
+    "name": "Red Ododo Beaded Corset Dress",
     "category": "gowns",
     "mode": "both",
-    "salePrice": 86000,
-    "rentPrice": 25000,
-    "sizes": [
-      "Bust 36, Waist 30, Hip 41"
-    ],
-    "images": [
-      "red-aso-oke-gown-set-v1/00000062-PHOTO-2026-07-15-20-58-14.jpg",
-      "red-aso-oke-gown-set-v1/00000063-PHOTO-2026-07-15-20-58-14.jpg",
-      "red-aso-oke-gown-set-v1/00000064-PHOTO-2026-07-15-20-58-14.jpg"
-    ]
-  },
-  {
-    "id": "21b",
-    "slug": "red-agbada-senator-set",
-    "name": "Red Aso-Oke Agbada, Aso-Oke Senator, Fila",
-    "category": "male-traditional",
-    "mode": "both",
-    "salePrice": 190000,
-    "rentPrice": 49000,
-    "sizes": [
-      "One size fits all"
-    ],
-    "images": [
-      "red-agbada-senator-set/00000064-PHOTO-2026-07-15-20-58-14.jpg",
-      "red-agbada-senator-set/00000065-PHOTO-2026-07-15-20-58-15.jpg"
-    ]
-  },
-  {
-    "id": "21c",
-    "slug": "purple-agbada-senator-set",
-    "name": "Purple Aso-Oke Agbada, Aso-Oke Senator, Fila",
-    "category": "male-traditional",
-    "mode": "both",
-    "salePrice": 180000,
-    "rentPrice": 46000,
-    "sizes": [
-      "One size fits all"
-    ],
-    "images": [
-      "purple-agbada-senator-set/00000066-PHOTO-2026-07-15-20-58-15.jpg",
-      "purple-agbada-senator-set/00000067-PHOTO-2026-07-15-20-58-16.jpg",
-      "purple-agbada-senator-set/00000068-PHOTO-2026-07-15-20-58-16.jpg"
-    ]
-  },
-  {
-    "id": "22",
-    "slug": "green-gold-agbada-set",
-    "name": "Green and Gold Aso-Oke Agbada, Aso-Oke Senator, Fila",
-    "category": "male-traditional",
-    "mode": "both",
-    "salePrice": 250000,
-    "rentPrice": 59500,
-    "sizes": [
-      "One size fits all"
-    ],
-    "images": [
-      "green-gold-agbada-set/00000074-PHOTO-2026-07-15-20-58-18.jpg",
-      "green-gold-agbada-set/00000075-PHOTO-2026-07-15-20-58-19.jpg"
-    ]
-  },
-  {
-    "id": "23",
-    "slug": "brown-orange-agbada-set",
-    "name": "Brown & Orange Aso-Oke Agbada, Aso-Oke Senator, Fila",
-    "category": "male-traditional",
-    "mode": "both",
-    "salePrice": 180000,
-    "rentPrice": 47000,
-    "sizes": [
-      "One size fits all"
-    ],
-    "images": [
-      "brown-orange-agbada-set/00000076-PHOTO-2026-07-15-20-58-19.jpg",
-      "brown-orange-agbada-set/00000077-PHOTO-2026-07-15-20-58-20.jpg"
-    ]
-  },
-  {
-    "id": "24",
-    "slug": "green-gold-iro-buba-set",
-    "name": "Green & Gold Iro, Ipele & Gele + Green Buba",
-    "category": "female-traditional",
-    "mode": "both",
-    "salePrice": 69000,
-    "rentPrice": 20000,
-    "sizes": [
-      "One size fits all"
-    ],
-    "images": [
-      "green-gold-iro-buba-set/00000078-PHOTO-2026-07-15-20-58-20.jpg",
-      "green-gold-iro-buba-set/00000079-PHOTO-2026-07-15-20-58-20.jpg"
-    ]
-  },
-  {
-    "id": "25",
-    "slug": "red-iro-buba-set-2",
-    "name": "Red Aso-Oke Iro & Buba, Ipele & Gele",
-    "category": "female-traditional",
-    "mode": "both",
-    "salePrice": 71000,
-    "rentPrice": 21000,
-    "sizes": [
-      "One size fits all"
-    ],
-    "images": [
-      "red-iro-buba-set-2/00000080-PHOTO-2026-07-15-20-58-21.jpg",
-      "red-iro-buba-set-2/00000081-PHOTO-2026-07-15-20-58-21.jpg"
-    ]
-  },
-  {
-    "id": "26",
-    "slug": "ruby-wine-agbada-danshiki-set",
-    "name": "Ruby Wine Aso-Oke Agbada, Danshiki, Trouser & Fila",
-    "category": "male-traditional",
-    "mode": "both",
-    "salePrice": 138000,
-    "rentPrice": 35000,
-    "sizes": [
-      "One size fits all"
-    ],
-    "images": [
-      "ruby-wine-agbada-danshiki-set/00000082-PHOTO-2026-07-15-20-58-22.jpg",
-      "ruby-wine-agbada-danshiki-set/00000083-PHOTO-2026-07-15-20-58-23.jpg"
-    ]
-  },
-  {
-    "id": "27",
-    "slug": "royal-blue-sequenced-gown",
-    "name": "Royal Blue Sequenced Aso-Ebi Gown",
-    "category": "gowns",
-    "mode": "both",
-    "salePrice": 96000,
+    "salePrice": 105000,
     "rentPrice": 33000,
-    "sizes": [
-      "Bust 49, Waist 38, Hip 50"
-    ],
+    "measurements": "BUST- 40",
+    "accessories": null,
     "images": [
-      "royal-blue-sequenced-gown/00000091-PHOTO-2026-07-15-20-58-26.jpg",
-      "royal-blue-sequenced-gown/00000092-PHOTO-2026-07-15-20-58-27.jpg"
+      "red-ododo-beaded-corset-dress/00000215-PHOTO-2026-07-17-10-13-00.jpg"
     ]
   },
   {
-    "id": "28",
-    "slug": "black-feathered-gown",
-    "name": "Black Feathered Gown",
+    "raw_id": "76",
+    "slug": "wine-black-corporate-gown",
+    "name": "Wine/Black Corporate Gown",
     "category": "gowns",
     "mode": "both",
-    "salePrice": 40000,
-    "rentPrice": 14000,
-    "sizes": [
-      "Bust 38, Waist 30, Hip 38"
-    ],
+    "salePrice": 20000,
+    "rentPrice": 7000,
+    "measurements": "SIZE 6/8",
+    "accessories": null,
     "images": [
-      "black-feathered-gown/00000093-PHOTO-2026-07-15-20-58-27.jpg"
+      "wine-black-corporate-gown/00000216-PHOTO-2026-07-17-10-13-00.jpg"
     ]
   },
   {
-    "id": "29",
-    "slug": "purple-aso-oke-gown",
-    "name": "Purple Aso-Oke Gown, Ipele and Gele",
-    "category": "gowns",
-    "mode": "both",
-    "salePrice": 90000,
-    "rentPrice": 25000,
-    "sizes": [
-      "Bust 46, Waist 35, Hip 43"
-    ],
-    "images": [
-      "purple-aso-oke-gown/00000066-PHOTO-2026-07-15-20-58-15.jpg",
-      "purple-aso-oke-gown/00000094-PHOTO-2026-07-15-20-58-27.jpg",
-      "purple-aso-oke-gown/00000095-PHOTO-2026-07-15-20-58-28.jpg"
-    ]
-  },
-  {
-    "id": "30",
-    "slug": "brown-orange-aso-oke-gown",
-    "name": "Brown & Orange Aso-Oke Gown, Ipele and Gele",
-    "category": "gowns",
-    "mode": "both",
-    "salePrice": 95000,
-    "rentPrice": 27000,
-    "sizes": [
-      "Bust 38, Waist 30, Hip 42"
-    ],
-    "images": [
-      "brown-orange-aso-oke-gown/00000096-PHOTO-2026-07-15-20-58-28.jpg"
-    ]
-  },
-  {
-    "id": "21d",
-    "slug": "red-aso-oke-gown-set-v2",
-    "name": "Red Aso-Oke Gown, Ipele & Gele (second size)",
-    "category": "gowns",
-    "mode": "both",
-    "salePrice": 86000,
-    "rentPrice": 25000,
-    "sizes": [
-      "Bust 39, Waist 32, Hip 41"
-    ],
-    "images": [
-      "red-aso-oke-gown-set-v1/00000062-PHOTO-2026-07-15-20-58-14.jpg",
-      "red-aso-oke-gown-set-v1/00000063-PHOTO-2026-07-15-20-58-14.jpg",
-      "red-aso-oke-gown-set-v1/00000064-PHOTO-2026-07-15-20-58-14.jpg"
-    ]
-  },
-  {
-    "id": "31",
-    "slug": "wine-suede-corset-cape",
-    "name": "Wine Suede Long Gown (Corset) + Cape",
-    "category": "gowns",
-    "mode": "both",
-    "salePrice": 67000,
-    "rentPrice": 20000,
-    "sizes": [
-      "Bust 40, Waist 31, Hip 41.5"
-    ],
-    "images": [
-      "wine-suede-corset-cape/00000097-PHOTO-2026-07-15-20-58-29.jpg"
-    ]
-  },
-  {
-    "id": "32",
-    "slug": "black-suede-embroidered-set",
-    "name": "Black Suede Red Embroidered Top and Long Skirt",
+    "raw_id": "78",
+    "slug": "white-damask-corset-gown",
+    "name": "White Damask Corset Gown",
     "category": "gowns",
     "mode": "both",
     "salePrice": 75000,
     "rentPrice": 23000,
-    "sizes": [
-      "Bust 42, Waist 32, Hip 42"
-    ],
+    "measurements": "BUST: 44, WAIST- 30, HIP- 45",
+    "accessories": "BEADS, WHITE GELE",
     "images": [
-      "black-suede-embroidered-set/00000098-PHOTO-2026-07-15-20-58-29.jpg",
-      "black-suede-embroidered-set/00000099-PHOTO-2026-07-15-20-58-36.jpg"
+      "white-damask-corset-gown/00000217-PHOTO-2026-07-17-10-13-00.jpg"
     ]
+  },
+  {
+    "raw_id": "79",
+    "slug": "white-and-gold-etibo-dress-george-material-stick",
+    "name": "White And Gold Etibo Dress, George Material & Stick",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 260000,
+    "rentPrice": 55000,
+    "measurements": "BUST- 41, WAIST- 34, HIP- 41",
+    "accessories": null,
+    "images": [
+      "white-and-gold-etibo-dress-george-material-stick/00000218-PHOTO-2026-07-17-10-13-01.jpg",
+      "white-and-gold-etibo-dress-george-material-stick/00000219-PHOTO-2026-07-17-10-13-02.jpg",
+      "white-and-gold-etibo-dress-george-material-stick/00000220-PHOTO-2026-07-17-10-13-02.jpg"
+    ]
+  },
+  {
+    "raw_id": "83",
+    "slug": "azure-blue-suede-suit-waistcoat-trouser",
+    "name": "Azure Blue Suede Suit, Waistcoat & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 110000,
+    "rentPrice": 28000,
+    "measurements": "SUIT SIZE: 58/60",
+    "accessories": null,
+    "images": [
+      "azure-blue-suede-suit-waistcoat-trouser/00000221-PHOTO-2026-07-17-10-13-02.jpg"
+    ]
+  },
+  {
+    "raw_id": "81",
+    "slug": "wine-short-gown",
+    "name": "Wine Short Gown",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 35000,
+    "rentPrice": 10000,
+    "measurements": "BUST- 37, WAIST- 31",
+    "accessories": null,
+    "images": [
+      "wine-short-gown/00000223-PHOTO-2026-07-17-10-13-03.jpg"
+    ]
+  },
+  {
+    "raw_id": "84",
+    "slug": "cream-striped-double-breasted-suit-trouser",
+    "name": "Cream Striped Double Breasted Suit & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 95000,
+    "rentPrice": 25000,
+    "measurements": "SIZES 48, TROUSER SIZE 32",
+    "accessories": null,
+    "images": []
+  },
+  {
+    "raw_id": "86",
+    "slug": "green-corporate-gown",
+    "name": "Green Corporate Gown",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 20000,
+    "rentPrice": 7000,
+    "measurements": "SIZE 6/8",
+    "accessories": null,
+    "images": [
+      "green-corporate-gown/00000225-PHOTO-2026-07-17-10-13-04.jpg"
+    ]
+  },
+  {
+    "raw_id": "87",
+    "slug": "black-orange-corporate-gown",
+    "name": "Black/Orange Corporate Gown",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 20000,
+    "rentPrice": 7000,
+    "measurements": "SIZE 6/8",
+    "accessories": null,
+    "images": [
+      "black-orange-corporate-gown/00000226-PHOTO-2026-07-17-10-13-04.jpg"
+    ]
+  },
+  {
+    "raw_id": "86",
+    "slug": "royal-blue-corporate-gown",
+    "name": "Royal Blue Corporate Gown",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 20000,
+    "rentPrice": 7000,
+    "measurements": "SIZE 6/8",
+    "accessories": null,
+    "images": [
+      "royal-blue-corporate-gown/00000227-PHOTO-2026-07-17-10-13-05.jpg",
+      "royal-blue-corporate-gown/00000228-PHOTO-2026-07-17-10-13-06.jpg",
+      "royal-blue-corporate-gown/00000229-PHOTO-2026-07-17-10-13-06.jpg",
+      "royal-blue-corporate-gown/00000230-PHOTO-2026-07-17-10-13-07.jpg",
+      "royal-blue-corporate-gown/00000231-PHOTO-2026-07-17-10-13-07.jpg"
+    ]
+  },
+  {
+    "raw_id": "29",
+    "slug": "northern-black-feathered-gown",
+    "name": "Northern Black Feathered Gown",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 50000,
+    "rentPrice": 17000,
+    "measurements": "BUST- 38, WAIST- 30, HIP- 38",
+    "accessories": null,
+    "images": [
+      "northern-black-feathered-gown/00000232-PHOTO-2026-07-17-10-13-07.jpg",
+      "northern-black-feathered-gown/00000233-PHOTO-2026-07-17-10-13-08.jpg"
+    ]
+  },
+  {
+    "raw_id": "95",
+    "slug": "black-white-stretchy-maxi-gown",
+    "name": "Black/White Stretchy Maxi Gown",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 35000,
+    "rentPrice": 13000,
+    "measurements": "ONE SIZE FITS ALL",
+    "accessories": null,
+    "images": [
+      "black-white-stretchy-maxi-gown/00000235-PHOTO-2026-07-17-10-13-09.jpg",
+      "black-white-stretchy-maxi-gown/00000236-PHOTO-2026-07-17-10-13-09.jpg"
+    ]
+  },
+  {
+    "raw_id": "96",
+    "slug": "cropped-suit-baggy-trouser",
+    "name": "Cropped Suit & Baggy Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 75000,
+    "rentPrice": 20000,
+    "measurements": null,
+    "accessories": null,
+    "images": []
+  },
+  {
+    "raw_id": "97",
+    "slug": "emerald-green-double-breasted-suit-and-trouser",
+    "name": "Emerald Green Double Breasted Suit And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 65000,
+    "rentPrice": 17000,
+    "measurements": "SIZE 50, WAIST SIZE 34",
+    "accessories": null,
+    "images": [
+      "emerald-green-double-breasted-suit-and-trouser/00000238-PHOTO-2026-07-17-10-13-10.jpg"
+    ]
+  },
+  {
+    "raw_id": "98",
+    "slug": "emerald-green-double-breasted-suit-and-trouser-2",
+    "name": "Emerald Green Double Breasted Suit And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 65000,
+    "rentPrice": 17000,
+    "measurements": "SIZE 48, WAIST SIZE 32",
+    "accessories": null,
+    "images": [
+      "emerald-green-double-breasted-suit-and-trouser-2/00000239-PHOTO-2026-07-17-10-13-11.jpg",
+      "emerald-green-double-breasted-suit-and-trouser-2/00000240-PHOTO-2026-07-17-10-13-11.jpg",
+      "emerald-green-double-breasted-suit-and-trouser-2/00000241-PHOTO-2026-07-17-10-13-11.jpg"
+    ]
+  },
+  {
+    "raw_id": "99",
+    "slug": "black-plain-suit-and-trouser",
+    "name": "Black Plain Suit And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 55000,
+    "rentPrice": 14000,
+    "measurements": "SIZE 58,  WAIST SIZE 42",
+    "accessories": null,
+    "images": []
+  },
+  {
+    "raw_id": "100",
+    "slug": "black-plain-suit-and-trouser-2",
+    "name": "Black Plain Suit And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 55000,
+    "rentPrice": 14000,
+    "measurements": "SIZE 54,  WAIST SIZE 38",
+    "accessories": null,
+    "images": [
+      "black-plain-suit-and-trouser-2/00000243-PHOTO-2026-07-17-10-13-12.jpg",
+      "black-plain-suit-and-trouser-2/00000244-PHOTO-2026-07-17-10-13-13.jpg"
+    ]
+  },
+  {
+    "raw_id": "101",
+    "slug": "black-plain-suit-and-trouser-3",
+    "name": "Black Plain Suit And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 55000,
+    "rentPrice": 14000,
+    "measurements": "SIZE 50,  WAIST SIZE 34",
+    "accessories": null,
+    "images": [
+      "black-plain-suit-and-trouser-3/00000245-PHOTO-2026-07-17-10-13-13.jpg",
+      "black-plain-suit-and-trouser-3/00000246-PHOTO-2026-07-17-10-13-14.jpg",
+      "black-plain-suit-and-trouser-3/00000247-PHOTO-2026-07-17-10-13-14.jpg",
+      "black-plain-suit-and-trouser-3/00000248-PHOTO-2026-07-17-10-13-14.jpg"
+    ]
+  },
+  {
+    "raw_id": "102",
+    "slug": "100-black-plain-suit-and-trouser",
+    "name": "100. Black Plain Suit And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 55000,
+    "rentPrice": 14000,
+    "measurements": "SIZE 48,  WAIST SIZE 32",
+    "accessories": null,
+    "images": []
+  },
+  {
+    "raw_id": "104",
+    "slug": "black-white-striped-3-piece-suit-blazer-waistcoat-and-trouse",
+    "name": "Black(White Striped) 3 Piece Suit (Blazer, Waistcoat And Trouser)",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 80000,
+    "rentPrice": 20000,
+    "measurements": "WAIST SIZE 54/56",
+    "accessories": null,
+    "images": [
+      "black-white-striped-3-piece-suit-blazer-waistcoat-and-trouse/00000250-PHOTO-2026-07-17-10-13-15.jpg"
+    ]
+  },
+  {
+    "raw_id": "104",
+    "slug": "light-brown-dark-brown-embroidered-agbada-senator-fila-and-b",
+    "name": "Light Brown (Dark Brown Embroidered Agbada, Senator, Fila And Beads)",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 80000,
+    "rentPrice": 23000,
+    "measurements": "SIZE M-2XL",
+    "accessories": null,
+    "images": [
+      "light-brown-dark-brown-embroidered-agbada-senator-fila-and-b/00000251-PHOTO-2026-07-17-10-13-16.jpg"
+    ]
+  },
+  {
+    "raw_id": "105",
+    "slug": "burnt-orange-3-piece-suit-blazer-waistcoat-and-trouser",
+    "name": "Burnt Orange 3-Piece Suit (Blazer, Waistcoat And Trouser)",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 80000,
+    "rentPrice": 20000,
+    "measurements": "SIZE 54/56, WAIST SIZE 38/40",
+    "accessories": null,
+    "images": [
+      "burnt-orange-3-piece-suit-blazer-waistcoat-and-trouser/00000252-PHOTO-2026-07-17-10-13-16.jpg"
+    ]
+  },
+  {
+    "raw_id": "106",
+    "slug": "dark-carton-colour-double-breasted-suit-and-trouser",
+    "name": "Dark Carton Colour Double Breasted Suit And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 63000,
+    "rentPrice": 17000,
+    "measurements": "SUIT SIZE 50, TROUSER SIZE 34",
+    "accessories": null,
+    "images": [
+      "dark-carton-colour-double-breasted-suit-and-trouser/00000253-PHOTO-2026-07-17-10-13-17.jpg"
+    ]
+  },
+  {
+    "raw_id": "107",
+    "slug": "light-carton-colour-double-breasted-suit-and-trouser",
+    "name": "Light Carton Colour Double Breasted Suit And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 62000,
+    "rentPrice": 16000,
+    "measurements": "SUIT SIZE 50, TROUSER SIZE 34",
+    "accessories": null,
+    "images": [
+      "light-carton-colour-double-breasted-suit-and-trouser/00000254-PHOTO-2026-07-17-10-13-17.jpg",
+      "light-carton-colour-double-breasted-suit-and-trouser/00000255-PHOTO-2026-07-17-10-13-18.jpg"
+    ]
+  },
+  {
+    "raw_id": "108",
+    "slug": "wine-suede-trench-coat-black-waistcoat-and-trouser",
+    "name": "Wine Suede Trench Coat, Black Waistcoat And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 78000,
+    "rentPrice": 21000,
+    "measurements": "M-XL",
+    "accessories": null,
+    "images": [
+      "wine-suede-trench-coat-black-waistcoat-and-trouser/00000256-PHOTO-2026-07-17-10-13-18.jpg"
+    ]
+  },
+  {
+    "raw_id": "109",
+    "slug": "black-plain-suit-waistcoat-and-trouser",
+    "name": "Black Plain Suit, Waistcoat And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 65000,
+    "rentPrice": 17000,
+    "measurements": "SIZE 48,  WAIST SIZE 32",
+    "accessories": null,
+    "images": [
+      "black-plain-suit-waistcoat-and-trouser/00000257-PHOTO-2026-07-17-10-13-19.jpg"
+    ]
+  },
+  {
+    "raw_id": "109",
+    "slug": "black-plain-suit-waistcoat-and-trouser-2",
+    "name": "Black Plain Suit, Waistcoat And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 65000,
+    "rentPrice": 17000,
+    "measurements": "SIZE 48,  WAIST SIZE 32",
+    "accessories": null,
+    "images": [
+      "black-plain-suit-waistcoat-and-trouser-2/00000258-PHOTO-2026-07-17-10-13-19.jpg"
+    ]
+  },
+  {
+    "raw_id": "111",
+    "slug": "brown-checkered-suit-waistcoat-and-trouser",
+    "name": "Brown Checkered Suit, Waistcoat And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 65000,
+    "rentPrice": 17000,
+    "measurements": "SIZE 48,  WAIST SIZE 32",
+    "accessories": null,
+    "images": [
+      "brown-checkered-suit-waistcoat-and-trouser/00000259-PHOTO-2026-07-17-10-13-20.jpg"
+    ]
+  },
+  {
+    "raw_id": "112",
+    "slug": "red-feathered-hand-fan",
+    "name": "Red Feathered Hand Fan",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 14000,
+    "rentPrice": 4000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "red-feathered-hand-fan/00000260-PHOTO-2026-07-17-10-13-20.jpg"
+    ]
+  },
+  {
+    "raw_id": "113",
+    "slug": "white-feathered-hand-fan-silver-crested",
+    "name": "White Feathered Hand Fan (Silver Crested",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 12000,
+    "rentPrice": 3000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "white-feathered-hand-fan-silver-crested/00000261-PHOTO-2026-07-17-10-13-21.jpg"
+    ]
+  },
+  {
+    "raw_id": "114",
+    "slug": "black-feathered-hand-fan-gold-crested",
+    "name": "Black Feathered Hand Fan (Gold Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "black-feathered-hand-fan-gold-crested/00000262-PHOTO-2026-07-17-10-13-21.jpg"
+    ]
+  },
+  {
+    "raw_id": "115",
+    "slug": "light-pink-feathered-hand-fan-gold-crested",
+    "name": "Light Pink Feathered Hand Fan (Gold Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "light-pink-feathered-hand-fan-gold-crested/00000263-PHOTO-2026-07-17-10-13-22.jpg"
+    ]
+  },
+  {
+    "raw_id": "116",
+    "slug": "gold-feathered-hand-fan-gold-crested",
+    "name": "Gold Feathered Hand Fan (Gold Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "gold-feathered-hand-fan-gold-crested/00000264-PHOTO-2026-07-17-10-13-22.jpg"
+    ]
+  },
+  {
+    "raw_id": "117",
+    "slug": "navy-blue-feathered-hand-fan-silver-crested",
+    "name": "Navy Blue Feathered Hand Fan (Silver Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "navy-blue-feathered-hand-fan-silver-crested/00000265-PHOTO-2026-07-17-10-13-23.jpg"
+    ]
+  },
+  {
+    "raw_id": "118",
+    "slug": "light-gold-feathered-hand-fan-gold-crested",
+    "name": "Light Gold Feathered Hand Fan (Gold Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "light-gold-feathered-hand-fan-gold-crested/00000266-PHOTO-2026-07-17-10-13-23.jpg"
+    ]
+  },
+  {
+    "raw_id": "118",
+    "slug": "light-brown-feathered-hand-fan-gold-crested",
+    "name": "Light Brown Feathered Hand Fan (Gold Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "light-brown-feathered-hand-fan-gold-crested/00000267-PHOTO-2026-07-17-10-13-24.jpg",
+      "light-brown-feathered-hand-fan-gold-crested/00000268-PHOTO-2026-07-17-10-13-24.jpg"
+    ]
+  },
+  {
+    "raw_id": "119",
+    "slug": "purple-feathered-hand-fan-gold-crested",
+    "name": "Purple Feathered Hand Fan (Gold Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 14000,
+    "rentPrice": 4000,
+    "measurements": null,
+    "accessories": null,
+    "images": []
+  },
+  {
+    "raw_id": "120",
+    "slug": "red-feathered-hand-fan-gold-crested",
+    "name": "Red Feathered Hand Fan (Gold Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "measurements": null,
+    "accessories": null,
+    "images": []
+  },
+  {
+    "raw_id": "121",
+    "slug": "white-feathered-hand-fan-gold-crested",
+    "name": "White Feathered Hand Fan (Gold Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 14000,
+    "rentPrice": 4000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "white-feathered-hand-fan-gold-crested/00000271-PHOTO-2026-07-17-10-13-25.jpg"
+    ]
+  },
+  {
+    "raw_id": "123",
+    "slug": "orange-feathered-hand-fan-gold-crested",
+    "name": "Orange Feathered Hand Fan (Gold Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 14000,
+    "rentPrice": 4000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "orange-feathered-hand-fan-gold-crested/00000272-PHOTO-2026-07-17-10-13-26.jpg"
+    ]
+  },
+  {
+    "raw_id": "124",
+    "slug": "royal-blue-feathered-hand-fan",
+    "name": "Royal Blue Feathered Hand Fan",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 14000,
+    "rentPrice": 4000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "royal-blue-feathered-hand-fan/00000273-PHOTO-2026-07-17-10-13-26.jpg"
+    ]
+  },
+  {
+    "raw_id": "125",
+    "slug": "sky-blue-feathered-hand-fan-silver-crest",
+    "name": "Sky Blue Feathered Hand Fan (Silver Crest)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 14000,
+    "rentPrice": 4000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "sky-blue-feathered-hand-fan-silver-crest/00000274-PHOTO-2026-07-17-10-13-27.jpg"
+    ]
+  },
+  {
+    "raw_id": "112",
+    "slug": "burgundy-feathered-hand-fan",
+    "name": "Burgundy Feathered Hand Fan",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 12000,
+    "rentPrice": 3000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "burgundy-feathered-hand-fan/00000275-PHOTO-2026-07-17-10-13-27.jpg"
+    ]
+  },
+  {
+    "raw_id": "127",
+    "slug": "light-gold-feathered-hand-fan-gold-crested-2",
+    "name": "Light Gold Feathered Hand Fan (Gold Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "light-gold-feathered-hand-fan-gold-crested-2/00000276-PHOTO-2026-07-17-10-13-28.jpg"
+    ]
+  },
+  {
+    "raw_id": "128",
+    "slug": "emerald-green-feathered-hand-fan-gold-crested",
+    "name": "Emerald Green Feathered Hand Fan (Gold Crested)",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "measurements": null,
+    "accessories": null,
+    "images": [
+      "emerald-green-feathered-hand-fan-gold-crested/00000277-PHOTO-2026-07-17-10-13-28.jpg",
+      "emerald-green-feathered-hand-fan-gold-crested/00000278-PHOTO-2026-07-17-10-13-29.jpg",
+      "emerald-green-feathered-hand-fan-gold-crested/00000279-PHOTO-2026-07-17-10-13-29.jpg"
+    ]
+  },
+  {
+    "raw_id": "129",
+    "slug": "red-beaded-edo-outfit",
+    "name": "Red Beaded Edo Outfit",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 110000,
+    "rentPrice": 33000,
+    "measurements": "HIP- 37, BUST- 33, WAIST- 29",
+    "accessories": null,
+    "images": [
+      "red-beaded-edo-outfit/00000281-PHOTO-2026-07-17-10-13-30.jpg"
+    ],
+    "note": "Categorized as male-traditional by inference (Edo beaded outfit, no dress/gown keyword) - confirm"
+  },
+  {
+    "raw_id": "130",
+    "slug": "grey-checkered-double-breasted-suit-and-trouser",
+    "name": "Grey Checkered Double Breasted Suit And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 90000,
+    "rentPrice": 23000,
+    "measurements": "SUIT SIZE 54, TROUSER SIZE 36-38",
+    "accessories": null,
+    "images": [
+      "grey-checkered-double-breasted-suit-and-trouser/00000283-PHOTO-2026-07-17-10-13-31.jpg"
+    ]
+  },
+  {
+    "raw_id": "131",
+    "slug": "moss-green-3-piece-suit-waistcoat-and-trouser",
+    "name": "Moss Green 3-Piece Suit, Waistcoat And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 90000,
+    "rentPrice": 23000,
+    "measurements": "SUIT SIZE 54-56, TROUSER SIZE 36-38",
+    "accessories": null,
+    "images": [
+      "moss-green-3-piece-suit-waistcoat-and-trouser/00000285-PHOTO-2026-07-17-10-13-32.jpg"
+    ]
+  },
+  {
+    "raw_id": "132",
+    "slug": "lemon-green-3-piece-suit-waistcoat-and-trouser",
+    "name": "Lemon Green 3-Piece Suit, Waistcoat And Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 95000,
+    "rentPrice": 25000,
+    "measurements": "SUIT SIZE 56-58, TROUSER SIZE 36-38",
+    "accessories": null,
+    "images": [
+      "lemon-green-3-piece-suit-waistcoat-and-trouser/00000287-PHOTO-2026-07-17-10-13-33.jpg",
+      "lemon-green-3-piece-suit-waistcoat-and-trouser/00000288-PHOTO-2026-07-17-10-13-33.jpg"
+    ]
+  },
+  {
+    "raw_id": "133",
+    "slug": "burgundy-short-gown",
+    "name": "Burgundy Short Gown",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 36000,
+    "rentPrice": 12000,
+    "measurements": "HIP- 42, BUST- 38, WAIST- 34",
+    "accessories": null,
+    "images": [
+      "burgundy-short-gown/00000290-PHOTO-2026-07-17-10-13-34.jpg",
+      "burgundy-short-gown/00000291-PHOTO-2026-07-17-10-13-35.jpg",
+      "burgundy-short-gown/00000292-PHOTO-2026-07-17-10-13-35.jpg",
+      "burgundy-short-gown/00000293-PHOTO-2026-07-17-10-13-36.jpg",
+      "burgundy-short-gown/00000294-PHOTO-2026-07-17-10-13-36.jpg",
+      "burgundy-short-gown/00000295-PHOTO-2026-07-17-10-13-37.jpg"
+    ]
+  },
+  {
+    "raw_id": "134",
+    "slug": "white-embroidred-agbada-and-senator-outfit",
+    "name": "White Embroidred Agbada And Senator Outfit",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 80000,
+    "rentPrice": 23000,
+    "measurements": "SIZE L-2XL",
+    "accessories": null,
+    "images": []
   }
 ]
