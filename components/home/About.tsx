@@ -7,7 +7,7 @@ export default function About() {
             aspectRatio: '4/5', borderRadius: '3px', overflow: 'hidden',
             border: '1px solid var(--line)', position: 'relative'
           }}>
-            <img src="/about-us-hero.jpg" alt="White and gold gown with staff" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="https://res.cloudinary.com/ztf9w9qb/image/upload/v1784284036/mariocollections/about-us-hero.jpg" alt="White and gold gown with staff" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             <span className="tag" style={{
               position: 'absolute', bottom: '16px', left: '16px',
               background: 'var(--gold)', color: 'var(--wine-deep)',

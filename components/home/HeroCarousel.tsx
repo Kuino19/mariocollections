@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const slides = [
   {
-    image: '/products/red-corset-ododo-edo-dress/00000163-PHOTO-2026-07-17-10-12-38.jpg', 
+    image: 'https://res.cloudinary.com/ztf9w9qb/image/upload/v1784283823/mariocollections/red-corset-ododo-edo-dress/00000163-PHOTO-2026-07-17-10-12-38.jpg', 
     eyebrow: 'New This Week',
     title: (
       <>
@@ -16,7 +16,7 @@ const slides = [
     btnText: 'Browse the Shop',
   },
   {
-    image: '/products/dark-green-long-isi-agu-isi-agu-wrapper/00000165-PHOTO-2026-07-17-10-12-39.jpg', 
+    image: 'https://res.cloudinary.com/ztf9w9qb/image/upload/v1784283826/mariocollections/dark-green-long-isi-agu-isi-agu-wrapper/00000165-PHOTO-2026-07-17-10-12-39.jpg', 
     eyebrow: 'Defense & Native Wear',
     title: (
       <>
@@ -28,7 +28,7 @@ const slides = [
     btnText: 'Shop Defense',
   },
   {
-    image: '/products/green-trench-coat-waistcoat-trouser/00000178-PHOTO-2026-07-17-10-12-44.jpg',
+    image: 'https://res.cloudinary.com/ztf9w9qb/image/upload/v1784283841/mariocollections/green-trench-coat-waistcoat-trouser/00000178-PHOTO-2026-07-17-10-12-44.jpg',
     eyebrow: 'Dinner & Formal',
     title: (
       <>
@@ -40,7 +40,7 @@ const slides = [
     btnText: 'Shop Dinner',
   },
   {
-    image: '/products/wine-checkered-3-piece-suit-suit-waist-coat-trouser/wine-checkered-1.jpg', 
+    image: 'https://res.cloudinary.com/ztf9w9qb/image/upload/v1784283871/mariocollections/wine-checkered-3-piece-suit-suit-waist-coat-trouser/wine-checkered-1.jpg', 
     eyebrow: 'Milestones',
     title: (
       <>
