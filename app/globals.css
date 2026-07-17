@@ -223,6 +223,15 @@ input:focus, select:focus, textarea:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .header-search-desktop, .header-nav-desktop {
+    display: none !important;
+  }
+  .header-mobile-controls {
+    display: flex !important;
+  }
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 56px 5vw;
