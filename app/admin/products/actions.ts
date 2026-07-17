@@ -14,8 +14,7 @@ export async function deleteProduct(id: string) {
   await prisma.product.delete({
     where: { id }
   });
-  revalidatePath('/admin');
-  revalidatePath('/shop');
+  revalidatePath('/', 'layout');
 }
 
 export async function saveProduct(formData: FormData, productId?: string) {
@@ -103,7 +102,6 @@ export async function saveProduct(formData: FormData, productId?: string) {
     });
   }
 
-  revalidatePath('/admin');
-  revalidatePath('/shop');
+  revalidatePath('/', 'layout');
   return { success: true };
 }

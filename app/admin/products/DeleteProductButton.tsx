@@ -11,6 +11,7 @@ export default function DeleteProductButton({ id }: { id: string }) {
       setLoading(true);
       try {
         await deleteProduct(id);
+        window.location.reload();
       } catch (e) {
         console.error(e);
         alert('Failed to delete product');

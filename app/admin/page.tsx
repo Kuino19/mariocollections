@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { logout } from './actions'
 import AdminDashboardClient from './AdminDashboardClient'
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   title: 'Admin Dashboard - Mario Collections',
 }

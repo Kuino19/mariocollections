@@ -33,8 +33,7 @@ export default function ProductForm({ product }: { product?: Product }) {
 
       const result = await saveProduct(formData, product?.id);
       if (result && result.success) {
-        router.push('/admin');
-        router.refresh();
+        window.location.href = '/admin';
       }
     } catch (error) {
       console.error(error);
