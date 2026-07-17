@@ -9,6 +9,7 @@ export default function CheckoutClient() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [phone, setPhone] = useState('');
+  const [address, setAddress] = useState('');
   
   const { items, getTotalPrice, clearCart } = useCartStore();
   const router = useRouter();
@@ -32,8 +33,8 @@ export default function CheckoutClient() {
 
   const handlePaystack = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !firstName || !lastName || !phone) {
-      alert("Please fill all details");
+    if (!email || !firstName || !lastName || !phone || !address) {
+      alert("Please fill all details including delivery address.");
       return;
     }
 
@@ -77,6 +78,7 @@ export default function CheckoutClient() {
             `*Customer:* ${firstName} ${lastName}\n` +
             `*Email:* ${email}\n` +
             `*Phone:* ${phone}\n` +
+            `*Delivery Address:* ${address}\n` +
             `*Reference:* ${transaction.reference}\n\n` +
             `*Items:*\n${itemsText}\n\n` +
             `*Total Paid:* ₦${amount.toLocaleString()}`;
@@ -119,6 +121,24 @@ export default function CheckoutClient() {
           <div>
             <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: 600 }}>Phone Number (WhatsApp)</label>
             <input type="tel" value={phone} onChange={e => setPhone(e.target.value)} required />
+          </div>
+          <div>
+            <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: 600 }}>Delivery Address</label>
+            <textarea 
+              value={address} 
+              onChange={e => setAddress(e.target.value)} 
+              required 
+              style={{
+                width: '100%',
+                padding: '12px',
+                border: '1px solid rgba(59,18,32,0.2)',
+                borderRadius: '3px',
+                minHeight: '80px',
+                fontFamily: 'inherit',
+                fontSize: '0.95rem'
+              }}
+              placeholder="Enter your full delivery address"
+            />
           </div>
           
           <button type="submit" className="btn btn-gold" style={{ marginTop: '16px', width: '100%', padding: '18px' }}>

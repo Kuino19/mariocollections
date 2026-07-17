@@ -6,17 +6,36 @@ import { Product } from '@/lib/data';
 interface Props {
   initialMode: 'sale' | 'rent';
   products: Product[];
+  searchQuery?: string;
 }
 
-export default function CategoryGrid({ initialMode, products }: Props) {
+export default function CategoryGrid({ initialMode, products, searchQuery = '' }: Props) {
   const [mode, setMode] = useState<'sale' | 'rent'>(initialMode);
+  const [category, setCategory] = useState<string>('all');
 
-  // Filter products based on mode toggle. If mode is rent, only show products that support rent or both.
-  const visibleProducts = products.filter(p => p.mode === 'both' || p.mode === mode);
+  const categories = [
+    { id: 'all', label: 'All Products' },
+    { id: 'female-traditional', label: 'Female Traditional' },
+    { id: 'male-traditional', label: 'Male Traditional' },
+    { id: 'gowns', label: 'Gowns' },
+    { id: 'suits', label: 'Suits' }
+  ];
+
+  // Filter products based on mode toggle, category, and search query
+  const visibleProducts = products.filter(p => {
+    const matchesMode = p.mode === 'both' || p.mode === mode;
+    const matchesCategory = category === 'all' || p.category === category;
+    const matchesSearch = !searchQuery || 
+      p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+      (p.description && p.description.toLowerCase().includes(searchQuery.toLowerCase()));
+    
+    return matchesMode && matchesCategory && matchesSearch;
+  });
 
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '32px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', marginBottom: '32px' }}>
+        {/* Mode Filter */}
         <div style={{ display: 'flex', background: 'rgba(59,18,32,0.08)', borderRadius: '999px', padding: '4px' }}>
           <button
             onClick={() => setMode('sale')}
@@ -33,11 +52,32 @@ export default function CategoryGrid({ initialMode, products }: Props) {
             Rent
           </button>
         </div>
+
+        {/* Category Filter */}
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+          {categories.map(cat => (
+            <button
+              key={cat.id}
+              onClick={() => setCategory(cat.id)}
+              className={`btn ${category === cat.id ? 'btn-gold' : 'btn-outline-wine'}`}
+              style={{ padding: '6px 16px', fontSize: '0.9rem', borderRadius: '999px' }}
+            >
+              {cat.label}
+            </button>
+          ))}
+        </div>
+        
+        {/* Search Results Indicator */}
+        {searchQuery && (
+          <div style={{ color: '#4a423d', fontSize: '1.05rem', fontStyle: 'italic' }}>
+            Showing results for "{searchQuery}"
+          </div>
+        )}
       </div>
 
       {visibleProducts.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '60px 0', color: '#4a423d' }}>
-          No products available for {mode} in this category.
+          No products found matching your criteria.
         </div>
       ) : (
         <div style={{
@@ -56,12 +96,12 @@ export default function CategoryGrid({ initialMode, products }: Props) {
                 <div style={{ aspectRatio: '4/5', background: 'var(--wine)' }}>
                   <img src={product.images[0]} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
-                <div style={{ padding: '16px' }}>
+                <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                   <div className="eyebrow" style={{ marginBottom: '4px' }}>
-                    {mode === 'rent' ? 'Rental' : 'For Sale'}
+                    {mode === 'rent' ? 'Rental' : 'For Sale'} • {product.category.replace('-', ' ')}
                   </div>
                   <h3 style={{ fontSize: '1.05rem', margin: '0 0 8px' }}>{product.name}</h3>
-                  <div style={{ fontWeight: 600, color: 'var(--wine)' }}>
+                  <div style={{ fontWeight: 600, color: 'var(--wine)', marginTop: 'auto' }}>
                     ₦{price?.toLocaleString()} {mode === 'rent' && <span style={{ fontSize: '0.8rem', color: '#4a423d' }}>/ day</span>}
                   </div>
                 </div>
