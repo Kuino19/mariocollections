@@ -5,8 +5,10 @@ import { saveProduct } from './actions';
 import { Product } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function ProductForm({ product }: { product?: Product }) {
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [mode, setMode] = useState(product?.mode || 'both');
   
@@ -29,7 +31,11 @@ export default function ProductForm({ product }: { product?: Product }) {
         formData.append('existingImages', img);
       });
 
-      await saveProduct(formData, product?.id);
+      const result = await saveProduct(formData, product?.id);
+      if (result && result.success) {
+        router.push('/admin');
+        router.refresh();
+      }
     } catch (error) {
       console.error(error);
       alert('Failed to save product. Please check console for details.');

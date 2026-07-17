@@ -105,5 +105,5 @@ export async function saveProduct(formData: FormData, productId?: string) {
 
   revalidatePath('/admin');
   revalidatePath('/shop');
-  redirect('/admin');
+  return { success: true };
 }
