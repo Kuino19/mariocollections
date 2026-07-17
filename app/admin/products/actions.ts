@@ -5,10 +5,24 @@ import { redirect } from 'next/navigation';
 import prisma from '@/lib/prisma';
 import { v2 as cloudinary } from 'cloudinary';
 
-// Configure Cloudinary using the CLOUDINARY_URL environment variable
-cloudinary.config({
-  secure: true
-});
+// Manually parse CLOUDINARY_URL to ensure Webpack/Vercel correctly initializes the SDK
+const cloudinaryUrl = process.env.CLOUDINARY_URL || '';
+if (cloudinaryUrl.startsWith('cloudinary://')) {
+  const parts = cloudinaryUrl.replace('cloudinary://', '').split('@');
+  if (parts.length === 2) {
+    const keys = parts[0].split(':');
+    if (keys.length === 2) {
+      cloudinary.config({
+        cloud_name: parts[1],
+        api_key: keys[0],
+        api_secret: keys[1],
+        secure: true
+      });
+    }
+  }
+} else {
+  cloudinary.config({ secure: true });
+}
 
 export async function deleteProduct(id: string) {
   await prisma.product.delete({
