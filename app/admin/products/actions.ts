@@ -5,11 +5,8 @@ import { redirect } from 'next/navigation';
 import prisma from '@/lib/prisma';
 import { v2 as cloudinary } from 'cloudinary';
 
-// Configure Cloudinary explicitly using the credentials provided
+// Configure Cloudinary using the CLOUDINARY_URL environment variable
 cloudinary.config({
-  cloud_name: 'ztf9w9qb',
-  api_key: '933465122786641',
-  api_secret: 'hzGd7nZ0UgoaQ7HcxW2JJ6hmKqM',
   secure: true
 });
 
