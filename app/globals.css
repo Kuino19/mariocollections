@@ -225,3 +225,7 @@ input:focus, select:focus, textarea:focus {
     scroll-behavior: auto !important;
   }
 }
+
+/* Product Card Hover */
+.product-card { transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(59,18,32,0.12); border-color: var(--gold) !important; }
