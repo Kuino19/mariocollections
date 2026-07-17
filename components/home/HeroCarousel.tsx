@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const slides = [
   {
-    image: '/products/wine-aso-oke-iro-set/00000017-PHOTO-2026-07-15-19-52-03.jpg', 
+    image: '/products/red-corset-ododo-edo-dress/00000163-PHOTO-2026-07-17-10-12-38.jpg', 
     eyebrow: 'New This Week',
     title: (
       <>
@@ -16,7 +16,7 @@ const slides = [
     btnText: 'Browse the Shop',
   },
   {
-    image: '/products/royal-blue-agbada-set/00000025-PHOTO-2026-07-15-19-52-07.jpg', 
+    image: '/products/dark-green-long-isi-agu-isi-agu-wrapper/00000165-PHOTO-2026-07-17-10-12-39.jpg', 
     eyebrow: 'Defense & Native Wear',
     title: (
       <>
@@ -28,7 +28,7 @@ const slides = [
     btnText: 'Shop Defense',
   },
   {
-    image: '/products/pink-aso-ebi-corset/00000033-PHOTO-2026-07-15-19-52-09.jpg',
+    image: '/products/green-trench-coat-waistcoat-trouser/00000178-PHOTO-2026-07-17-10-12-44.jpg',
     eyebrow: 'Dinner & Formal',
     title: (
       <>
@@ -40,7 +40,7 @@ const slides = [
     btnText: 'Shop Dinner',
   },
   {
-    image: '/products/sky-blue-double-breasted-suit/00000031-PHOTO-2026-07-15-19-52-08.jpg', 
+    image: '/products/wine-checkered-3-piece-suit-suit-waist-coat-trouser/wine-checkered-1.jpg', 
     eyebrow: 'Milestones',
     title: (
       <>
