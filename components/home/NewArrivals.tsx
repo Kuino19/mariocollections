@@ -8,6 +8,7 @@ export default async function NewArrivals() {
   const arrivals = products.filter(p => p.inStock).slice(0, 6).map(p => ({
     id: p.id,
     name: p.name,
+    slug: p.slug,
     price: p.salePrice || p.rentPrice || 0,
     image: p.images[0],
     category: p.category
