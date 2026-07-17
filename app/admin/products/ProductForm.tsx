@@ -34,10 +34,13 @@ export default function ProductForm({ product }: { product?: Product }) {
       const result = await saveProduct(formData, product?.id);
       if (result && result.success) {
         window.location.href = '/admin';
+      } else if (result && result.error) {
+        alert('Failed to save: ' + result.error);
+        setLoading(false);
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
-      alert('Failed to save product. Please check console for details.');
+      alert('Failed to save product: ' + (error?.message || 'Unknown error'));
       setLoading(false);
     }
   };
