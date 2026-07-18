@@ -10,6 +10,30 @@ export default function CheckoutClient() {
   const [lastName, setLastName] = useState('');
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [user, setUser] = useState<any>(null);
+
+  // Fetch logged-in user to pre-fill info
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const res = await fetch('/api/auth/me');
+        if (res.ok) {
+          const data = await res.json();
+          if (data.user) {
+            setUser(data.user);
+            setFirstName(data.user.firstName || '');
+            setLastName(data.user.lastName || '');
+            setEmail(data.user.email || '');
+            if (data.user.phone) setPhone(data.user.phone);
+          }
+        }
+      } catch (e) {
+        console.error('Failed to fetch user', e);
+      }
+    };
+    fetchUser();
+  }, []);
   
   const { items, getTotalPrice, clearCart } = useCartStore();
   const router = useRouter();
@@ -67,7 +91,7 @@ export default function CheckoutClient() {
         firstname: firstName,
         lastname: lastName,
         metadata,
-        onSuccess: (transaction: any) => {
+        onSuccess: async (transaction: any) => {
           // Construct the receipt message for WhatsApp
           const itemsText = items.map(item => 
             `- ${item.quantity}x ${item.name} (${item.mode.toUpperCase()}) - ₦${((item.price * item.quantity) + (item.rentDeposit ? item.rentDeposit * item.quantity : 0)).toLocaleString()}` + 
@@ -82,6 +106,26 @@ export default function CheckoutClient() {
             `*Reference:* ${transaction.reference}\n\n` +
             `*Items:*\n${itemsText}\n\n` +
             `*Total Paid:* ₦${amount.toLocaleString()}`;
+
+          // Save order to DB
+          try {
+            await fetch('/api/orders', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                userId: user ? user.id : undefined,
+                customerName: `${firstName} ${lastName}`,
+                customerEmail: email,
+                customerPhone: phone,
+                totalAmount: amount,
+                status: 'PAID',
+                paymentRef: transaction.reference,
+                items: items
+              })
+            });
+          } catch (e) {
+            console.error("Failed to save order to db", e);
+          }
 
           clearCart();
           

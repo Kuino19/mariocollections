@@ -6,6 +6,7 @@ import { useCartStore } from '@/store/useCartStore';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
 import Link from 'next/link';
+import WishlistButton from './WishlistButton';
 
 export default function ProductDetailClient({ 
   product, 
@@ -21,6 +22,47 @@ export default function ProductDetailClient({
   
   const addItem = useCartStore(state => state.addItem);
   const router = useRouter();
+
+  const [showSizeGuide, setShowSizeGuide] = useState(false);
+  const [showReviewModal, setShowReviewModal] = useState(false);
+  const [reviewRating, setReviewRating] = useState(5);
+  const [reviewComment, setReviewComment] = useState('');
+  const [reviewAuthor, setReviewAuthor] = useState('');
+  const [reviewImages, setReviewImages] = useState<FileList | null>(null);
+  const [isSubmittingReview, setIsSubmittingReview] = useState(false);
+
+  const handleReviewSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!reviewRating || !reviewComment || !reviewAuthor) return;
+    setIsSubmittingReview(true);
+    
+    try {
+      const formData = new FormData();
+      formData.append('productId', product.id);
+      formData.append('rating', reviewRating.toString());
+      formData.append('comment', reviewComment);
+      formData.append('authorName', reviewAuthor);
+      if (reviewImages) {
+        for (let i = 0; i < reviewImages.length; i++) {
+          formData.append('images', reviewImages[i]);
+        }
+      }
+
+      const res = await fetch('/api/reviews', { method: 'POST', body: formData });
+      if (res.ok) {
+        toast.success('Review submitted successfully!');
+        setShowReviewModal(false);
+        // Refresh page to show review
+        window.location.reload();
+      } else {
+        toast.error('Failed to submit review.');
+      }
+    } catch (err) {
+      toast.error('An error occurred.');
+    } finally {
+      setIsSubmittingReview(false);
+    }
+  };
 
   const handleAddToCart = () => {
     if (mode === 'rent' && !eventDate) {
@@ -63,6 +105,11 @@ export default function ProductDetailClient({
 
   const currentPrice = mode === 'sale' ? product.salePrice : product.rentPrice;
 
+  const reviews = (product as any).reviews || [];
+  const averageRating = reviews.length > 0 
+    ? reviews.reduce((acc: number, r: any) => acc + r.rating, 0) / reviews.length 
+    : 0;
+
   return (
     <>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '56px', marginBottom: '80px' }}>
@@ -70,7 +117,7 @@ export default function ProductDetailClient({
         <div style={{ flex: '1 1 400px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <div style={{
             aspectRatio: '4/5', background: 'var(--wine)', borderRadius: '3px',
-            overflow: 'hidden', border: '1px solid rgba(59,18,32,0.1)'
+            overflow: 'hidden', border: '1px solid rgba(59,18,32,0.1)', position: 'relative'
           }}>
             <img src={mainImage} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
@@ -102,6 +149,21 @@ export default function ProductDetailClient({
           <div>
             <div className="eyebrow">{product.category.replace('-', ' ')}</div>
             <h1 style={{ fontSize: 'clamp(2rem, 3vw, 2.8rem)', margin: '0.2em 0 0.4em' }}>{product.name}</h1>
+            
+            {/* Reviews Summary */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+              <div style={{ display: 'flex', color: 'var(--gold)' }}>
+                {[1,2,3,4,5].map(star => (
+                  <svg key={star} width="16" height="16" viewBox="0 0 24 24" fill={star <= averageRating ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                ))}
+              </div>
+              <a href="#reviews" style={{ fontSize: '0.9rem', color: '#666', textDecoration: 'underline' }}>
+                {reviews.length} {reviews.length === 1 ? 'Review' : 'Reviews'}
+              </a>
+            </div>
+
             <div style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--wine)' }}>
               ₦{currentPrice?.toLocaleString()} {mode === 'rent' && <span style={{ fontSize: '1rem', color: '#4a423d' }}>/ day</span>}
             </div>
@@ -137,7 +199,15 @@ export default function ProductDetailClient({
 
           {product.sizes && product.sizes.length > 0 && (
             <div>
-              <div style={{ fontWeight: 600, marginBottom: '12px' }}>Select Size:</div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                <div style={{ fontWeight: 600 }}>Select Size:</div>
+                <button 
+                  onClick={() => setShowSizeGuide(true)} 
+                  style={{ background: 'none', border: 'none', color: '#666', textDecoration: 'underline', cursor: 'pointer', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '4px' }}
+                >
+                  📏 Size Guide
+                </button>
+              </div>
               <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                 {product.sizes.map(size => (
                   <button
@@ -226,6 +296,50 @@ export default function ProductDetailClient({
         </div>
       </div>
 
+      {/* Reviews Section */}
+      <div id="reviews" style={{ borderTop: '1px solid var(--line)', paddingTop: '60px', marginTop: '40px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px' }}>
+          <h2 style={{ fontSize: '1.8rem', margin: 0 }}>Customer Reviews</h2>
+          <button onClick={() => setShowReviewModal(true)} className="btn btn-outline-wine" style={{ padding: '8px 16px' }}>
+            Write a Review
+          </button>
+        </div>
+
+        {reviews.length === 0 ? (
+          <div style={{ textAlign: 'center', padding: '40px', background: 'rgba(59,18,32,0.02)', borderRadius: '8px', color: '#666' }}>
+            No reviews yet. Be the first to review this product!
+          </div>
+        ) : (
+          <div style={{ display: 'grid', gap: '24px' }}>
+            {reviews.map((review: any) => (
+              <div key={review.id} style={{ padding: '24px', border: '1px solid var(--line)', borderRadius: '8px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
+                  <div style={{ fontWeight: 600 }}>{review.authorName}</div>
+                  <div style={{ display: 'flex', color: 'var(--gold)' }}>
+                    {[1,2,3,4,5].map(star => (
+                      <svg key={star} width="14" height="14" viewBox="0 0 24 24" fill={star <= review.rating ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p style={{ margin: '0 0 16px', color: '#4a423d', lineHeight: 1.5 }}>{review.comment}</p>
+                {review.images && review.images.length > 0 && (
+                  <div style={{ display: 'flex', gap: '8px', overflowX: 'auto' }}>
+                    {review.images.map((img: string, i: number) => (
+                      <img key={i} src={img} alt="Review photo" style={{ width: '80px', height: '100px', objectFit: 'cover', borderRadius: '4px', border: '1px solid var(--line)' }} />
+                    ))}
+                  </div>
+                )}
+                <div style={{ fontSize: '0.8rem', color: '#888', marginTop: '12px' }}>
+                  {new Date(review.createdAt).toLocaleDateString()}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
       {/* Related Products Section */}
       {relatedProducts.length > 0 && (
         <div style={{ borderTop: '1px solid var(--line)', paddingTop: '60px', marginTop: '40px' }}>
@@ -243,9 +357,10 @@ export default function ProductDetailClient({
                 <Link key={rp.id} href={`/product/${rp.slug}`} style={{
                   textDecoration: 'none', color: 'inherit',
                   border: '1px solid rgba(59,18,32,0.1)', borderRadius: '3px',
-                  overflow: 'hidden', display: 'flex', flexDirection: 'column'
+                  overflow: 'hidden', display: 'flex', flexDirection: 'column', position: 'relative'
                 }}>
-                  <div style={{ aspectRatio: '4/5', background: 'var(--wine)' }}>
+                  <div style={{ aspectRatio: '4/5', background: 'var(--wine)', position: 'relative' }}>
+                    <WishlistButton product={rp} />
                     <img src={rp.images[0]} alt={rp.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', flex: 1 }}>
@@ -258,6 +373,83 @@ export default function ProductDetailClient({
                 </Link>
               );
             })}
+          </div>
+        </div>
+      )}
+
+      {/* Review Modal */}
+      {showReviewModal && (
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000, padding: '20px' }}>
+          <div style={{ background: '#fff', padding: '32px', borderRadius: '8px', maxWidth: '500px', width: '100%', position: 'relative' }}>
+            <button onClick={() => setShowReviewModal(false)} style={{ position: 'absolute', top: '16px', right: '16px', background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', color: '#666' }}>&times;</button>
+            <h3 style={{ margin: '0 0 24px', fontSize: '1.5rem', color: 'var(--wine-deep)' }}>Write a Review</h3>
+            <form onSubmit={handleReviewSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <div>
+                <label style={{ display: 'block', fontWeight: 600, marginBottom: '8px' }}>Rating</label>
+                <div style={{ display: 'flex', gap: '8px' }}>
+                  {[1,2,3,4,5].map(star => (
+                    <button key={star} type="button" onClick={() => setReviewRating(star)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--gold)', padding: 0 }}>
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill={star <= reviewRating ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <label style={{ display: 'block', fontWeight: 600, marginBottom: '8px' }}>Your Name *</label>
+                <input type="text" value={reviewAuthor} onChange={e => setReviewAuthor(e.target.value)} required style={{ width: '100%', padding: '12px', border: '1px solid var(--line)', borderRadius: '4px' }} placeholder="e.g. Sarah" />
+              </div>
+              <div>
+                <label style={{ display: 'block', fontWeight: 600, marginBottom: '8px' }}>Review *</label>
+                <textarea value={reviewComment} onChange={e => setReviewComment(e.target.value)} required rows={4} style={{ width: '100%', padding: '12px', border: '1px solid var(--line)', borderRadius: '4px' }} placeholder="Tell others about the fit, fabric, and your experience..."></textarea>
+              </div>
+              <div>
+                <label style={{ display: 'block', fontWeight: 600, marginBottom: '8px' }}>Add Photos (Optional)</label>
+                <input type="file" accept="image/*" multiple onChange={e => setReviewImages(e.target.files)} style={{ width: '100%' }} />
+              </div>
+              <button type="submit" disabled={isSubmittingReview} className="btn btn-gold" style={{ marginTop: '8px', padding: '14px' }}>
+                {isSubmittingReview ? 'Submitting...' : 'Submit Review'}
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* Size Guide Modal */}
+      {showSizeGuide && (
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000, padding: '20px' }}>
+          <div style={{ background: '#fff', padding: '32px', borderRadius: '8px', maxWidth: '600px', width: '100%', position: 'relative', maxHeight: '90vh', overflowY: 'auto' }}>
+            <button onClick={() => setShowSizeGuide(false)} style={{ position: 'absolute', top: '16px', right: '16px', background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', color: '#666' }}>&times;</button>
+            <h3 style={{ margin: '0 0 8px', fontSize: '1.5rem', color: 'var(--wine-deep)' }}>Size Guide</h3>
+            <p style={{ color: '#666', marginBottom: '24px' }}>Measure yourself carefully. All measurements are in inches.</p>
+            
+            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', marginBottom: '24px' }}>
+              <thead>
+                <tr style={{ background: 'var(--wine)', color: 'var(--ivory)' }}>
+                  <th style={{ padding: '12px' }}>Size</th>
+                  <th style={{ padding: '12px' }}>Bust</th>
+                  <th style={{ padding: '12px' }}>Waist</th>
+                  <th style={{ padding: '12px' }}>Hip</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>S (UK 8-10)</td><td style={{ padding: '12px' }}>34 - 35</td><td style={{ padding: '12px' }}>26 - 28</td><td style={{ padding: '12px' }}>36 - 38</td></tr>
+                <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>M (UK 12)</td><td style={{ padding: '12px' }}>36 - 38</td><td style={{ padding: '12px' }}>29 - 31</td><td style={{ padding: '12px' }}>39 - 41</td></tr>
+                <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>L (UK 14-16)</td><td style={{ padding: '12px' }}>39 - 41</td><td style={{ padding: '12px' }}>32 - 34</td><td style={{ padding: '12px' }}>42 - 44</td></tr>
+                <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>XL (UK 18)</td><td style={{ padding: '12px' }}>42 - 44</td><td style={{ padding: '12px' }}>35 - 38</td><td style={{ padding: '12px' }}>45 - 48</td></tr>
+                <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>XXL (UK 20+)</td><td style={{ padding: '12px' }}>45 - 48</td><td style={{ padding: '12px' }}>39 - 42</td><td style={{ padding: '12px' }}>49 - 52</td></tr>
+              </tbody>
+            </table>
+            
+            <div style={{ background: 'rgba(201,162,39,0.1)', padding: '16px', borderRadius: '4px' }}>
+              <strong style={{ display: 'block', marginBottom: '8px' }}>How to Measure:</strong>
+              <ul style={{ margin: 0, paddingLeft: '20px', color: '#4a423d', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <li><strong>Bust:</strong> Measure around the fullest part of your bust.</li>
+                <li><strong>Waist:</strong> Measure around the narrowest part of your natural waist.</li>
+                <li><strong>Hip:</strong> Measure around the fullest part of your hips.</li>
+              </ul>
+            </div>
           </div>
         </div>
       )}

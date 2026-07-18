@@ -13,6 +13,25 @@ export default function Header() {
   const [isSearching, setIsSearching] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [user, setUser] = useState<any>(null);
+
+  // Fetch current user
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const res = await fetch('/api/auth/me');
+        if (res.ok) {
+          const data = await res.json();
+          if (data.user) {
+            setUser(data.user);
+          }
+        }
+      } catch (e) {
+        console.error('Failed to fetch user', e);
+      }
+    };
+    fetchUser();
+  }, []);
   
   // Calculate total quantity
   const totalItems = items.reduce((acc, item) => acc + item.quantity, 0);
@@ -204,6 +223,17 @@ export default function Header() {
             <nav style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
               <Link href="/shop" style={{ fontWeight: 600, fontSize: '0.95rem' }}>Shop</Link>
             </nav>
+            <Link href={user ? "/account" : "/login"} style={{ fontWeight: 600, fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '6px' }} aria-label="Account">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </Link>
+            <Link href="/wishlist" style={{ fontWeight: 600, fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '6px' }} aria-label="Wishlist">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </Link>
             <Link href="/cart" style={{ fontWeight: 600, fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '6px' }} aria-label="Cart">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
@@ -304,6 +334,8 @@ export default function Header() {
             <nav style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <Link href="/" onClick={() => setIsMobileMenuOpen(false)} style={{ fontWeight: 600, fontSize: '1.1rem', padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>Home</Link>
               <Link href="/shop" onClick={() => setIsMobileMenuOpen(false)} style={{ fontWeight: 600, fontSize: '1.1rem', padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>All Products</Link>
+              <Link href={user ? "/account" : "/login"} onClick={() => setIsMobileMenuOpen(false)} style={{ fontWeight: 600, fontSize: '1.1rem', padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>My Account</Link>
+              <Link href="/wishlist" onClick={() => setIsMobileMenuOpen(false)} style={{ fontWeight: 600, fontSize: '1.1rem', padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>My Wishlist</Link>
               <Link href="/cart" onClick={() => setIsMobileMenuOpen(false)} style={{ fontWeight: 600, fontSize: '1.1rem', padding: '8px 0' }}>Shopping Cart ({totalItems})</Link>
             </nav>
           </div>

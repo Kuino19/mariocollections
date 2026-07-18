@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useRef } from 'react';
 import Link from 'next/link';
+import WishlistButton from '../WishlistButton';
 
 export default function NewArrivalsClient({ arrivals }: { arrivals: any[] }) {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -45,21 +46,23 @@ export default function NewArrivalsClient({ arrivals }: { arrivals: any[] }) {
             paddingBottom: '8px', scrollbarWidth: 'none'
           }}>
             {arrivals.map((item, i) => (
-              <Link key={i} className="fs-card" href={`/product/${item.slug}`} style={{
-                flex: '0 0 auto', width: '230px', scrollSnapAlign: 'start',
-                textDecoration: 'none', color: 'inherit'
-              }}>
-                <div className="frame" style={{
-                  borderRadius: '3px', overflow: 'hidden', aspectRatio: '4/5',
-                  border: '1px solid rgba(59,18,32,0.1)', position: 'relative'
+              <div key={i} style={{ flex: '0 0 auto', width: '230px', scrollSnapAlign: 'start', position: 'relative' }}>
+                <Link className="fs-card" href={`/product/${item.slug}`} style={{
+                  textDecoration: 'none', color: 'inherit', display: 'block'
                 }}>
-                  <Image src={item.image} alt={item.name} fill style={{ objectFit: 'cover', transition: 'transform 0.4s ease' }} sizes="(max-width: 768px) 100vw, 230px" />
-                </div>
-                <div className="fs-label" style={{ marginTop: '10px' }}>
-                  <span className="eyebrow" style={{ display: 'block', marginBottom: '2px' }}>{item.category}</span>
-                  <h4 style={{ fontFamily: 'Fraunces,serif', fontWeight: 600, fontSize: '1.02rem', margin: 0 }}>{item.name}</h4>
-                </div>
-              </Link>
+                  <div className="frame" style={{
+                    borderRadius: '3px', overflow: 'hidden', aspectRatio: '4/5',
+                    border: '1px solid rgba(59,18,32,0.1)', position: 'relative'
+                  }}>
+                    {item.product && <WishlistButton product={item.product} />}
+                    <Image src={item.image} alt={item.name} fill style={{ objectFit: 'cover', transition: 'transform 0.4s ease' }} sizes="(max-width: 768px) 100vw, 230px" />
+                  </div>
+                  <div className="fs-label" style={{ marginTop: '10px' }}>
+                    <span className="eyebrow" style={{ display: 'block', marginBottom: '2px' }}>{item.category}</span>
+                    <h4 style={{ fontFamily: 'Fraunces,serif', fontWeight: 600, fontSize: '1.02rem', margin: 0 }}>{item.name}</h4>
+                  </div>
+                </Link>
+              </div>
             ))}
           </div>
         </section>

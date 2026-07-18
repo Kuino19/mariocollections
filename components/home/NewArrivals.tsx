@@ -1,5 +1,6 @@
 import { getProducts } from '@/lib/data';
 import NewArrivalsClient from './NewArrivalsClient';
+import WishlistButton from '../WishlistButton';
 
 export default async function NewArrivals() {
   const products = await getProducts();
@@ -11,7 +12,8 @@ export default async function NewArrivals() {
     slug: p.slug,
     price: p.salePrice || p.rentPrice || 0,
     image: p.images[0],
-    category: p.category
+    category: p.category,
+    product: p
   }));
 
   return <NewArrivalsClient arrivals={arrivals} />;

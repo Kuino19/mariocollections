@@ -12,7 +12,12 @@ export const metadata = {
 export default async function AdminDashboard() {
   const products = await prisma.product.findMany({
     orderBy: { createdAt: 'desc' }
-  })
+  });
+
+  const orders = await prisma.order.findMany({
+    orderBy: { createdAt: 'desc' },
+    take: 50 // Limit to recent 50 orders for dashboard
+  });
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -44,7 +49,7 @@ export default async function AdminDashboard() {
       </nav>
 
       <main>
-        <AdminDashboardClient initialProducts={products as any} />
+        <AdminDashboardClient initialProducts={products as any} orders={orders as any} />
       </main>
     </div>
   )

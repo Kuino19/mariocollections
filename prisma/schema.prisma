@@ -25,4 +25,47 @@ model Product {
   inStock      Boolean  @default(true)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+  reviews      Review[]
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  firstName    String
+  lastName     String
+  phone        String?
+  orders       Order[]
+  reviews      Review[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Review {
+  id         String   @id @default(cuid())
+  productId  String
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  rating     Int      // 1 to 5
+  comment    String
+  authorName String
+  images     String[] // Optional Cloudinary URLs
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Order {
+  id            String   @id @default(cuid())
+  userId        String?
+  user          User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  customerName  String
+  customerEmail String?
+  customerPhone String
+  totalAmount   Float
+  items         Json     // Array of ordered items
+  paymentRef    String   @unique
+  status        String   @default("paid")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Product } from '@/lib/data';
+import WishlistButton from './WishlistButton';
 
 interface Props {
   initialMode: 'sale' | 'rent';
@@ -22,7 +23,9 @@ export default function CategoryGrid({ initialMode, products, searchQuery = '' }
     { id: 'female-traditional', label: 'Female Traditional' },
     { id: 'male-traditional', label: 'Male Traditional' },
     { id: 'gowns', label: 'Gowns' },
-    { id: 'suits', label: 'Suits' }
+    { id: 'suits', label: 'Suits' },
+    { id: 'shoes', label: 'Shoes' },
+    { id: 'accessories', label: 'Accessories' }
   ];
 
   // Reset to page 1 whenever filters change
@@ -106,8 +109,9 @@ export default function CategoryGrid({ initialMode, products, searchQuery = '' }
             {paginatedProducts.map(product => {
               const price = mode === 'rent' ? product.rentPrice : product.salePrice;
               return (
-                <Link key={product.id} href={`/product/${product.slug}`} className="product-card">
-                  <div className="image-wrapper">
+                <Link key={product.id} href={`/product/${product.slug}`} className="product-card" style={{ position: 'relative' }}>
+                  <div className="image-wrapper" style={{ position: 'relative' }}>
+                    <WishlistButton product={product} />
                     <Image src={product.images[0]} alt={product.name} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                     <div className="badge-premium">
                       {mode === 'rent' ? 'Rental' : 'For Sale'}

@@ -11,7 +11,8 @@ export type ProductCategory =
   | "female-traditional"
   | "shoes"
   | "fans"
-  | "souvenirs";
+  | "souvenirs"
+  | "accessories";
 
 export type ServiceType = "equipment-rental" | "photoshoot";
 
@@ -75,6 +76,11 @@ export async function getProductById(idOrSlug: string) {
         { id: idOrSlug },
         { slug: idOrSlug }
       ]
+    },
+    include: {
+      reviews: {
+        orderBy: { createdAt: 'desc' }
+      }
     }
   });
 }

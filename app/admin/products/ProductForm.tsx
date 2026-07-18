@@ -65,6 +65,7 @@ export default function ProductForm({ product }: { product?: Product }) {
                 <option value="gowns">Gowns</option>
                 <option value="suits">Suits</option>
                 <option value="shoes">Shoes</option>
+                <option value="accessories">Accessories</option>
                 <option value="fans">Fans</option>
                 <option value="souvenirs">Souvenirs</option>
               </select>

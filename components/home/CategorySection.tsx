@@ -130,6 +130,24 @@ export default function CategorySection() {
               </div>
             </div>
 
+            <div className="cat-row" style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px',
+              padding: '20px 4px', borderBottom: '1px solid rgba(59,18,32,0.12)'
+            }}>
+              <div className="cat-row-left" style={{ display: 'flex', alignItems: 'center', gap: '16px', minWidth: 0 }}>
+                <div className="cat-avatar" style={{
+                  width: '56px', height: '56px', borderRadius: '50%', overflow: 'hidden', flex: '0 0 auto',
+                  border: '1px solid var(--line)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  background: 'var(--wine)', color: 'var(--gold-soft)', fontFamily: 'Fraunces, serif', fontWeight: 600, fontSize: '1rem'
+                }}>AC</div>
+                <h3 style={{ fontSize: '1.1rem', margin: 0 }}>Accessories</h3>
+              </div>
+              <div className="cat-row-actions" style={{ display: 'flex', gap: '10px', flex: '0 0 auto' }}>
+                <Link className="pill" href="/category/accessories?type=rental">Rent</Link>
+                <Link className="pill fill" href="/category/accessories">Buy</Link>
+              </div>
+            </div>
+
           </div>
         </section>
       </div>
