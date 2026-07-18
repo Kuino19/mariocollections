@@ -1,0 +1,473 @@
+[
+  {
+    "raw_id": "142",
+    "slug": "red-edo-headbead",
+    "name": "Red Edo Headbead",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 10000,
+    "rentPrice": 2500,
+    "size": null,
+    "images": [
+      "red-edo-headbead/00000018-PHOTO-2026-07-18-22-36-18.jpg",
+      "red-edo-headbead/00000019-PHOTO-2026-07-18-22-36-19.jpg"
+    ],
+    "note": "Near-duplicate name/price of item 141 - confirm two distinct pieces"
+  },
+  {
+    "raw_id": "143",
+    "slug": "red-set-of-beads-2-head-and-2-hand",
+    "name": "Red Set of Beads (2 Head and 2 Hand)",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 20000,
+    "rentPrice": 5000,
+    "size": null,
+    "images": [],
+    "note": "Still no confidently matched photo across two exports - please send this one directly"
+  },
+  {
+    "raw_id": "144",
+    "slug": "red-set-of-beads-1-head-and-2-hand",
+    "name": "Red Set of Beads (1 Head and 2 Hand)",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "size": null,
+    "images": [
+      "red-set-of-beads-1-head-and-2-hand/00000021-PHOTO-2026-07-18-22-36-19.jpg",
+      "red-set-of-beads-1-head-and-2-hand/00000022-PHOTO-2026-07-18-22-36-20.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "145",
+    "slug": "green-set-of-beads-1-head-and-2-hand",
+    "name": "Green Set of Beads (1 Head and 2 Hand)",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "size": null,
+    "images": [
+      "green-set-of-beads-1-head-and-2-hand/00000025-PHOTO-2026-07-18-22-36-21.jpg",
+      "green-set-of-beads-1-head-and-2-hand/00000026-PHOTO-2026-07-18-22-36-22.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "146a",
+    "slug": "cream-set-of-beads-1-head-and-2-hand",
+    "name": "Cream Set of Beads (1 Head and 2 Hand)",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "size": null,
+    "images": [],
+    "note": "Still no confidently matched photo across two exports - please send this one directly. Duplicate number 146 used twice, renumbered a/b"
+  },
+  {
+    "raw_id": "146b",
+    "slug": "red-and-green-set-of-beads-1-head-and-2-hand",
+    "name": "Red and Green Set of Beads (1 Head and 2 Hand)",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "size": null,
+    "images": [
+      "red-and-green-set-of-beads-1-head-and-2-hand/00000028-PHOTO-2026-07-18-22-36-23.jpg"
+    ],
+    "note": "Duplicate number 146 used twice, renumbered a/b"
+  },
+  {
+    "raw_id": "147",
+    "slug": "red-set-of-beads-1-head-and-2-hand-b",
+    "name": "Red Set of Beads (1 Head and 2 Hand) - B",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 11000,
+    "rentPrice": 3000,
+    "size": null,
+    "images": [
+      "red-set-of-beads-1-head-and-2-hand-b/00000030-PHOTO-2026-07-18-22-36-23.jpg"
+    ],
+    "note": "Same name as item 144, different price - likely separate stock unit, confirm"
+  },
+  {
+    "raw_id": "148",
+    "slug": "white-and-black-set-of-beads-2-head-and-2-hands",
+    "name": "White and Black Set of Beads (2 Head and 2 Hands)",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 20000,
+    "rentPrice": 5000,
+    "size": null,
+    "images": [
+      "white-and-black-set-of-beads-2-head-and-2-hands/00000032-PHOTO-2026-07-18-22-36-24.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "150",
+    "slug": "red-and-black-set-of-beads-1-head-and-2-hand",
+    "name": "Red and Black Set of Beads (1 Head and 2 Hand)",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "size": null,
+    "images": [
+      "red-and-black-set-of-beads-1-head-and-2-hand/00000034-PHOTO-2026-07-18-22-36-25.jpg"
+    ],
+    "note": "Number 149 skipped - not a missing item"
+  },
+  {
+    "raw_id": "151",
+    "slug": "blue-and-white-set-of-beads-1-head-and-2-hands",
+    "name": "Blue and White Set of Beads (1 Head and 2 Hands)",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "size": null,
+    "images": [
+      "blue-and-white-set-of-beads-1-head-and-2-hands/00000036-PHOTO-2026-07-18-22-36-26.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "152",
+    "slug": "fulani-styles-set-of-beads-1-head-and-2-hands",
+    "name": "Fulani Styles Set of Beads (1 Head and 2 Hands)",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "size": null,
+    "images": [
+      "fulani-styles-set-of-beads-1-head-and-2-hands/00000038-PHOTO-2026-07-18-22-36-27.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "153",
+    "slug": "light-gold-coloured-set-of-beads-1-head-and-2-hands",
+    "name": "Light Gold Coloured Set of Beads (1 Head and 2 Hands)",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3000,
+    "size": null,
+    "images": [
+      "light-gold-coloured-set-of-beads-1-head-and-2-hands/00000040-PHOTO-2026-07-18-22-36-28.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "154",
+    "slug": "black-trad-flat-shoe",
+    "name": "Black Trad Flat Shoe",
+    "category": "shoes",
+    "mode": "both",
+    "salePrice": 35000,
+    "rentPrice": 8000,
+    "size": "45",
+    "images": [],
+    "note": "Still no confidently matched photo across two exports - please send this one directly"
+  },
+  {
+    "raw_id": "155",
+    "slug": "black-dotted-suit-loafers",
+    "name": "Black Dotted Suit Loafers",
+    "category": "shoes",
+    "mode": "both",
+    "salePrice": 55000,
+    "rentPrice": 10000,
+    "size": "46",
+    "images": [],
+    "note": "Still no confidently matched photo across two exports - please send this one directly"
+  },
+  {
+    "raw_id": "156",
+    "slug": "doc-martens-black-laced-shoes",
+    "name": "Doc Martens Black Laced Shoes",
+    "category": "shoes",
+    "mode": "both",
+    "salePrice": 60000,
+    "rentPrice": 13000,
+    "size": "44",
+    "images": [
+      "doc-martens-black-laced-shoes/00000044-PHOTO-2026-07-18-22-36-30.jpg",
+      "doc-martens-black-laced-shoes/00000045-PHOTO-2026-07-18-22-36-30.jpg"
+    ],
+    "note": "New item, not seen in earlier exports"
+  },
+  {
+    "raw_id": "157",
+    "slug": "white-half-shoes",
+    "name": "White Half Shoes",
+    "category": "shoes",
+    "mode": "both",
+    "salePrice": 23000,
+    "rentPrice": 6000,
+    "size": "45",
+    "images": [
+      "white-half-shoes/00000046-PHOTO-2026-07-18-22-36-31.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "158",
+    "slug": "brown-laced-brogues",
+    "name": "Brown Laced Brogues",
+    "category": "shoes",
+    "mode": "both",
+    "salePrice": 35000,
+    "rentPrice": 8000,
+    "size": null,
+    "images": [
+      "brown-laced-brogues/00000047-PHOTO-2026-07-18-22-36-31.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "159",
+    "slug": "light-brown-laced-shoes",
+    "name": "Light Brown Laced Shoes",
+    "category": "shoes",
+    "mode": "both",
+    "salePrice": 35000,
+    "rentPrice": 8000,
+    "size": null,
+    "images": [
+      "light-brown-laced-shoes/00000056-PHOTO-2026-07-18-22-36-36.jpg",
+      "light-brown-laced-shoes/00000057-PHOTO-2026-07-18-22-36-36.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "160",
+    "slug": "dark-brown-laced-shoes",
+    "name": "Dark Brown Laced Shoes",
+    "category": "shoes",
+    "mode": "both",
+    "salePrice": 35000,
+    "rentPrice": 8000,
+    "size": null,
+    "images": [
+      "dark-brown-laced-shoes/00000055-PHOTO-2026-07-18-22-36-35.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "161",
+    "slug": "brown-square-patterned-half-shoes",
+    "name": "Brown Square Patterned Half Shoes",
+    "category": "shoes",
+    "mode": "both",
+    "salePrice": 23000,
+    "rentPrice": 5000,
+    "size": "42/43",
+    "images": [
+      "brown-square-patterned-half-shoes/00000048-PHOTO-2026-07-18-22-36-32.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "162",
+    "slug": "black-patterned-half-shoes",
+    "name": "Black Patterned Half Shoes",
+    "category": "shoes",
+    "mode": "both",
+    "salePrice": 23000,
+    "rentPrice": 5000,
+    "size": "41/42",
+    "images": [
+      "black-patterned-half-shoes/00000049-PHOTO-2026-07-18-22-36-32.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "163",
+    "slug": "white-trad-loafers",
+    "name": "White Trad Loafers",
+    "category": "shoes",
+    "mode": "both",
+    "salePrice": 32000,
+    "rentPrice": 7000,
+    "size": "45",
+    "images": [
+      "white-trad-loafers/00000050-PHOTO-2026-07-18-22-36-33.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "164",
+    "slug": "sky-blue-light-striped-suit-and-trouser",
+    "name": "Sky Blue Light Striped Suit and Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 67000,
+    "rentPrice": 16000,
+    "size": "Suit 52-54, Trouser 36-38",
+    "images": [
+      "sky-blue-light-striped-suit-and-trouser/00000051-PHOTO-2026-07-18-22-36-33.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "165",
+    "slug": "red-plain-suit-and-trouser",
+    "name": "Red Plain Suit and Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 65000,
+    "rentPrice": 16000,
+    "size": "Suit 50-52, Waist 34-36",
+    "images": [
+      "red-plain-suit-and-trouser/00000052-PHOTO-2026-07-18-22-36-34.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "166",
+    "slug": "black-double-breasted-suit-and-trouser",
+    "name": "Black Double Breasted Suit and Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 73000,
+    "rentPrice": 18000,
+    "size": "Suit 50, Trouser 34",
+    "images": [
+      "black-double-breasted-suit-and-trouser/00000053-PHOTO-2026-07-18-22-36-34.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "167",
+    "slug": "black-plain-3-piece-suit",
+    "name": "Black Plain 3-Piece Suit",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 73000,
+    "rentPrice": 18000,
+    "size": "Suit 50, Trouser 34",
+    "images": [
+      "black-plain-3-piece-suit/00000054-PHOTO-2026-07-18-22-36-35.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "168",
+    "slug": "navy-blue-double-collared-double-breasted-suit-and-trouser",
+    "name": "Navy Blue Double Collared Double Breasted Suit and Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 70000,
+    "rentPrice": 18000,
+    "size": "Suit 50, Trouser 34",
+    "images": [
+      "navy-blue-double-collared-double-breasted-suit-and-trouser/00000060-PHOTO-2026-07-18-22-36-37.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "169",
+    "slug": "navy-blue-double-breasted-suit-and-trouser",
+    "name": "Navy Blue Double Breasted Suit and Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 65000,
+    "rentPrice": 16000,
+    "size": "Suit 50, Waist 34",
+    "images": [],
+    "note": "Still no confidently matched photo - item 170 is same style/name, different size/price, likely separate unit"
+  },
+  {
+    "raw_id": "170",
+    "slug": "navy-blue-double-breasted-suit-and-trouser-2",
+    "name": "Navy Blue Double Breasted Suit and Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 80000,
+    "rentPrice": 20000,
+    "size": "Suit 52, Waist 36",
+    "images": [
+      "navy-blue-double-breasted-suit-and-trouser-2/00000059-PHOTO-2026-07-18-22-36-37.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "171",
+    "slug": "purple-agbada-senator-outfit-fila",
+    "name": "Purple Agbada, Senator Outfit & Fila",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 74000,
+    "rentPrice": 19000,
+    "size": "L-2XL",
+    "images": [
+      "purple-agbada-senator-outfit-fila/00000061-PHOTO-2026-07-18-22-36-38.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "172",
+    "slug": "navy-blue-checkered-single-breasted-blazer",
+    "name": "Navy Blue Checkered Single Breasted Blazer",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 48000,
+    "rentPrice": 12000,
+    "size": "50",
+    "images": [
+      "navy-blue-checkered-single-breasted-blazer/00000062-PHOTO-2026-07-18-22-36-38.jpg",
+      "navy-blue-checkered-single-breasted-blazer/00000063-PHOTO-2026-07-18-22-36-39.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "173",
+    "slug": "navy-blue-single-breasted-suit-and-trouser",
+    "name": "Navy Blue Single Breasted Suit and Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 63000,
+    "rentPrice": 16000,
+    "size": "Suit 54-56, Trouser 38",
+    "images": [
+      "navy-blue-single-breasted-suit-and-trouser/00000065-PHOTO-2026-07-18-22-36-41.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "174",
+    "slug": "light-brown-thin-checkered-blazer",
+    "name": "Light Brown Thin Checkered Blazer",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 43000,
+    "rentPrice": 11000,
+    "size": "50",
+    "images": [],
+    "note": "Still no confidently matched photo across two exports - please send this one directly"
+  },
+  {
+    "raw_id": "175",
+    "slug": "black-isi-agu-shirt",
+    "name": "Black Isi-Agu Shirt",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 29000,
+    "rentPrice": 8000,
+    "size": "L-XL",
+    "images": [
+      "black-isi-agu-shirt/00000067-PHOTO-2026-07-18-22-36-42.jpg",
+      "black-isi-agu-shirt/00000068-PHOTO-2026-07-18-22-36-43.jpg"
+    ],
+    "note": null
+  }
+]
