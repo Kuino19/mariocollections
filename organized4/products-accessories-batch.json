@@ -1,0 +1,86 @@
+[
+  {
+    "raw_id": "135",
+    "slug": "white-small-sized-horsetail",
+    "name": "White Small Sized Horsetail",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 10000,
+    "rentPrice": 3000,
+    "images": [
+      "white-small-sized-horsetail/00000297-PHOTO-2026-07-17-13-39-45.jpg"
+    ]
+  },
+  {
+    "raw_id": "136",
+    "slug": "black-walking-stick",
+    "name": "Black Walking Stick",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 12000,
+    "rentPrice": 3000,
+    "images": [
+      "black-walking-stick/00000299-PHOTO-2026-07-17-13-39-46.jpg"
+    ]
+  },
+  {
+    "raw_id": "137",
+    "slug": "gold-coloured-walking-stick",
+    "name": "Gold Coloured Walking Stick",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 12000,
+    "rentPrice": 3000,
+    "images": [
+      "gold-coloured-walking-stick/00000301-PHOTO-2026-07-17-13-39-47.jpg"
+    ]
+  },
+  {
+    "raw_id": "138",
+    "slug": "black-striped-walking-stick",
+    "name": "Black Striped Walking Stick",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 12000,
+    "rentPrice": 3000,
+    "images": [
+      "black-striped-walking-stick/00000303-PHOTO-2026-07-17-13-39-47.jpg"
+    ]
+  },
+  {
+    "raw_id": "139",
+    "slug": "brown-coloured-walking-stick",
+    "name": "Brown Coloured Walking Stick",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 12000,
+    "rentPrice": 3000,
+    "images": [
+      "brown-coloured-walking-stick/00000305-PHOTO-2026-07-17-13-39-48.jpg"
+    ]
+  },
+  {
+    "raw_id": "140",
+    "slug": "white-igbo-handfan",
+    "name": "White Igbo Handfan",
+    "category": "fans",
+    "mode": "both",
+    "salePrice": 12000,
+    "rentPrice": 3000,
+    "images": [
+      "white-igbo-handfan/00000307-PHOTO-2026-07-17-13-39-48.jpg"
+    ]
+  },
+  {
+    "raw_id": "141",
+    "slug": "red-edo-headbead",
+    "name": "Red Edo Headbead",
+    "category": "accessories",
+    "mode": "both",
+    "salePrice": 13000,
+    "rentPrice": 3500,
+    "images": [
+      "red-edo-headbead/00000309-PHOTO-2026-07-17-13-39-49.jpg"
+    ]
+  }
+]
