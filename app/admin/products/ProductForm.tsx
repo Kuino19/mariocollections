@@ -6,6 +6,7 @@ import { Product } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { CldUploadWidget } from 'next-cloudinary';
 
 export default function ProductForm({ product }: { product?: Product }) {
   const router = useRouter();
@@ -14,6 +15,7 @@ export default function ProductForm({ product }: { product?: Product }) {
   
   // Track existing images so users can see what they're keeping
   const [existingImages, setExistingImages] = useState<string[]>(product?.images || []);
+  const [uploadedImages, setUploadedImages] = useState<string[]>([]);
 
   const handleRemoveExistingImage = (index: number) => {
     setExistingImages(existingImages.filter((_, i) => i !== index));
@@ -154,10 +156,48 @@ export default function ProductForm({ product }: { product?: Product }) {
           </div>
         )}
 
-        <div>
+        <div style={{ marginBottom: '24px' }}>
           <label style={{ display: 'block', fontWeight: 600, marginBottom: '6px' }}>Upload New Images</label>
-          <input type="file" name="images" accept="image/*" multiple style={{ padding: '12px 0', border: 'none' }} />
-          <p style={{ fontSize: '0.85rem', color: '#666' }}>You can select multiple files. Images will be automatically uploaded to Cloudinary.</p>
+          <CldUploadWidget
+            signatureEndpoint="/api/cloudinary/sign"
+            onSuccess={(result: any) => {
+              if (result.info && result.info.secure_url) {
+                setUploadedImages(prev => [...prev, result.info.secure_url]);
+              }
+            }}
+            options={{
+              multiple: true,
+              folder: 'mariocollections',
+            }}
+          >
+            {({ open }) => (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  open();
+                }}
+                className="btn btn-outline-wine"
+                style={{ width: '100%' }}
+              >
+                Upload Images
+              </button>
+            )}
+          </CldUploadWidget>
+
+          {uploadedImages.length > 0 && (
+            <div style={{ marginTop: '16px' }}>
+              <p style={{ fontSize: '0.9rem', marginBottom: '8px' }}>Newly Uploaded:</p>
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                {uploadedImages.map((img, i) => (
+                  <div key={i} style={{ position: 'relative', width: '80px', height: '100px', borderRadius: '6px', overflow: 'hidden' }}>
+                    <Image src={img} alt="New" fill style={{ objectFit: 'cover' }} />
+                    <input type="hidden" name="newUploadedImages" value={img} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 

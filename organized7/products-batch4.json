@@ -1,0 +1,170 @@
+[
+  {
+    "raw_id": "176",
+    "slug": "dark-green-cropped-suit-trouser-robe",
+    "name": "Dark Green Cropped Suit & Trouser + Robe",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 90000,
+    "rentPrice": 25000,
+    "size": "Suit 52-54, Waist 36-38",
+    "images": [
+      "dark-green-cropped-suit-trouser-robe/00000069-PHOTO-2026-07-20-01-13-09.jpg",
+      "dark-green-cropped-suit-trouser-robe/00000070-PHOTO-2026-07-20-01-13-09.jpg",
+      "dark-green-cropped-suit-trouser-robe/00000071-PHOTO-2026-07-20-01-13-10.jpg",
+      "dark-green-cropped-suit-trouser-robe/00000073-PHOTO-2026-07-20-01-13-10.jpg",
+      "dark-green-cropped-suit-trouser-robe/00000074-PHOTO-2026-07-20-01-13-11.jpg",
+      "dark-green-cropped-suit-trouser-robe/00000075-PHOTO-2026-07-20-01-13-11.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "177",
+    "slug": "lilac-corseted-laced-gown",
+    "name": "Lilac Corseted Laced Gown",
+    "category": "gowns",
+    "mode": "both",
+    "salePrice": 110000,
+    "rentPrice": 30000,
+    "size": "Bust 38, Waist 34, Hip 42",
+    "images": [
+      "lilac-corseted-laced-gown/00000077-PHOTO-2026-07-20-01-13-13.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "178",
+    "slug": "black-striped-3-piece-suit-trouser-and-waistcoat",
+    "name": "Black Striped 3-Piece Suit, Trouser and Waistcoat",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 90000,
+    "rentPrice": 23000,
+    "size": "Suit 50, Trouser 34",
+    "images": [
+      "black-striped-3-piece-suit-trouser-and-waistcoat/00000079-PHOTO-2026-07-20-01-13-19.jpg",
+      "black-striped-3-piece-suit-trouser-and-waistcoat/00000080-PHOTO-2026-07-20-01-13-14.jpg",
+      "black-striped-3-piece-suit-trouser-and-waistcoat/00000081-PHOTO-2026-07-20-01-13-14.jpg",
+      "black-striped-3-piece-suit-trouser-and-waistcoat/00000082-PHOTO-2026-07-20-01-13-14.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "179",
+    "slug": "purple-agbada-with-lilac-green-embroidery-purple-senator-unisex",
+    "name": "Purple Agbada with Lilac & Green Embroidery + Purple Senator (Unisex)",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 105000,
+    "rentPrice": 28000,
+    "size": "M-XL",
+    "images": [
+      "purple-agbada-with-lilac-green-embroidery-purple-senator-unisex/00000084-PHOTO-2026-07-20-01-13-16.jpg",
+      "purple-agbada-with-lilac-green-embroidery-purple-senator-unisex/00000085-PHOTO-2026-07-20-01-13-16.jpg"
+    ],
+    "note": "Marked unisex by Kuino - consider whether it should also surface under Female Traditional"
+  },
+  {
+    "raw_id": "180",
+    "slug": "purple-cropped-senator-top-trouser-lilac-muffler",
+    "name": "Purple Cropped Senator Top, Trouser + Lilac Muffler",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 75000,
+    "rentPrice": 20000,
+    "size": "M-XL",
+    "images": [
+      "purple-cropped-senator-top-trouser-lilac-muffler/00000087-PHOTO-2026-07-20-01-13-17.jpg",
+      "purple-cropped-senator-top-trouser-lilac-muffler/00000088-PHOTO-2026-07-20-01-13-18.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "181",
+    "slug": "purple-aso-oke-top-and-baggy-trouser-lilac-top-overlay",
+    "name": "Purple Aso-Oke Top and Baggy Trouser + Lilac Top Overlay",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 110000,
+    "rentPrice": 28000,
+    "size": "M-XL",
+    "images": [
+      "purple-aso-oke-top-and-baggy-trouser-lilac-top-overlay/00000090-PHOTO-2026-07-20-01-13-20.jpg",
+      "purple-aso-oke-top-and-baggy-trouser-lilac-top-overlay/00000091-PHOTO-2026-07-20-01-13-21.jpg",
+      "purple-aso-oke-top-and-baggy-trouser-lilac-top-overlay/00000092-PHOTO-2026-07-20-01-13-21.jpg"
+    ],
+    "note": "Categorized as male-traditional by inference (cropped/baggy trouser style matches other male pieces) - confirm"
+  },
+  {
+    "raw_id": "182",
+    "slug": "red-black-adire-bubu",
+    "name": "Red & Black Adire Bubu",
+    "category": "female-traditional",
+    "mode": "both",
+    "salePrice": 50000,
+    "rentPrice": 15000,
+    "size": "One size fits all",
+    "images": [
+      "red-black-adire-bubu/00000094-PHOTO-2026-07-20-01-13-24.jpg",
+      "red-black-adire-bubu/00000095-PHOTO-2026-07-20-01-13-25.jpg",
+      "red-black-adire-bubu/00000096-PHOTO-2026-07-20-01-13-25.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "183",
+    "slug": "black-senator-trad-with-red-overlay-jacket-cap",
+    "name": "Black Senator Trad with Red Overlay Jacket + Cap",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 75000,
+    "rentPrice": 20000,
+    "size": "L-XL",
+    "images": [
+      "black-senator-trad-with-red-overlay-jacket-cap/00000098-PHOTO-2026-07-20-01-13-26.jpg",
+      "black-senator-trad-with-red-overlay-jacket-cap/00000099-PHOTO-2026-07-20-01-13-27.jpg",
+      "black-senator-trad-with-red-overlay-jacket-cap/00000100-PHOTO-2026-07-20-01-13-27.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "184",
+    "slug": "red-long-senator-trad-black-long-overlay",
+    "name": "Red Long Senator Trad + Black Long Overlay",
+    "category": "male-traditional",
+    "mode": "both",
+    "salePrice": 70000,
+    "rentPrice": 19000,
+    "size": "XL-2XL",
+    "images": [
+      "red-long-senator-trad-black-long-overlay/00000102-PHOTO-2026-07-20-01-13-28.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "185",
+    "slug": "white-double-breasted-suit-trouser",
+    "name": "White Double Breasted Suit & Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 90000,
+    "rentPrice": 23000,
+    "size": "Suit 50, Trouser 34",
+    "images": [
+      "white-double-breasted-suit-trouser/00000104-PHOTO-2026-07-20-01-13-29.jpg"
+    ],
+    "note": null
+  },
+  {
+    "raw_id": "186",
+    "slug": "light-carton-coloured-suit-baggy-trouser",
+    "name": "Light Carton Coloured Suit & Baggy Trouser",
+    "category": "suits",
+    "mode": "both",
+    "salePrice": 75000,
+    "rentPrice": 20000,
+    "size": "Suit 50-52, Trouser 34-36",
+    "images": [],
+    "note": "No photo sent in this export - last item, may have been cut off"
+  }
+]

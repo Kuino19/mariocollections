@@ -18,6 +18,11 @@ export default async function AccountPage() {
     include: {
       orders: {
         orderBy: { createdAt: 'desc' }
+      },
+      wishlist: {
+        include: {
+          product: true
+        }
       }
     }
   });

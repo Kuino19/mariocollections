@@ -54,29 +54,9 @@ export async function saveProduct(formData: FormData, productId?: string) {
       images = [...existingImagesRaw] as string[];
     }
 
-    const imageFiles = formData.getAll('images') as File[];
-    
-    for (const file of imageFiles) {
-      if (file.size > 0 && file.type.startsWith('image/')) {
-        const arrayBuffer = await file.arrayBuffer();
-        const buffer = Buffer.from(arrayBuffer);
-        
-        try {
-          const uploadResult = await new Promise((resolve, reject) => {
-            cloudinary.uploader.upload_stream(
-              { folder: 'mariocollections', public_id: `${slug}-${Date.now()}` },
-              (error, result) => {
-                if (error) reject(error);
-                else resolve(result);
-              }
-            ).end(buffer);
-          }) as any;
-          images.push(uploadResult.secure_url);
-        } catch (uploadError: any) {
-          console.error("Cloudinary Upload Error:", uploadError);
-          return { success: false, error: "Cloudinary configuration error: " + (uploadError?.message || JSON.stringify(uploadError)) };
-        }
-      }
+    const newUploadedImagesRaw = formData.getAll('newUploadedImages');
+    if (newUploadedImagesRaw.length > 0) {
+      images.push(...(newUploadedImagesRaw as string[]));
     }
 
     if (images.length === 0 && !productId) {

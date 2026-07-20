@@ -31,3 +31,44 @@ export async function logout() {
   cookieStore.delete('admin-auth')
   redirect('/admin/login')
 }
+
+// Order Management Actions
+export async function updateOrderStatus(orderId: string, status: string) {
+  const cookieStore = await cookies()
+  const auth = cookieStore.get('admin-auth')
+  if (!auth) throw new Error("Unauthorized")
+
+  const { PrismaClient } = await import('@prisma/client')
+  const prisma = new PrismaClient()
+
+  try {
+    await prisma.order.update({
+      where: { id: orderId },
+      data: { status }
+    })
+    return { success: true }
+  } catch (error) {
+    console.error("Failed to update order:", error)
+    return { error: "Failed to update order" }
+  }
+}
+
+// Review Management Actions
+export async function deleteReview(reviewId: string) {
+  const cookieStore = await cookies()
+  const auth = cookieStore.get('admin-auth')
+  if (!auth) throw new Error("Unauthorized")
+
+  const { PrismaClient } = await import('@prisma/client')
+  const prisma = new PrismaClient()
+
+  try {
+    await prisma.review.delete({
+      where: { id: reviewId }
+    })
+    return { success: true }
+  } catch (error) {
+    console.error("Failed to delete review:", error)
+    return { error: "Failed to delete review" }
+  }
+}

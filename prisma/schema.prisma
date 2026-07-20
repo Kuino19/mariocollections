@@ -30,17 +30,20 @@ model Product {
 }
 
 model User {
-  id           String   @id @default(cuid())
-  email        String   @unique
-  passwordHash String
-  firstName    String
-  lastName     String
-  phone        String?
-  orders       Order[]
-  reviews      Review[]
-  wishlist     WishlistItem[]
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id               String   @id @default(cuid())
+  email            String   @unique
+  passwordHash     String
+  firstName        String
+  lastName         String
+  phone            String?
+  shippingAddress  String?
+  billingAddress   String?
+  measurements     Json?    // Tailoring/Bespoke Measurements
+  orders           Order[]
+  reviews          Review[]
+  wishlist         WishlistItem[]
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
 }
 
 model Review {

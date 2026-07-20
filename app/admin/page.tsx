@@ -16,7 +16,21 @@ export default async function AdminDashboard() {
 
   const orders = await prisma.order.findMany({
     orderBy: { createdAt: 'desc' },
-    take: 50 // Limit to recent 50 orders for dashboard
+    take: 100 
+  });
+
+  const users = await prisma.user.findMany({
+    orderBy: { createdAt: 'desc' },
+    include: {
+      _count: {
+        select: { orders: true }
+      }
+    }
+  });
+
+  const reviews = await prisma.review.findMany({
+    orderBy: { createdAt: 'desc' },
+    include: { product: true }
   });
 
   return (
@@ -49,7 +63,7 @@ export default async function AdminDashboard() {
       </nav>
 
       <main>
-        <AdminDashboardClient initialProducts={products as any} orders={orders as any} />
+        <AdminDashboardClient initialProducts={products as any} orders={orders as any} users={users as any} reviews={reviews as any} />
       </main>
     </div>
   )
