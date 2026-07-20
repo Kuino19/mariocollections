@@ -431,29 +431,55 @@ export default function ProductDetailClient({
             <h3 style={{ margin: '0 0 8px', fontSize: '1.5rem', color: 'var(--wine-deep)' }}>Size Guide</h3>
             <p style={{ color: '#666', marginBottom: '24px' }}>Measure yourself carefully. All measurements are in inches.</p>
             
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', marginBottom: '24px' }}>
-              <thead>
-                <tr style={{ background: 'var(--wine)', color: 'var(--ivory)' }}>
-                  <th style={{ padding: '12px' }}>Size</th>
-                  <th style={{ padding: '12px' }}>Bust</th>
-                  <th style={{ padding: '12px' }}>Waist</th>
-                  <th style={{ padding: '12px' }}>Hip</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>S (UK 8-10)</td><td style={{ padding: '12px' }}>34 - 35</td><td style={{ padding: '12px' }}>26 - 28</td><td style={{ padding: '12px' }}>36 - 38</td></tr>
-                <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>M (UK 12)</td><td style={{ padding: '12px' }}>36 - 38</td><td style={{ padding: '12px' }}>29 - 31</td><td style={{ padding: '12px' }}>39 - 41</td></tr>
-                <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>L (UK 14-16)</td><td style={{ padding: '12px' }}>39 - 41</td><td style={{ padding: '12px' }}>32 - 34</td><td style={{ padding: '12px' }}>42 - 44</td></tr>
-                <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>XL (UK 18)</td><td style={{ padding: '12px' }}>42 - 44</td><td style={{ padding: '12px' }}>35 - 38</td><td style={{ padding: '12px' }}>45 - 48</td></tr>
-                <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>XXL (UK 20+)</td><td style={{ padding: '12px' }}>45 - 48</td><td style={{ padding: '12px' }}>39 - 42</td><td style={{ padding: '12px' }}>49 - 52</td></tr>
-              </tbody>
-            </table>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', marginBottom: '24px' }}>
+              <div>
+                <h4 style={{ margin: '0 0 12px', color: 'var(--wine)' }}>Women's Sizing</h4>
+                <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+                  <thead>
+                    <tr style={{ background: 'var(--wine)', color: 'var(--ivory)' }}>
+                      <th style={{ padding: '12px' }}>Size</th>
+                      <th style={{ padding: '12px' }}>Bust</th>
+                      <th style={{ padding: '12px' }}>Waist</th>
+                      <th style={{ padding: '12px' }}>Hip</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>S (UK 8-10)</td><td style={{ padding: '12px' }}>34 - 35</td><td style={{ padding: '12px' }}>26 - 28</td><td style={{ padding: '12px' }}>36 - 38</td></tr>
+                    <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>M (UK 12)</td><td style={{ padding: '12px' }}>36 - 38</td><td style={{ padding: '12px' }}>29 - 31</td><td style={{ padding: '12px' }}>39 - 41</td></tr>
+                    <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>L (UK 14-16)</td><td style={{ padding: '12px' }}>39 - 41</td><td style={{ padding: '12px' }}>32 - 34</td><td style={{ padding: '12px' }}>42 - 44</td></tr>
+                    <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>XL (UK 18)</td><td style={{ padding: '12px' }}>42 - 44</td><td style={{ padding: '12px' }}>35 - 38</td><td style={{ padding: '12px' }}>45 - 48</td></tr>
+                    <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>XXL (UK 20+)</td><td style={{ padding: '12px' }}>45 - 48</td><td style={{ padding: '12px' }}>39 - 42</td><td style={{ padding: '12px' }}>49 - 52</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div>
+                <h4 style={{ margin: '0 0 12px', color: 'var(--wine)' }}>Men's Sizing (Suits & Traditional)</h4>
+                <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+                  <thead>
+                    <tr style={{ background: 'var(--wine)', color: 'var(--ivory)' }}>
+                      <th style={{ padding: '12px' }}>Size</th>
+                      <th style={{ padding: '12px' }}>Chest</th>
+                      <th style={{ padding: '12px' }}>Trouser Waist</th>
+                      <th style={{ padding: '12px' }}>Suit (EU)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>S</td><td style={{ padding: '12px' }}>36 - 38</td><td style={{ padding: '12px' }}>30 - 32</td><td style={{ padding: '12px' }}>46 - 48</td></tr>
+                    <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>M</td><td style={{ padding: '12px' }}>39 - 41</td><td style={{ padding: '12px' }}>33 - 35</td><td style={{ padding: '12px' }}>50 - 52</td></tr>
+                    <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>L</td><td style={{ padding: '12px' }}>42 - 44</td><td style={{ padding: '12px' }}>36 - 38</td><td style={{ padding: '12px' }}>54</td></tr>
+                    <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>XL</td><td style={{ padding: '12px' }}>45 - 48</td><td style={{ padding: '12px' }}>39 - 42</td><td style={{ padding: '12px' }}>56 - 58</td></tr>
+                    <tr style={{ borderBottom: '1px solid var(--line)' }}><td style={{ padding: '12px', fontWeight: 600 }}>XXL</td><td style={{ padding: '12px' }}>49 - 52</td><td style={{ padding: '12px' }}>43 - 46</td><td style={{ padding: '12px' }}>60+</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
             
             <div style={{ background: 'rgba(201,162,39,0.1)', padding: '16px', borderRadius: '4px' }}>
               <strong style={{ display: 'block', marginBottom: '8px' }}>How to Measure:</strong>
               <ul style={{ margin: 0, paddingLeft: '20px', color: '#4a423d', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                <li><strong>Bust:</strong> Measure around the fullest part of your bust.</li>
-                <li><strong>Waist:</strong> Measure around the narrowest part of your natural waist.</li>
+                <li><strong>Chest/Bust:</strong> Measure around the fullest part of your chest or bust.</li>
+                <li><strong>Waist:</strong> Measure around the narrowest part of your natural waist (or where you normally wear your trousers).</li>
                 <li><strong>Hip:</strong> Measure around the fullest part of your hips.</li>
               </ul>
             </div>
