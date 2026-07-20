@@ -11,7 +11,7 @@ export default async function NewArrivals() {
     name: p.name,
     slug: p.slug,
     price: p.salePrice || p.rentPrice || 0,
-    image: p.images[0],
+    image: p.images && p.images.length > 0 ? p.images[0] : '/logo.png',
     category: p.category,
     product: p
   }));

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { useCartStore } from '../../store/useCartStore';
+import { useWishlistStore } from '../../store/useWishlistStore';
 
 export default function Header() {
   const items = useCartStore((state) => state.items);
@@ -15,7 +16,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [user, setUser] = useState<any>(null);
 
-  // Fetch current user
+  // Fetch current user and sync wishlist
   useEffect(() => {
     const fetchUser = async () => {
       try {
@@ -24,6 +25,42 @@ export default function Header() {
           const data = await res.json();
           if (data.user) {
             setUser(data.user);
+            const store = useWishlistStore.getState();
+            store.setIsLoggedIn(true);
+            
+            // Sync Wishlist
+            try {
+              const wlRes = await fetch('/api/wishlist');
+              if (wlRes.ok) {
+                const dbItems = await wlRes.json();
+                const localItems = store.items;
+                
+                // Find items in local that are not in DB
+                const missingInDb = localItems.filter(local => 
+                  !dbItems.find((db: any) => db.id === local.id && (db.size || '') === (local.size || ''))
+                );
+                
+                if (missingInDb.length > 0) {
+                  // Sync missing items to DB
+                  await fetch('/api/wishlist', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ items: missingInDb })
+                  });
+                }
+                
+                // Merge DB items into local
+                const missingInLocal = dbItems.filter((db: any) => 
+                  !localItems.find(local => local.id === db.id && (local.size || '') === (db.size || ''))
+                );
+                
+                if (missingInLocal.length > 0) {
+                  store.setItems([...localItems, ...missingInLocal]);
+                }
+              }
+            } catch (err) {
+              console.error('Failed to sync wishlist', err);
+            }
           }
         }
       } catch (e) {

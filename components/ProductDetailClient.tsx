@@ -18,7 +18,7 @@ export default function ProductDetailClient({
   const [mode, setMode] = useState<'sale' | 'rent'>(product.mode === 'both' ? 'sale' : (product.mode as 'sale' | 'rent'));
   const [eventDate, setEventDate] = useState<string>('');
   const [selectedSize, setSelectedSize] = useState<string>(product.sizes?.[0] || '');
-  const [mainImage, setMainImage] = useState<string>(product.images[0]);
+  const [mainImage, setMainImage] = useState<string>(product.images && product.images.length > 0 ? product.images[0] : '/logo.png');
   
   const addItem = useCartStore(state => state.addItem);
   const router = useRouter();
@@ -259,16 +259,23 @@ export default function ProductDetailClient({
           )}
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: 'auto' }}>
-            <button
-              className="btn btn-gold"
-              onClick={handleAddToCart}
-              disabled={!product.inStock || (mode === 'rent' && !eventDate)}
-              style={{ width: '100%', padding: '18px', fontSize: '1.1rem' }}
-            >
-              {product.inStock 
-                ? (mode === 'sale' ? 'Add Purchase to Cart' : 'Add Rental to Cart') 
-                : 'Out of Stock'}
-            </button>
+            <div style={{ display: 'flex', gap: '12px' }}>
+              <button
+                className="btn btn-gold"
+                onClick={handleAddToCart}
+                disabled={!product.inStock || (mode === 'rent' && !eventDate)}
+                style={{ flex: 1, padding: '18px', fontSize: '1.1rem' }}
+              >
+                {product.inStock 
+                  ? (mode === 'sale' ? 'Add Purchase to Cart' : 'Add Rental to Cart') 
+                  : 'Out of Stock'}
+              </button>
+              
+              <div style={{ position: 'relative', width: '60px', flexShrink: 0, border: '1px solid var(--line)', borderRadius: '3px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <WishlistButton product={product} size={selectedSize} absolute={false} />
+              </div>
+            </div>
+            
             <a
               href={`https://wa.me/2348113683580?text=${encodeURIComponent(`Hello Mario Collections, I am interested in ${mode === 'sale' ? 'buying' : 'renting'} the *${product.name}* for ₦${currentPrice?.toLocaleString()}.`)}`}
               target="_blank"
@@ -361,7 +368,7 @@ export default function ProductDetailClient({
                 }}>
                   <div style={{ aspectRatio: '4/5', background: 'var(--wine)', position: 'relative' }}>
                     <WishlistButton product={rp} />
-                    <img src={rp.images[0]} alt={rp.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={rp.images && rp.images.length > 0 ? rp.images[0] : '/logo.png'} alt={rp.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                     <div className="eyebrow" style={{ marginBottom: '4px' }}>{rpModeDisplay}</div>

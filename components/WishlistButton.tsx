@@ -4,17 +4,17 @@ import { useWishlistStore } from '@/store/useWishlistStore';
 import { Product } from '@/lib/data';
 import toast from 'react-hot-toast';
 
-export default function WishlistButton({ product }: { product: Product }) {
+export default function WishlistButton({ product, size, absolute = true }: { product: Product, size?: string, absolute?: boolean }) {
   const { items, addItem, removeItem, isInWishlist } = useWishlistStore();
   
-  const isWished = isInWishlist(product.id);
+  const isWished = isInWishlist(product.id, size);
 
   const toggleWishlist = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
 
     if (isWished) {
-      removeItem(product.id);
+      removeItem(product.id, size);
       toast.success(`${product.name} removed from wishlist.`);
     } else {
       addItem({
@@ -24,6 +24,7 @@ export default function WishlistButton({ product }: { product: Product }) {
         image: product.images[0],
         slug: product.slug,
         category: product.category,
+        size: size,
       });
       toast.success(`${product.name} added to wishlist!`);
     }
@@ -33,7 +34,8 @@ export default function WishlistButton({ product }: { product: Product }) {
     <button
       onClick={toggleWishlist}
       style={{
-        position: 'absolute', top: '12px', right: '12px', zIndex: 10,
+        position: absolute ? 'absolute' : 'relative', 
+        ...(absolute ? { top: '12px', right: '12px', zIndex: 10 } : {}),
         background: 'rgba(255, 255, 255, 0.9)', border: 'none', width: '36px', height: '36px',
         borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
         boxShadow: '0 2px 8px rgba(0,0,0,0.1)', cursor: 'pointer',
