@@ -26,6 +26,7 @@ model Product {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
   reviews      Review[]
+  wishlist     WishlistItem[]
 }
 
 model User {
@@ -37,6 +38,7 @@ model User {
   phone        String?
   orders       Order[]
   reviews      Review[]
+  wishlist     WishlistItem[]
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 }
@@ -69,3 +71,16 @@ model Order {
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
 }
+
+model WishlistItem {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  size      String?
+  createdAt DateTime @default(now())
+
+  @@unique([userId, productId, size])
+}
+
